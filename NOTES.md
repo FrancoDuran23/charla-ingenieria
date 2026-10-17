@@ -47,3 +47,14 @@ Image files expected (also in assets/memes/README.md and assets/fotos/README.md)
 | `assets/fotos/18-mate-abuelos.jpg` | FOTO: mate con los abuelos |
 | `assets/fotos/18-charla.jpg` | FOTO: dando esta charla |
 | `assets/fotos/18-estudiar.jpg` | FOTO: estudiando / pizarrón |
+
+## EDIT (2026-10-17) — 22 slides
+Repo: /workspace/charla-ingenieria (GitHub Pages: https://francoduran23.github.io/charla-ingenieria/). index.html == charla.html (keep identical). Render check: `python3 tools/shot_full.py` → renders/full/ (gitignored).
+Changes:
+- Slide 3 Quién soy: logo wall — Founder (jujuy.dev real logo) · Embajador (assets/logos/01-03.png) · Hackatones ganadas (04-06) · Hackatones hosteadas (07-08). Slots auto-show when files exist. No brand names invented.
+- Slide 5 Locura: explosion of 38 polaroid cards in 4 bursts (steps 1-4, pop/burst animation from center), title in black tag on top. Labeled highlight slots: assets/fotos/05-richard-hipp.jpg, 05-midudev.jpg, 05-artu-grande.jpg, 05-erasmo-hernandez.jpg, 05-carli-code.jpg, 05-hackatones.jpg, 05-coworking.jpg (05-amigos-tech.jpg removed), meme assets/memes/05-this-is-fine.jpg; generic assets/fotos/locura/01-30.jpg (01-18 = real event photos from jujuy.dev.ar; 19-30 show llama/gradient tiles).
+- Agents sub-section (old 12-13 → new 12-16), condensed from Facu Padilla's deck (charla.facundopadilla.com/orca, credited on each): 12 Un modelo no es un agente (modelo: prompt→respuesta vs agente: percibe→decide→actúa→observa loop) · 13 ¿Qué es el harness? (modelo + herramientas + contexto + permisos + loop + estado = harness; "Gracias, Jev") · 14 Orquestar es coordinar trabajo (no es: malla de agentes / es: quién hace qué, cuándo y cómo se integra; "Más agentes ≠ más productividad") · 15 Un agente, un espacio de trabajo (mismo checkout → conflictos; repo → worktrees A/B/C → review (si falla, volvemos) → merge; fan-out/fan-in) · 16 Orca (ADE = Agent Development Environment; antes: caos de terminales/branches/notas "¿cuál era cuál?" → panel Orca con workers A-D; Worker = agente con tarea concreta).
+- Old 14-19 → now 17-22 (CSS classes renamed s17-s22).
+- Slide 19 Comunidades: nodes with real logos from jujuy.dev.ar "Los que empujan" (assets/logos/comunidades/): Superteam Argentina, SaltaDev, CuyoConnect, CrecimientoAR, Nerdearla, Formosa.dev, Mar del Plata Dev; Superteam Brasil (not on site, initials node, named by Franco). Not used (not communities): Fundación CIDEJ, Municipalidad SSJ, Gobierno de Jujuy, Celo, Ripio.
+Storyboard now: 1 Portada · 2 Técnica/práctica/sentimental · 3 Quién soy · 4 ColeJUY · 5 Locura · 6 Plot twist · 7 Hace casi 1 año · 8 Pantallas compartidas · 9 5 etapas · 10 Hackatones · 11 IDE/ADE · 12-16 Agentes (Facu) · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea · 21 Delegar · 22 Cierre.
+Asset lists: assets/memes/README.md, assets/fotos/README.md, assets/logos/README.md.
