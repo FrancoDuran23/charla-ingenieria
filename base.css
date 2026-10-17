@@ -1,0 +1,19 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden}
+.stage{position:absolute;left:50%;top:50%;width:1280px;height:720px;transform-origin:center;overflow:hidden}
+.slide{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .35s ease}
+.slide.active{opacity:1;pointer-events:auto}
+.progress{position:absolute;left:0;bottom:0;height:6px;width:100%;z-index:10}
+.progress i{display:block;height:100%;width:0;transition:width .35s ease}
+.counter{position:absolute;right:28px;bottom:18px;z-index:10}
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px}
+/* notas y presentador */
+.notes{display:none}
+.notes-panel{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);width:min(1100px,94vw);max-height:42vh;overflow:auto;z-index:100;
+ background:rgba(10,10,10,.94);color:#fbfbf7;border:1.5px solid #7b37e5;padding:18px 24px;font:500 20px/1.45 Montserrat,system-ui,sans-serif}
+.notes-panel.hidden{display:none}
+.notes-panel .np-head{display:flex;justify-content:space-between;font:700 13px/1 "Space Mono",monospace;letter-spacing:3px;text-transform:uppercase;color:#b18cff;margin-bottom:10px}
+.notes-panel .np-next{margin-top:12px;font:700 13px/1.3 "Space Mono",monospace;letter-spacing:2px;color:#a9a6b3;text-transform:uppercase}
+.notes-panel p{margin:0 0 .6em}
+body.presenter .notes-panel{left:60vw;top:0;bottom:0;right:0;width:40vw;max-height:none;transform:none;border:0;border-left:3px solid #7b37e5;padding:28px 32px;font-size:24px}
+body.presenter .np-timer{font-size:28px;color:#fbfbf7;letter-spacing:2px}

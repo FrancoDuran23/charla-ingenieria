@@ -1,0 +1,492 @@
+<!doctype html><html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>¿Quién programa a mano hoy? — Franco Durán · jujuy.dev</title>
+<link rel="icon" href="assets/jujuydev-isotipo.png">
+<link rel="stylesheet" href="base.css"><link rel="stylesheet" href="charla.css">
+<style>
+/* 01 */
+.s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
+.s01 .tags{margin-bottom:34px}
+.s01 h1{font-size:118px;margin-top:24px;line-height:.93}
+.s01 .sub{margin-top:30px}
+.s01 .orb{width:440px;height:440px;right:40px;top:150px;opacity:.95}
+.s01 .photo{right:150px;top:118px;width:330px;height:420px;z-index:2}
+.s01 .llama{right:28px;bottom:0;height:330px;-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent);mask-image:linear-gradient(180deg,#000 80%,transparent)}
+.s01 .hint{position:absolute;left:56px;bottom:30px}
+/* 02 */
+.s02 .head h2{font-size:72px;margin-top:22px}
+.s02 .meme{z-index:1;left:56px;right:56px;top:250px;bottom:44px}
+.s02 .orb{width:200px;height:200px;left:-60px;top:190px;z-index:0}
+.s02 .llama{right:50px;top:30px;height:175px;transform:rotate(8deg)}
+/* 03 */
+.s03 .photo{left:56px;top:110px;width:380px;height:520px}
+.s03 .orb{width:260px;height:260px;left:250px;top:440px;z-index:0}
+.s03 .right{position:absolute;left:490px;top:104px;right:56px}
+.s03 h2{font-size:96px}
+.s03 .age{margin-top:12px}
+.s03 ul{list-style:none;margin-top:26px;display:flex;flex-direction:column;gap:12px}
+.s03 li{display:flex;gap:14px;align-items:baseline;font:600 25px/1.25 var(--font-sans)}
+.s03 li i{font:700 14px/1 var(--font-mono);letter-spacing:2px;color:var(--violet);font-style:normal;min-width:34px}
+.s03 li b{font-weight:800}
+/* 04 */
+.s04 .left{position:absolute;left:56px;top:110px;width:640px}
+.s04 h2{font-size:150px}
+.s04 .lead{margin-top:14px}
+.s04 .stat{margin-top:34px;display:flex;align-items:flex-end;gap:16px}
+.s04 .stat .n{font:400 150px/.85 var(--font-condensed);color:var(--violet)}
+.s04 .stat .u{font:800 32px/1.1 var(--font-sans)}
+.s04 .stat .u small{display:block;font:700 14px/1.4 var(--font-mono);letter-spacing:3px;color:var(--ink-muted);text-transform:uppercase}
+.s04 .tags{margin-top:30px}
+.s04 .shot{right:56px;top:96px;width:470px;height:570px;z-index:2}
+.s04 .orb{width:300px;height:300px;right:10px;top:40px;z-index:0}
+/* 05 */
+.s05 .head h2{font-size:68px}
+.s05 .grid{position:absolute;left:56px;right:56px;top:196px;bottom:40px}
+.s05 .grid .media{width:calc((100% - 32px)/3);height:calc((100% - 16px)/2)}
+.s05 .g1{left:0;top:0}.s05 .g2{left:calc((100% - 32px)/3 + 16px);top:0}.s05 .g3{right:0;top:0}
+.s05 .g4{left:0;bottom:0}.s05 .g5{left:calc((100% - 32px)/3 + 16px);bottom:0}.s05 .g6{right:0;bottom:0}
+.s05 .g6.missing{border-color:var(--violet)}
+/* 06 */
+.s06 .kick{position:absolute;left:56px;top:110px}
+.s06 h2{position:absolute;left:56px;top:168px;width:820px;font-size:88px}
+.s06 .lol{position:absolute;left:56px;top:372px;font:600 28px/1 var(--font-sans);color:var(--ink-muted)}
+.s06 .list{position:absolute;left:56px;right:56px;bottom:60px}
+.s06 .list .mono{margin-bottom:16px}
+.s06 .chips{display:flex;gap:14px}
+.s06 .chips .tag{font:400 36px/1 var(--font-condensed);text-transform:uppercase;padding:16px 24px;letter-spacing:0}
+.s06 .chips .tag:before{content:"✓";font:700 22px/1 var(--font-mono);color:var(--violet);margin-right:6px}.s06 .chips .tag--violet:before{color:#fff}
+.s06 .orb{width:300px;height:300px;right:70px;top:110px}
+.s06 .llama{right:90px;top:70px;height:340px;transform:rotate(-6deg)}
+.s06 .sticker{right:310px;top:110px}
+/* 07 */
+.s07 .q{position:absolute;left:56px;top:110px;width:600px}
+.s07 .q h2{font-size:84px}
+.s07 .a{position:absolute;left:56px;top:380px;width:600px}
+.s07 .a .big{font:400 64px/.95 var(--font-condensed);text-transform:uppercase}
+.s07 .meme{right:56px;top:100px;width:540px;height:560px}
+/* 08 */
+.s08 .head h2{font-size:72px}
+.s08 .head .lead{margin-top:10px}
+.s08 .tl{position:absolute;left:56px;right:56px;top:330px;height:220px}
+.s08 .tl .line{position:absolute;left:30px;right:30px;top:30px;height:4px;background:var(--line-soft)}
+.s08 .node{position:absolute;top:0;width:176px}
+.s08 .node .dot{width:60px;height:60px;border-radius:50%;background:var(--ink);color:var(--on-ink);font:400 30px/60px var(--font-condensed);text-align:center}
+.s08 .node p{margin-top:16px;font:700 20px/1.2 var(--font-sans)}
+.s08 .node.me .dot{background:var(--orb);width:64px;height:64px;line-height:64px}
+.s08 .node.me p{color:var(--violet);font-weight:800}
+.s08 .yo{position:absolute;left:80px;top:12px;font-size:22px;padding:6px 12px}
+.s08 .punch{position:absolute;left:56px;right:56px;bottom:56px;font:400 54px/1 var(--font-condensed);text-transform:uppercase}
+/* 09 */
+.s09 .head h2{font-size:68px}
+.s09 ol{position:absolute;left:56px;top:210px;width:470px;list-style:none;display:flex;flex-direction:column;gap:14px}
+.s09 li{display:flex;align-items:center;gap:16px;font:400 46px/1 var(--font-condensed);text-transform:uppercase}
+.s09 li i{font:700 15px/1 var(--font-mono);font-style:normal;width:40px;height:40px;border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center}
+.s09 li.pum{color:var(--violet)} .s09 li.pum i{background:var(--violet);color:#fff;border-color:var(--violet)}
+.s09 .neg{left:560px;top:206px;width:320px;height:440px;transform:rotate(-2deg)}
+.s09 .pos{right:56px;top:226px;width:320px;height:440px;transform:rotate(2deg);z-index:2}
+.s09 .pos.missing{border-color:var(--violet)}
+/* 10 */
+.s10 .head h2{font-size:72px}
+.s10 .flow{position:absolute;left:56px;top:214px;width:720px;display:flex;flex-direction:column;gap:14px}
+.s10 .flow .tag{font:700 25px/1.2 var(--font-sans);padding:11px 20px;align-self:flex-start}
+.s10 .flow .tag:nth-child(2){margin-left:40px}.s10 .flow .tag:nth-child(3){margin-left:80px}.s10 .flow .tag:nth-child(4){margin-left:120px}
+.s10 .flow .arr{font:700 18px/1 var(--font-mono);color:var(--violet);padding-left:22px}
+.s10 .from{position:absolute;left:56px;bottom:112px;width:720px;font:400 40px/1 var(--font-condensed);text-transform:uppercase}
+.s10 .end{position:absolute;left:56px;bottom:52px;width:740px}
+.s10 .photo{right:56px;top:210px;width:400px;height:450px}
+.s10 .orb{width:220px;height:220px;right:20px;top:150px;z-index:0}
+/* 11 */
+.s11 .q{position:absolute;left:56px;top:120px;width:620px}
+.s11 .q h2{font-size:84px}
+.s11 .a{position:absolute;left:56px;top:390px;width:600px}
+.s11 .a .lead{font-size:34px}
+.s11 .a .big{font:400 92px/.9 var(--font-condensed);text-transform:uppercase;margin-top:8px}
+.s11 .meme{right:56px;top:100px;width:500px;height:560px}
+/* 12 */
+.s12 .head h2{font-size:72px}
+.s12 .head .lead{margin-top:8px;font-size:26px}
+.s12 svg.wires{position:absolute;left:0;top:0;width:1280px;height:720px;z-index:1}
+.s12 .box{position:absolute;z-index:2;border:2px solid var(--ink);background:var(--paper-raised);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-shadow:var(--shadow-tile)}
+.s12 .repo{left:56px;top:345px;width:220px;height:150px;border-radius:var(--radius-tile)}
+.s12 .repo b,.s12 .merge b{font:400 40px/1 var(--font-condensed);text-transform:uppercase}
+.s12 .repo small,.s12 .merge small{font:600 18px/1.25 var(--font-sans);margin-top:6px}
+.s12 .wt{left:450px;width:360px;height:104px;border-radius:14px;flex-direction:row;justify-content:space-between;padding:0 20px}
+.s12 .wt b{font:400 32px/1 var(--font-condensed);text-transform:uppercase}
+.s12 .wt .ag{font:700 18px/1 var(--font-sans);padding:8px 12px;background:var(--ink);color:#fff}
+.s12 .wt1{top:236px}.s12 .wt2{top:368px}.s12 .wt3{top:500px}
+.s12 .merge{right:56px;top:330px;width:300px;height:180px;border-radius:var(--radius-tile);background:var(--violet);color:#fff;border-color:var(--violet)}
+.s12 .credit{position:absolute;left:56px;bottom:30px;font-size:12px;color:var(--ink-muted)}
+.s12 .motto{position:absolute;right:56px;bottom:68px;font:400 34px/1 var(--font-condensed);text-transform:uppercase}
+/* 13 */
+.s13 .head h2{font-size:72px}
+.s13 .eq{position:absolute;left:56px;right:56px;top:230px;display:flex;align-items:center;gap:20px}
+.s13 .card{flex:1;height:200px;border:2px solid var(--ink);border-radius:var(--radius-tile);background:var(--paper-raised);padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow-tile)}
+.s13 .card b{font:400 52px/1 var(--font-condensed);text-transform:uppercase}
+.s13 .card span{font:600 22px/1.25 var(--font-sans)}
+.s13 .card.ag{background:var(--ink);color:#fff}
+.s13 .op{font:400 72px/1 var(--font-condensed);color:var(--violet)}
+.s13 .orq{position:absolute;left:56px;right:56px;top:480px;height:150px;border-radius:var(--radius-tile);background:var(--orb);color:#fff;display:flex;align-items:center;gap:22px;padding:0 32px}
+.s13 .orq .mini{font:700 20px/1 var(--font-sans);background:rgba(10,10,10,.85);padding:12px 14px}
+.s13 .orq b{font:400 52px/1 var(--font-condensed);text-transform:uppercase;margin-left:auto}
+.s13 .orq .eqs{font:400 52px/1 var(--font-condensed)}
+.s13 .sticker{right:90px;top:446px}
+/* 14 */
+.s14 .orb{width:520px;height:520px;right:-120px;top:-120px;opacity:.9}
+.s14 .kick{position:absolute;left:56px;top:110px}
+.s14 blockquote{position:absolute;left:56px;top:160px;width:900px;font:400 92px/.95 var(--font-condensed);text-transform:uppercase}
+.s14 blockquote .q{color:var(--violet-soft)}
+.s14 .who{position:absolute;left:56px;bottom:70px;font:600 26px/1.3 var(--font-sans);color:#d8d6ce}
+.s14 .who b{color:#fff}
+.s14 .llama{right:90px;bottom:0;height:380px}
+/* 15 */
+.s15 .head h2{font-size:88px}
+.s15 .left{position:absolute;left:56px;top:330px;width:560px}
+.s15 .lesson{position:absolute;left:56px;bottom:56px;width:560px;border:2px solid var(--violet);padding:20px 22px;background:var(--paper-raised)}
+.s15 .lesson .mono{color:var(--violet);margin-bottom:8px}
+.s15 .lesson p{font:700 28px/1.25 var(--font-sans)}
+.s15 .meme{right:56px;top:100px;width:540px;height:560px}
+/* 16 */
+.s16 .left{position:absolute;left:56px;top:110px;width:400px;z-index:3}
+.s16 .left h2{font-size:66px}
+.s16 .left .lead{margin-top:20px;font-size:24px}
+.s16 .born{position:absolute;left:56px;bottom:56px;width:390px;font:700 24px/1.3 var(--font-sans);border-left:4px solid var(--violet);padding-left:16px}
+.s16 svg.net{position:absolute;left:0;top:0;width:1280px;height:720px;z-index:1}
+.s16 svg.net line{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 6;opacity:0;transition:opacity .4s}
+.s16 svg.net line.on{opacity:.5}
+.s16 .nd{position:absolute;z-index:2;white-space:nowrap}
+.s16 .me{font:400 34px/1 var(--font-condensed);text-transform:uppercase;background:var(--ink);color:#fff;padding:16px 22px;border-radius:999px}
+.s16 .nd.tag:not(.tag--solid){background:var(--paper-raised);font-weight:700}
+.s16 .nd.person{border-radius:999px}
+.s16 .jd{background:var(--paper-raised);border:2px solid var(--violet);padding:10px 16px;display:flex;align-items:center;gap:10px;font:800 22px/1 var(--font-sans);box-shadow:var(--shadow-tile)}
+.s16 .jd img{height:34px}
+.s16 .orb{width:200px;height:200px;left:780px;top:290px;opacity:.35;z-index:0}
+/* 17 */
+.s17 .left{position:absolute;left:56px;top:110px;width:540px}
+.s17 .lock{width:150px;height:170px;position:relative;transform:scale(.7);transform-origin:0 100%;margin-top:-30px}
+.s17 .lock .body{position:absolute;left:0;bottom:0;width:150px;height:110px;background:var(--ink);border-radius:16px;display:flex;align-items:center;justify-content:center}
+.s17 .lock .body i{width:22px;height:34px;border-radius:11px;background:var(--paper)}
+.s17 .lock .shackle{position:absolute;left:28px;top:0;width:94px;height:110px;border:16px solid var(--ink);border-bottom:0;border-radius:50px 50px 0 0;transform-origin:78px 100%;transition:transform .6s cubic-bezier(.3,1.5,.5,1)}
+.s17 .lock.on .shackle{transform:translateY(-26px) rotate(28deg)}
+.s17 .lock.on .body{background:var(--violet)}
+.s17 .lock .body{transition:background .4s}
+.s17 h2{font-size:76px;margin-top:16px}
+.s17 .now{margin-top:22px;font-size:28px}
+.s17 .ben{position:absolute;left:56px;bottom:42px;width:520px;font:600 19px/1.35 var(--font-sans);color:var(--ink-muted)}
+.s17 .ben b{color:var(--ink)}
+.s17 .right{position:absolute;left:640px;right:56px;top:96px}
+.s17 .gb{background:var(--ink);color:#fff;border-radius:var(--radius-tile);padding:20px 24px;display:flex;justify-content:space-between;align-items:center}
+.s17 .gb b{font:400 50px/1 var(--font-condensed);text-transform:uppercase}
+.s17 .gb span{font:600 19px/1.3 var(--font-sans);text-align:right;color:#d8d6ce}
+.s17 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.s17 .chips .tag{font-size:19px;font-weight:700}.s17 .chips .tag:not(.tag--violet){background:var(--paper-raised)}
+.s17 .meme{left:640px;right:56px;top:390px;bottom:40px}
+/* 18 */
+.s18 .head h2{font-size:60px}
+.s18 .row{position:absolute;left:56px;right:56px;top:200px;bottom:44px}
+.s18 .row .media{top:0;bottom:0;width:calc((100% - 48px)/4)}
+.s18 .p1{left:0}.s18 .p2{left:calc((100% - 48px)/4 + 16px)}.s18 .p3{left:calc((100% - 48px)/2 + 32px)}.s18 .p4{right:0}
+/* 19 */
+.s19 .left{position:absolute;left:56px;top:110px;width:700px;z-index:3}
+.s19 h2{font-size:96px}
+.s19 .lead{margin-top:22px;font-size:27px;width:660px}
+.s19 .dare{margin-top:22px;font:400 38px/1.05 var(--font-condensed);text-transform:uppercase;color:var(--violet);width:720px}
+.s19 .sign{position:absolute;right:56px;top:172px;display:flex;align-items:center;gap:12px;z-index:3}
+.s19 .sign .tag--solid{font-size:24px}
+.s19 .orb{width:420px;height:420px;right:40px;top:230px}
+.s19 .llama{right:70px;bottom:0;height:470px}
+.s19 .gracias{position:absolute;right:56px;top:96px;font:400 64px/1 var(--font-condensed);text-transform:uppercase;z-index:5}
+</style></head><body>
+<div class="stage">
+
+<!-- 01 PORTADA -->
+<section class="slide s01" data-title="Portada">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">UNJu · Ingeniería</div>
+ <div class="copy">
+  <div class="tags"><span class="tag"><b>Jujuy</b><span class="v">Dev</span>&nbsp;presenta</span><span class="tag tag--solid">Charla en vivo</span></div>
+  <div class="bar"></div>
+  <h1 class="display">¿Quién programa<br><span class="hl">a mano</span> hoy?</h1>
+  <div class="lead sub"><b>Franco Durán</b> · Facultad de Ingeniería</div>
+ </div>
+ <div class="orb"></div>
+ <figure class="media photo" data-label="FOTO: Franco"><img src="assets/fotos/01-franco-portada.jpg" alt="Franco Durán"></figure>
+ <img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
+ <div class="mono hint">Deslizá →</div>
+ <aside class="notes"><p>¡Buenas! Soy Franco. Arranco con una pregunta y quiero manos arriba: <b>¿quién programa a mano hoy?</b></p><p>Guarden la respuesta, que la vamos a retomar.</p></aside>
+</section>
+
+<!-- 02 TÉCNICA / PRÁCTICA / SENTIMENTAL -->
+<section class="slide s02" data-title="¿Técnica, práctica o sentimental?">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">¿Técnica, práctica o <span class="hl">sentimental</span>?</h2></div>
+ <img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
+ <figure class="media meme" data-label="MEME: two buttons / perro indeciso — botones: técnica · práctica · sentimental"><img src="assets/memes/02-two-buttons.jpg" alt=""><span class="tag tag--solid cap">Yo armando esta charla</span></figure>
+ <div class="orb"></div>
+ <aside class="notes"><p>Cuando armaba esta charla, que es súper importante para mí, no sabía si hablar muy técnico, muy por arriba, más práctico, más teórico, más sentimental…</p><p>Estar parado acá, en la facultad donde me gradué, era impensable hace unos meses. Si no fuera por el libre albedrío, los modelos de IA y la orquestación de agentes, no estaría acá.</p></aside>
+</section>
+
+<!-- 03 QUIÉN SOY -->
+<section class="slide s03" data-title="Quién soy">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="kicker">Quién soy</div>
+ <div class="orb"></div>
+ <figure class="media photo" data-label="FOTO: Franco (perfil)"><img src="assets/fotos/03-franco-perfil.jpg" alt=""></figure>
+ <div class="right">
+  <div class="bar"></div><h2 class="display">Franco <span class="hl">Durán</span></h2>
+  <div class="tags age"><span class="tag tag--solid">26 años</span><span class="tag">Jujuy, Argentina</span></div>
+  <ul>
+   <li class="step" data-step="1"><i>01</i><span>Lic. en <b>Tecnologías de la Información</b></span></li>
+   <li class="step" data-step="1"><i>02</i><span>Analista Programador Universitario</span></li>
+   <li class="step" data-step="2"><i>03</i><span>Consultor en <b>automatización de procesos e IA</b></span></li>
+   <li class="step" data-step="2"><i>04</i><span>Founder de <b>jujuy.dev</b> · +600 entusiastas tech</span></li>
+   <li class="step" data-step="3"><i>05</i><span>Embajador de redes blockchain · charlas</span></li>
+   <li class="step" data-step="3"><i>06</i><span>Host de hackatones web2 y web3 <b>(y gané unas cuantas 🏆)</b></span></li>
+  </ul>
+ </div>
+ <aside class="notes"><p>Soy Franco Durán, tengo 26 años. Licenciado en Tecnologías de la Información y Analista Programador Universitario, acá en la UNJu.</p><p>Hoy soy consultor en automatización de procesos e IA en varias empresas.</p><p>Soy founder de jujuy.dev, una comunidad de +600 entusiastas tecnológicos donde conectamos y aprendemos.</p><p>Soy embajador de redes blockchain, doy charlas, hosteo hackatones web2 y web3… y gané unas cuantas.</p></aside>
+</section>
+
+<!-- 04 COLEJUY -->
+<section class="slide s04" data-title="ColeJUY">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="kicker">Un proyecto</div>
+ <div class="left">
+  <div class="bar"></div><h2 class="display">Cole<span class="hl">JUY</span></h2>
+  <div class="lead">Los colectivos de Jujuy, <b>en vivo</b>.</div>
+  <div class="stat step" data-step="1"><span class="n">+1500</span><span class="u">usuarios/día<small>(ponele)</small></span></div>
+  <div class="tags step" data-step="2"><span class="tag tag--violet">Open source</span><span class="tag">Municipalidad → pronto toda Jujuy</span></div>
+ </div>
+ <div class="orb"></div>
+ <figure class="media shot contain" data-label="SCREENSHOT: ColeJUY (mapa con colectivos en vivo)"><img src="assets/fotos/04-colejuy-screenshot.png" alt="ColeJUY"></figure>
+ <aside class="notes"><p>Uno de los proyectos de los que más orgulloso estoy: ColeJUY. Una web para trackear los colectivos en vivo, para los ciudadanos de la municipalidad y próximamente de toda Jujuy.</p><p>Es open source, y la usan más o menos +1500 personas por día, ponele.</p></aside>
+</section>
+
+<!-- 05 LOCURA -->
+<section class="slide s05" data-title="Estas semanas fueron una locura">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">Estas semanas fueron <span class="hl">una locura</span></h2></div>
+ <div class="grid">
+  <figure class="media sm g1 pop" data-step="1" data-label="FOTO: cowork con Richard Hipp"><img src="assets/fotos/05-richard-hipp.jpg" alt=""><span class="tag tag--solid cap">Cowork con Richard Hipp · creador de SQLite</span></figure>
+  <figure class="media sm g2 pop" data-step="1" data-label="FOTO: con midudev"><img src="assets/fotos/05-midudev.jpg" alt=""><span class="tag tag--solid cap">Conocí a midudev</span></figure>
+  <figure class="media sm g3 pop" data-step="2" data-label="FOTO: Artu Grande, Erasmo Hernández, Carli Code"><img src="assets/fotos/05-amigos-tech.jpg" alt=""><span class="tag tag--solid cap">Artu Grande · Erasmo Hernández · Carli Code</span></figure>
+  <figure class="media sm g4 pop" data-step="2" data-label="FOTO: hackatones y eventos en simultáneo"><img src="assets/fotos/05-hackatones.jpg" alt=""><span class="tag tag--solid cap">Hackatones y eventos en simultáneo</span></figure>
+  <figure class="media sm g5 pop" data-step="3" data-label="FOTO: coworking con amigos / reuniones"><img src="assets/fotos/05-coworking.jpg" alt=""><span class="tag tag--solid cap">Laburo, reuniones y coworking</span></figure>
+  <figure class="media sm meme g6 pop" data-step="3" data-label="MEME: This is fine (perro en la casa en llamas)"><img src="assets/memes/05-this-is-fine.jpg" alt=""><span class="tag tag--violet cap">Me amenazaron por una app que le solucionaba la vida a la gente</span></figure>
+ </div>
+ <aside class="notes"><p>Estas últimas semanas fueron una locura.</p><p>Hice cowork con Richard Hipp, el creador de SQLite. Conocí a midudev. Compartí con amigos que son líderes tech: Artu Grande, Erasmo Hernández, Carli Code.</p><p>Más laburo de automatización, reuniones, coworking con amigos, hackatones, eventos y hackatones en simultáneo, redes…</p><p>Y sí: me amenazaron de muerte por hacer una app que le solucionaba la vida a la gente. (Decirlo con calma: pasó, lo cuento, y seguimos.)</p></aside>
+</section>
+
+<!-- 06 PLOT TWIST -->
+<section class="slide s06" data-title="Plot twist">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="kick tags"><span class="tag tag--solid">Plot twist</span></div>
+ <div class="bar" style="position:absolute;left:56px;top:150px"></div>
+ <h2 class="display">Todo esto fue <span class="hl">orquestando agentes</span></h2>
+ <div class="lol">(aunque no me crean jaja)</div>
+ <div class="orb"></div><img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
+ <div class="list">
+  <div class="mono step" data-step="1">Los eventos los movieron agentes:</div>
+  <div class="chips">
+   <span class="tag pop" data-step="1">Publicación</span><span class="tag pop" data-step="2">Conversión</span><span class="tag pop" data-step="3">Sponsors</span><span class="tag pop" data-step="4">Venue</span><span class="tag tag--violet pop" data-step="5">Catering</span>
+  </div>
+ </div>
+ <aside class="notes"><p>Plot twist: todo esto fue gracias a orquestar agentes. Aunque no me crean, jaja.</p><p>Los eventos de la comunidad fueron automatizados por agentes: la publicación, la conversión, los sponsors, el venue… ¡hasta el catering!</p></aside>
+</section>
+
+<!-- 07 HACE CASI 1 AÑO -->
+<section class="slide s07" data-title="Hace casi 1 año que no programo a mano">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="q"><div class="bar"></div><h2 class="display">¿Quién programa<br>hoy <span class="hl">a mano</span>?</h2></div>
+ <div class="a step" data-step="1"><div class="big">Yo hace casi <span class="hl">1 año</span> que no programo a mano.</div></div>
+ <figure class="media meme pop" data-step="1" data-label="MEME: Titanic, Rose anciana — “Han pasado 84 años…”"><img src="assets/memes/07-84-anios.jpg" alt=""><span class="tag tag--solid cap">Yo cuando me piden escribir un for a mano</span></figure>
+ <aside class="notes"><p>Vuelvo a la pregunta del principio: ¿quién programa hoy a mano? …</p><p>Yo hace casi un año que no programo a mano.</p></aside>
+</section>
+
+<!-- 08 PANTALLAS COMPARTIDAS -->
+<section class="slide s08" data-title="Las pantallas compartidas">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">Las pantallas <span class="hl">compartidas</span></h2><div class="lead muted">Hace 5 meses, en el laburo…</div></div>
+ <div class="tl"><div class="line"></div>
+  <div class="node step" data-step="1" style="left:0"><div class="dot">1</div><p>Chat + copiar/pegar</p></div>
+  <div class="node step" data-step="2" style="left:198px"><div class="dot">2</div><p>Autocompletar en el IDE</p></div>
+  <div class="node step" data-step="3" style="left:396px"><div class="dot">3</div><p>CLI</p></div>
+  <div class="node step" data-step="4" style="left:594px"><div class="dot">4</div><p>Prompts larguísimos</p></div>
+  <div class="node step" data-step="5" style="left:792px"><div class="dot">5</div><p>Skills / AGENTS.md</p></div>
+  <div class="node me step" data-step="6" style="left:990px"><div class="dot">6</div><p>Agentes en paralelo · orquestación</p><span class="tag tag--violet yo">👈 yo</span></div>
+ </div>
+ <div class="punch step" data-step="7">…pero <span class="hl">ninguno</span> trabajaba como yo.</div>
+ <aside class="notes"><p>Hace 5 meses, en el laburo, mis compañeros compartían pantalla.</p><p>Uno le preguntaba a la IA y copiaba y pegaba. Otro usaba un CLI. Otros, prompts larguísimos. Algunos ya usaban skills o AGENTS.md…</p><p>Pero ninguno trabajaba como yo: agentes en paralelo, orquestados.</p></aside>
+</section>
+
+<!-- 09 5 ETAPAS DEL DUELO -->
+<section class="slide s09" data-title="Las 5 etapas del duelo con la IA">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">Las 5 etapas del duelo <span class="hl">con la IA</span></h2></div>
+ <ol>
+  <li class="step" data-step="1"><i>01</i>Negación</li>
+  <li class="step" data-step="2"><i>02</i>Miedo</li>
+  <li class="step" data-step="3"><i>03</i>Posts en contra</li>
+  <li class="step" data-step="4"><i>04</i>…</li>
+  <li class="step pum" data-step="5"><i>05</i>¡Pum! Esperanza</li>
+ </ol>
+ <figure class="media neg pop" data-step="3" data-label="CAPTURA: posts en contra de la IA"><img src="assets/fotos/09-posts-en-contra.png" alt=""><span class="tag tag--solid cap">Mi timeline</span></figure>
+ <figure class="media pos pop" data-step="5" data-label="CAPTURA: el post que dio esperanza"><img src="assets/fotos/09-post-esperanza.png" alt=""><span class="tag tag--violet cap">El post que lo cambió todo</span></figure>
+ <aside class="notes"><p>Las 5 etapas del duelo con la IA. Mis compañeros, varios de +40, vivieron esto: la IA estaba mal vista.</p><p>Negación. Miedo, el miedo del programador viejo. Ver posts en contra todo el tiempo…</p><p>Y de golpe, pum: un post que daba esperanza. [Contar el post — el de “cielo” / Martín.]</p><p>Yo esto lo viví 5 meses antes que ellos.</p></aside>
+</section>
+
+<!-- 10 PUERTA DE ENTRADA -->
+<section class="slide s10" data-title="La puerta de entrada: hackatones">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">La puerta de entrada: <span class="hl">hackatones</span></h2></div>
+ <div class="flow">
+  <span class="tag tag--solid step" data-step="1">🏁 Hackatones</span>
+  <span class="tag step" data-step="2">↳ 🤖 Programar con IA</span>
+  <span class="tag step" data-step="3">↳ 👀 Seguir a los que ganaban</span>
+  <span class="tag tag--violet step" data-step="4">↳ 🌉 Rondas + su empresa en San Francisco</span>
+ </div>
+ <div class="from step" data-step="5">Desde Argentina, LATAM o <span class="hl">cualquier país</span>.</div>
+ <div class="lead end step" data-step="6">Ahí me metí en la <b>ingeniería de agentes de IA</b>.</div>
+ <div class="orb"></div>
+ <figure class="media photo" data-label="FOTO: Franco en una hackatón"><img src="assets/fotos/10-hackaton.jpg" alt=""></figure>
+ <aside class="notes"><p>La puerta de entrada fueron las hackatones. Programar con IA, y seguir a la gente que ganaba hackatones, levantaba rondas y armaba su empresa en San Francisco… desde Argentina, desde LATAM, desde cualquier país.</p><p>Ahí me perfeccioné y me metí en la ingeniería de agentes de IA.</p></aside>
+</section>
+
+<!-- 11 IDE vs ADE -->
+<section class="slide s11" data-title="¿Quién usa un IDE?">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="q"><div class="bar"></div><h2 class="display">¿Quién de ustedes<br>usa un <span class="hl">IDE</span>?</h2></div>
+ <div class="a step" data-step="1"><div class="lead">Bueno… yo uso un</div><div class="big">ADE: <span class="hl">Orca</span></div></div>
+ <figure class="media meme pop" data-step="2" data-label="MEME: vergüenza ajena / cara de mis compañeros"><img src="assets/memes/11-verguenza.jpg" alt=""><span class="tag tag--solid cap">Mis compañeros cuando saqué el ADE</span></figure>
+ <aside class="notes"><p>¿Quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca.</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p><p>Tranquis: esto tiene final feliz, ya lo cuento.</p></aside>
+</section>
+
+<!-- 12 ORCA SIMPLE -->
+<section class="slide s12" data-title="Orca explicado simple">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">Orca, <span class="hl">explicado simple</span></h2><div class="lead muted">ADE = Agent Development Environment</div></div>
+ <svg class="wires" viewBox="0 0 1280 720" aria-hidden="true">
+  <g stroke="#0a0a0a" stroke-width="2.5" fill="none">
+   <path class="step" data-step="1" d="M276 420 C360 420 360 288 450 288"/><path class="step" data-step="1" d="M276 420 L450 420"/><path class="step" data-step="1" d="M276 420 C360 420 360 552 450 552"/>
+   <path class="step" data-step="3" stroke="#7b37e5" d="M810 288 C860 288 870 400 924 410"/><path class="step" data-step="3" stroke="#7b37e5" d="M810 420 L924 420"/><path class="step" data-step="3" stroke="#7b37e5" d="M810 552 C860 552 870 440 924 430"/>
+  </g>
+ </svg>
+ <div class="box repo"><b>Tu repo</b><small>el proyecto</small></div>
+ <div class="box wt wt1 step" data-step="1"><b>Copia A</b><span class="ag pop" data-step="2">🤖 agente</span></div>
+ <div class="box wt wt2 step" data-step="1"><b>Copia B</b><span class="ag pop" data-step="2">🤖 agente</span></div>
+ <div class="box wt wt3 step" data-step="1"><b>Copia C</b><span class="ag pop" data-step="2">🤖 agente</span></div>
+ <div class="box merge step" data-step="3"><b>Vos revisás<br>y juntás</b><small>✓ merge</small></div>
+ <div class="motto step" data-step="2">Un agente, un espacio. <span class="hl">No se pisan.</span></div>
+ <div class="mono credit">Basado en la charla de Facu Padilla · charla.facundopadilla.com/orca</div>
+ <aside class="notes"><p>Orca, explicado simple. Es un ADE: un Agent Development Environment. No es otro modelo: es el entorno alrededor de los agentes.</p><p>Tenés tu repo. Con git worktrees hacés varias copias de trabajo del mismo repo, separadas. En cada una corre un agente con su tarea. Un agente, un espacio de trabajo: no se pisan.</p><p>Y al final vos revisás y juntás lo que hicieron.</p><p>(Esto está basado en la charla de Facu Padilla — charla.facundopadilla.com/orca.)</p></aside>
+</section>
+
+<!-- 13 HARNESS -->
+<section class="slide s13" data-title="Harness, agentes y orquestación">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">Harness, agentes y <span class="hl">orquestación</span></h2></div>
+ <div class="eq">
+  <div class="card"><b>Modelo</b><span>el cerebro 🧠</span></div>
+  <div class="op step" data-step="1">+</div>
+  <div class="card step" data-step="1"><b>Harness</b><span>herramientas y reglas alrededor 🧰</span></div>
+  <div class="op step" data-step="2">=</div>
+  <div class="card ag step" data-step="2"><b>Agente</b><span>hace el laburo 💪</span></div>
+ </div>
+ <div class="orq step" data-step="3"><span class="mini">🤖 agente</span><span class="mini">🤖 agente</span><span class="mini">🤖 agente</span><span class="eqs">=</span><b>Orquestación</b></div>
+ <div class="sticker pop" data-step="4">Gracias, Jev 🙌</div>
+ <aside class="notes"><p>Tres palabras y listo. El modelo es el cerebro. El harness son las herramientas y las reglas que le ponés alrededor: qué puede tocar, qué contexto recibe, qué permisos tiene. Modelo + harness = agente.</p><p>Y cuando coordinás varios agentes —quién hace qué, quién espera a quién, quién revisa— eso es orquestación.</p><p>[Mencionar brevemente los modelos que usás hoy: completar.]</p><p>Y no me puedo olvidar de Jev. [Completar: por qué Jev.]</p></aside>
+</section>
+
+<!-- 14 FINAL FELIZ -->
+<section class="slide s14 dark" data-title="Final feliz">
+ <img class="logo" src="assets/jujuydev-logo-white.webp" alt="jujuy.dev">
+ <div class="orb"></div>
+ <div class="kick tags"><span class="tag tag--violet">Final feliz</span></div>
+ <blockquote><span class="q">“</span>Franco, tenés razón. Estamos trabajando mal. <span class="hl">Gracias por abrirnos la cabeza.</span><span class="q">”</span></blockquote>
+ <div class="who step" data-step="1"><b>Mi team leader</b>, al otro día (y cayó con Herd)</div>
+ <img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
+ <aside class="notes"><p>¿Se acuerdan que les dije que tenía final feliz? Al otro día, el team leader cayó con Herd y me dijo:</p><p>“Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”</p></aside>
+</section>
+
+<!-- 15 FOMO -->
+<section class="slide s15" data-title="El FOMO me hizo la casa">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">El FOMO me<br>hizo <span class="hl">la casa</span></h2></div>
+ <div class="left lead">Vivía en una burbuja de Twitter: gente muy avanzada y <b>cosas nuevas cada semana</b>.</div>
+ <div class="lesson step" data-step="1"><div class="mono">Aprendizaje</div><p>Comunicar y transmitir esto es súper importante.</p></div>
+ <figure class="media meme" data-label="MEME: distracted boyfriend — yo / herramienta nueva / la de la semana pasada"><img src="assets/memes/15-fomo.jpg" alt=""><span class="tag tag--solid cap">Yo cada lunes con una herramienta nueva</span></figure>
+ <aside class="notes"><p>El FOMO me hizo la casa. Vivía en una burbuja de Twitter con gente muy avanzada, y cada semana salía algo nuevo.</p><p>Aprendizaje: comunicar y transmitir esto es súper importante. Si no lo contás, te quedás solo en tu burbuja.</p></aside>
+</section>
+
+<!-- 16 COMUNIDADES -->
+<section class="slide s16" data-title="Comunidades">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="left"><div class="bar"></div><h2 class="display">Salí a buscar más gente <span class="hl">como yo</span></h2></div>
+ <div class="born step" data-step="4">Me animaron a crear la <b>primera comunidad tech con eventos</b> de la provincia.</div>
+ <div class="orb"></div>
+ <svg class="net" viewBox="0 0 1280 720" aria-hidden="true">
+  <line data-step="1" x1="880" y1="390" x2="642" y2="258"/><line data-step="1" x1="880" y1="390" x2="1118" y2="258"/>
+  <line data-step="2" x1="880" y1="390" x2="600" y2="390"/><line data-step="2" x1="880" y1="390" x2="1160" y2="390"/>
+  <line data-step="3" x1="880" y1="390" x2="781" y2="174"/><line data-step="3" x1="880" y1="390" x2="979" y2="174"/><line data-step="3" x1="880" y1="390" x2="642" y2="522"/><line data-step="3" x1="880" y1="390" x2="1118" y2="522"/>
+  <line data-step="4" x1="880" y1="390" x2="880" y2="630" style="stroke:#7b37e5"/>
+ </svg>
+ <div class="nd me mid" style="left:880px;top:390px">Franco</div>
+ <div class="nd tag tag--solid pop mid" data-step="1" style="left:642px;top:258px">Superteam Brasil</div>
+ <div class="nd tag tag--solid pop mid" data-step="1" style="left:1118px;top:258px">Superteam Argentina</div>
+ <div class="nd tag pop mid" data-step="2" style="left:600px;top:390px">Comunidad AR [?]</div>
+ <div class="nd tag pop mid" data-step="2" style="left:1160px;top:390px">Comunidad AR [?]</div>
+ <div class="nd tag person pop mid" data-step="3" style="left:781px;top:174px">midudev</div>
+ <div class="nd tag person pop mid" data-step="3" style="left:979px;top:174px">Artu Grande</div>
+ <div class="nd tag person pop mid" data-step="3" style="left:642px;top:522px">Erasmo Hernández</div>
+ <div class="nd tag person pop mid" data-step="3" style="left:1118px;top:522px">Carli Code</div>
+ <div class="nd jd pop mid" data-step="4" style="left:880px;top:630px"><img src="assets/jujuydev-isotipo.png" alt="">Nace jujuy.dev · +600</div>
+ <aside class="notes"><p>Entonces salí a buscar más gente como yo: Superteam Brasil, Superteam Argentina, [otras comunidades argentinas: completar].</p><p>Conecté con gente como midudev, Artu Grande, Erasmo Hernández, Carli Code.</p><p>Y me animaron a crear la primera comunidad tech con eventos de la provincia. Había una antes, estuve 4 años, pero nunca organizaban eventos. Así nació jujuy.dev.</p></aside>
+</section>
+
+<!-- 17 SE DESBLOQUEA -->
+<section class="slide s17" data-title="Se desbloquea algo nuevo">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="left">
+  <div class="lock" data-step="1"><div class="shackle"></div><div class="body"><i></i></div></div>
+  <h2 class="display">Se desbloquea <span class="hl">algo nuevo</span></h2>
+  <div class="lead now step" data-step="1">Agentes corriendo <b>24/7</b>.<br>Ya es el presente.</div>
+ </div>
+ <div class="ben step" data-step="5">PD: <b>Ben, si me estás viendo:</b> pronto espero ser ambassador de SpaceX 🚀</div>
+ <div class="right">
+  <div class="gb step" data-step="2"><b>Grok Bot</b><span>~2 meses en el mercado<br>y ya es parte de mi rutina</span></div>
+  <div class="chips">
+   <span class="tag pop" data-step="3">📅 Eventos de la comunidad</span><span class="tag pop" data-step="3">🤝 Conseguir contactos</span><span class="tag pop" data-step="3">🎤 Armar esta presentación</span><span class="tag pop" data-step="3">🥊 Pelearme con empresas</span><span class="tag tag--violet pop" data-step="3">💜 Conectar con gente hermosa</span>
+  </div>
+ </div>
+ <figure class="media meme pop" data-step="4" data-label="MEME: pelea con el bondi"><img src="assets/memes/17-pelea-bondi.jpg" alt=""><span class="tag tag--solid cap">Yo vs. las empresas (con refuerzos)</span></figure>
+ <aside class="notes"><p>Y acá se desbloquea algo nuevo: agentes corriendo 24/7. No es el futuro, ya es el presente.</p><p>[Grok Bot es... completar]</p><p>Grok Bot lleva unos 2 meses en el mercado y ya es parte de mi rutina. Me permitió hacer los eventos de la comunidad, conseguir contactos, armar esta presentación, pelearme con empresas y conectar con gente hermosa.</p><p>Ben, si me estás viendo: pronto espero ser ambassador de SpaceX. 😄</p></aside>
+</section>
+
+<!-- 18 DELEGAR -->
+<section class="slide s18" data-title="Delegar lo automático para vivir lo real">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">Delegar lo automático para <span class="hl">vivir lo real</span></h2></div>
+ <div class="row">
+  <figure class="media sm p1 pop" data-step="1" data-label="FOTO: café con amigos"><img src="assets/fotos/18-cafe-amigos.jpg" alt=""><span class="tag tag--solid cap">☕ Un café con amigos</span></figure>
+  <figure class="media sm p2 pop" data-step="2" data-label="FOTO: mate con los abuelos"><img src="assets/fotos/18-mate-abuelos.jpg" alt=""><span class="tag tag--solid cap">🧉 Un mate con los abuelos</span></figure>
+  <figure class="media sm p3 pop" data-step="3" data-label="FOTO: dando esta charla"><img src="assets/fotos/18-charla.jpg" alt=""><span class="tag tag--solid cap">🎤 Explicar esto acá</span></figure>
+  <figure class="media sm p4 pop" data-step="4" data-label="FOTO: estudiando / pizarrón"><img src="assets/fotos/18-estudiar.jpg" alt=""><span class="tag tag--violet cap">📚 Estudiar el producto y el problema</span></figure>
+ </div>
+ <aside class="notes"><p>¿Para qué todo esto? Para delegar lo automático y vivir lo real.</p><p>Un café con amigos. Un mate con los abuelos. Venir a explicar esto acá. Y estudiar más el producto y el problema.</p></aside>
+</section>
+
+<!-- 19 CIERRE -->
+<section class="slide s19" data-title="Cierre">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="left">
+  <div class="bar"></div>
+  <h2 class="display">El problema nunca fue <span class="hl">el código</span>.</h2>
+  <div class="lead step" data-step="1">Siempre fue arreglar un problema con software. Usemos la IA como <b>herramienta</b> para ser más productivos.</div>
+  <div class="dare step" data-step="2">Innovar y ser atrevidos va a incomodar. Animate a instalar algo nuevo.</div>
+ </div>
+ <div class="orb"></div><img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
+ <div class="gracias step" data-step="3">¡Gracias!</div>
+ <div class="sign step" data-step="3"><span class="tag tag--solid">Franco Durán</span><span class="tag"><b>jujuy</b><span class="v">.dev</span></span></div>
+ <aside class="notes"><p>El problema nunca fue el código. Lo que hacemos con código siempre fue arreglar un problema con software.</p><p>Usemos la IA como una herramienta que nos hace más productivos.</p><p>Innovar y ser atrevidos va a incomodar. Vas a pasar por estas cosas. Animate a instalar algo nuevo.</p><p>¡Gracias! Soy Franco Durán, de jujuy.dev.</p></aside>
+</section>
+
+ <div class="counter"></div><div class="progress"><i></i></div>
+</div>
+<script src="deck.js"></script></body></html>
