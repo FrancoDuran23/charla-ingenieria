@@ -86,3 +86,4 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Slide 3 Locura: solo fotos reales y distintas (franco-01 + 17 de jujuy.dev.ar). Eliminadas franco-02/04 (capturas), franco-03 (ilustración), 15.jpg (casi duplicado de franco-01). Explosión rebalanceada: tarjetas más grandes en 3 bursts. Detalle en assets/fotos/README.md.
 - Slide 15: título cambiado a "Cada semana algo nuevo: bienvenido al FOMO" (antes "El FOMO me hizo la casa").
 - Slide 3: nueva foto de Franco con midudev (assets/fotos/locura/midudev.jpg, recortada de historia de IG) como tarjeta grande del primer burst.
+- Slide 3: nuevas fotos de Franco recortadas de historias de IG: hackcba-pitch.jpg ("HackCBA"), hackcba-sala.jpg, colejuy-app.jpg ("ColeJUY en vivo", captura intencional). Burst 1: HackCBA pitch, Superteam, midudev; burst 2: sala HackCBA, ColeJUY; fotos de jujuy.dev.ar en bursts 2-4.
