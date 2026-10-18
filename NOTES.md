@@ -89,3 +89,12 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Slide 3: nuevas fotos de Franco recortadas de historias de IG: hackcba-pitch.jpg ("HackCBA"), hackcba-sala.jpg, colejuy-app.jpg ("ColeJUY en vivo", captura intencional). Burst 1: HackCBA pitch, Superteam, midudev; burst 2: sala HackCBA, ColeJUY; fotos de jujuy.dev.ar en bursts 2-4.
 - Slide 3: foto real "This is fine" (assets/fotos/locura/this-is-fine.jpg) como último burst (paso 5), tarjeta grande arriba de todo, sin caption.
 - Slide 3: flyer Metropolis Argentina & LATAM (metropolis.jpg) en burst 2; "This is fine" achicada y movida abajo al centro para no tapar la cara de Franco en la foto Superteam.
+
+## UPDATE (2026-10-18, 01:10) — fotos repartidas en sus slides (nada repetido)
+- Slide 2 Quién soy: perfil = assets/fotos/03-franco-perfil.jpg (foto de Franco con remera ST, adjunto sin usar, recortada solo a él).
+- Slide 7 5 etapas: “This is fine” (assets/fotos/09-this-is-fine.jpg) aparece en el paso 4 (“…”), tarjeta grande 380×500 a la derecha, borde blanco + sombra violeta; sale de la slide 3.
+- Slide 8 Hackatones: 10-hackaton.jpg (Franco pitcheando en HackCBA) + 10-hackaton-sala.jpg (tarjeta chica superpuesta abajo a la derecha); salen de la slide 3.
+- Slide 18 Delegar: fila en flex (los slots sin foto se cierran): café = mate y código (ex locura/07), charla = charla Superteam (ex locura/06), estudiar = mentoría (ex locura/08). “Mate con los abuelos” sigue sin foto (oculto; el paso 2 queda sin imagen).
+- Slide 3 Locura: nuevas diario-cabildo-tech.jpg (“Salimos en el diario”, burst 1) y perro-robot.jpg (burst 2); explosión reacomodada (20 tarjetas, 4 bursts).
+- Global: `.slide figure.media.missing{display:none}` — ningún placeholder rayado en el deck (memes 11/15/17 y capturas de la slide 7 ocultos hasta que existan).
+- tools/shot_steps.py: renders de pasos sueltos (`python3 tools/shot_steps.py 3:1 7:4`).

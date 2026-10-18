@@ -3,7 +3,7 @@
 <meta name="description" content="Orquestación de agentes y modelos de IA — charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu.">
 <meta property="og:title" content="Orquestación de agentes y modelos de IA — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=19"><link rel="stylesheet" href="charla.css?v=19">
+<link rel="stylesheet" href="base.css?v=20"><link rel="stylesheet" href="charla.css?v=20">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -17,6 +17,7 @@
 .s01 .hint{position:absolute;left:56px;bottom:30px}
 /* 03 */
 .s03 .photo{left:56px;top:110px;width:360px;height:380px}
+.s03 .photo img{object-position:40% 30%}
 .s03 .orb{width:220px;height:220px;left:250px;top:340px;z-index:0}
 .s03 .right{position:absolute;left:460px;top:100px;right:56px}
 .s03 h2{font-size:80px}
@@ -66,6 +67,7 @@
 .pol.hi .media.missing .ph:before{content:"📸";font-size:28px}
 .s14 .neq{position:relative;display:inline-block}.s14 .neq:after{content:"";position:absolute;left:46%;top:8%;bottom:8%;width:5px;background:currentColor;transform:rotate(28deg)}
 .s16 .chaos .q{left:230px;top:206px}
+.slide figure.media.missing{display:none!important}
 /* 06 */
 .s06 .kick{position:absolute;left:56px;top:110px}
 .s06 h2{position:absolute;left:56px;top:168px;width:820px;font-size:88px}
@@ -105,6 +107,10 @@
 .s09 .neg{left:560px;top:206px;width:320px;height:440px;transform:rotate(-2deg)}
 .s09 .pos{right:56px;top:226px;width:320px;height:440px;transform:rotate(2deg);z-index:2}
 .s09 .pos.missing{border-color:var(--violet)}
+.s09 .pos{z-index:4}
+.s09 .tif{left:700px;top:196px;width:380px;height:500px;z-index:3;border:8px solid #fff;box-shadow:12px 12px 0 var(--violet),var(--shadow-tile);transform-origin:center}
+.s09 .tif img{object-position:50% 40%}
+.s09 .tif.pop{transform:rotate(2.5deg) scale(.6)}.s09 .tif.pop.on{transform:rotate(2.5deg) scale(1)}
 /* 10 */
 .s10 .head h2{font-size:72px}
 .s10 .flow{position:absolute;left:56px;top:214px;width:720px;display:flex;flex-direction:column;gap:14px}
@@ -113,7 +119,8 @@
 .s10 .flow .arr{font:700 18px/1 var(--font-mono);color:var(--violet);padding-left:22px}
 .s10 .from{position:absolute;left:56px;bottom:112px;width:720px;font:400 40px/1 var(--font-condensed);text-transform:uppercase}
 .s10 .end{position:absolute;left:56px;bottom:52px;width:740px}
-.s10 .photo{right:56px;top:210px;width:400px;height:450px}
+.s10 .photo{right:66px;top:196px;width:380px;height:420px;transform:rotate(1.5deg);z-index:2}
+.s10 .sala{left:930px;top:528px;width:300px;height:170px;transform:rotate(-3deg);z-index:3;border:6px solid #fff}
 .s10 .orb{width:220px;height:220px;right:20px;top:150px;z-index:0}
 /* 11 */
 .s11 .q{position:absolute;left:56px;top:120px;width:620px}
@@ -232,6 +239,7 @@
 .s21 .head h2{font-size:60px}
 .s21 .row{position:absolute;left:56px;right:56px;top:200px;bottom:44px}
 .s21 .row .media{top:0;bottom:0;width:calc((100% - 48px)/4)}
+.s21 .row{display:flex;gap:16px}.s21 .row .media{position:relative;inset:auto;left:auto;right:auto;flex:1 1 0;height:100%;width:auto}
 .s21 .p1{left:0}.s21 .p2{left:calc((100% - 48px)/4 + 16px)}.s21 .p3{left:calc((100% - 48px)/2 + 32px)}.s21 .p4{right:0}
 /* 19 */
 .s22 .left{position:absolute;left:56px;top:110px;width:700px;z-index:3}
@@ -267,7 +275,7 @@
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="kicker">Quién soy</div>
  <div class="orb"></div>
- <figure class="media photo" data-label="FOTO: Franco (perfil)"><img src="assets/fotos/03-franco-perfil.jpg" alt=""></figure>
+ <figure class="media photo" data-label="FOTO: Franco (perfil)"><img src="assets/fotos/03-franco-perfil.jpg" alt="Franco Durán"></figure>
  <div class="right">
   <div class="bar"></div><h2 class="display">Franco <span class="hl">Durán</span></h2>
   <div class="tags age"><span class="tag tag--solid">26 años</span><span class="tag">Jujuy, Argentina</span></div>
@@ -292,30 +300,26 @@
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="titletag"><h2 class="display">Estas semanas fueron <span class="hl">una locura</span></h2></div>
  <div class="boom">
-  <figure class="pol fr" data-step="1" style="left:40px;top:190px;width:330px;height:404px;--r:-6deg;--fx:435px;--fy:-12px;--d:0.05s;z-index:61"><figure class="media"><img src="assets/fotos/locura/hackcba-pitch.jpg" alt="Franco pitcheando en HackCBA"></figure><figcaption>HackCBA</figcaption></figure>
-  <figure class="pol fr" data-step="2" style="left:20px;top:455px;width:400px;height:236px;--r:3deg;--fx:420px;--fy:-193px;--d:.04s;z-index:65"><figure class="media"><img src="assets/fotos/locura/metropolis.jpg" alt="Flyer de speakers de Metropolis Argentina &amp; LATAM"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="2" style="left:385px;top:470px;width:420px;height:280px;--r:-3deg;--fx:5px;--fy:-233px;--d:0s;z-index:66"><figure class="media"><img src="assets/fotos/locura/hackcba-sala.jpg" alt="Sala de HackCBA llena de hackers"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="2" style="left:1072px;top:205px;width:200px;height:375px;--r:6deg;--fx:-532px;--fy:-73px;--d:0.08s;z-index:67"><figure class="media"><img src="assets/fotos/locura/colejuy-app.jpg" alt="ColeJUY en vivo: mapa de la línea 45"></figure><figcaption>ColeJUY en vivo</figcaption></figure>
-  <figure class="pol fr" data-step="1" style="left:790px;top:150px;width:290px;height:416px;--r:4deg;--fx:-295px;--fy:10px;--d:.1s;z-index:68"><figure class="media"><img src="assets/fotos/locura/midudev.jpg" alt="Franco con midudev"></figure><figcaption>midudev</figcaption></figure>
-  <figure class="pol fr" data-step="1" style="left:330px;top:205px;width:470px;height:367px;--r:-3deg;--fx:260px;--fy:0px;--d:0s;z-index:60"><figure class="media"><img src="assets/fotos/locura/franco-01.jpg" alt="Franco con remera de Superteam ARG"></figure><figcaption></figcaption></figure>
-  <figure class="pol" data-step="2" style="left:453px;top:295px;width:254px;height:220px;--r:1.2deg;--fx:60px;--fy:-25px;--d:0.0s;z-index:10"><figure class="media"><img src="assets/fotos/locura/04.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="2" style="left:649px;top:304px;width:286px;height:221px;--r:3.1deg;--fx:-152px;--fy:-34px;--d:0.05s;z-index:10"><figure class="media"><img src="assets/fotos/locura/03.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="2" style="left:239px;top:303px;width:286px;height:244px;--r:-10.8deg;--fx:258px;--fy:-45px;--d:0.1s;z-index:13"><figure class="media"><img src="assets/fotos/locura/14.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="2" style="left:474px;top:79px;width:252px;height:218px;--r:-5.0deg;--fx:40px;--fy:192px;--d:0.15s;z-index:12"><figure class="media"><img src="assets/fotos/locura/16.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="2" style="left:650px;top:95px;width:284px;height:242px;--r:-4.6deg;--fx:-152px;--fy:164px;--d:0.2s;z-index:12"><figure class="media"><img src="assets/fotos/locura/08.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:474px;top:526px;width:256px;height:221px;--r:3.3deg;--fx:38px;--fy:-256px;--d:0.25s;z-index:25"><figure class="media"><img src="assets/fotos/locura/10.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:252px;top:74px;width:256px;height:221px;--r:1.5deg;--fx:260px;--fy:196px;--d:0.0s;z-index:23"><figure class="media"><img src="assets/fotos/locura/17.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:908px;top:314px;width:281px;height:240px;--r:-1.7deg;--fx:-408px;--fy:-54px;--d:0.05s;z-index:25"><figure class="media"><img src="assets/fotos/locura/13.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:683px;top:510px;width:279px;height:238px;--r:-3.3deg;--fx:-182px;--fy:-249px;--d:0.1s;z-index:23"><figure class="media"><img src="assets/fotos/locura/06.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:259px;top:503px;width:261px;height:225px;--r:-10.0deg;--fx:251px;--fy:-235px;--d:0.15s;z-index:24"><figure class="media"><img src="assets/fotos/locura/12.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:895px;top:105px;width:283px;height:192px;--r:5.5deg;--fx:-396px;--fy:179px;--d:0.2s;z-index:24"><figure class="media"><img src="assets/fotos/locura/09.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:-15px;top:285px;width:288px;height:245px;--r:0.3deg;--fx:511px;--fy:-27px;--d:0.25s;z-index:32"><figure class="media"><img src="assets/fotos/locura/02.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:1029px;top:315px;width:271px;height:232px;--r:-1.9deg;--fx:-524px;--fy:-51px;--d:0.0s;z-index:31"><figure class="media"><img src="assets/fotos/locura/01.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:899px;top:499px;width:285px;height:243px;--r:-3.8deg;--fx:-401px;--fy:-240px;--d:0.05s;z-index:35"><figure class="media"><img src="assets/fotos/locura/18.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:12px;top:120px;width:288px;height:194px;--r:7.1deg;--fx:484px;--fy:163px;--d:0.1s;z-index:31"><figure class="media"><img src="assets/fotos/locura/07.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:1045px;top:100px;width:255px;height:220px;--r:4.7deg;--fx:-532px;--fy:170px;--d:0.15s;z-index:31"><figure class="media"><img src="assets/fotos/locura/05.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:45px;top:510px;width:253px;height:219px;--r:3.5deg;--fx:469px;--fy:-239px;--d:0.2s;z-index:37"><figure class="media"><img src="assets/fotos/locura/11.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol fr tif" data-step="5" style="left:575px;top:372px;width:200px;height:344px;--r:4deg;--fx:-35px;--fy:-164px;--d:0s;z-index:79"><figure class="media"><img src="assets/fotos/locura/this-is-fine.jpg" alt="Franco con su laptop en un set de “This is fine”"></figure><figcaption></figcaption></figure>
+  <figure class="pol fr" data-step="1" style="left:28px;top:220px;width:410px;height:264px;--r:-1.5deg;--fx:407px;--fy:8px;--d:0.05s;z-index:62"><figure class="media"><img src="assets/fotos/locura/diario-cabildo-tech.jpg" alt="Nota del diario: “Cabildo Tech reunió a la comunidad tecnológica jujeña”"></figure><figcaption>Salimos en el diario</figcaption></figure>
+  <figure class="pol fr" data-step="1" style="left:425px;top:215px;width:400px;height:330px;--r:-2deg;--fx:15px;--fy:-20px;--d:0s;z-index:60"><figure class="media"><img src="assets/fotos/locura/franco-01.jpg" alt="Franco con remera de Superteam ARG"></figure><figcaption></figcaption></figure>
+  <figure class="pol fr" data-step="1" style="left:815px;top:150px;width:275px;height:400px;--r:4deg;--fx:-312px;--fy:10px;--d:0.1s;z-index:68"><figure class="media"><img src="assets/fotos/locura/midudev.jpg" alt="Franco con midudev"></figure><figcaption>midudev</figcaption></figure>
+  <figure class="pol fr" data-step="2" style="left:20px;top:494px;width:400px;height:236px;--r:2deg;--fx:420px;--fy:-246px;--d:0.04s;z-index:65"><figure class="media"><img src="assets/fotos/locura/metropolis.jpg" alt="Flyer de speakers de Metropolis Argentina &amp; LATAM"></figure><figcaption></figcaption></figure>
+  <figure class="pol fr" data-step="2" style="left:445px;top:462px;width:235px;height:300px;--r:-5deg;--fx:78px;--fy:-252px;--d:0s;z-index:66"><figure class="media"><img src="assets/fotos/locura/perro-robot.jpg" alt="Perro robot Cygnus en un evento"></figure><figcaption></figcaption></figure>
+  <figure class="pol fr" data-step="2" style="left:1072px;top:205px;width:200px;height:375px;--r:6deg;--fx:-532px;--fy:-32px;--d:0.08s;z-index:67"><figure class="media"><img src="assets/fotos/locura/colejuy-app.jpg" alt="ColeJUY en vivo: mapa de la línea 45"></figure><figcaption>ColeJUY en vivo</figcaption></figure>
+  <figure class="pol" data-step="2" style="left:453px;top:295px;width:254px;height:220px;--r:1.2deg;--fx:60px;--fy:-45px;--d:0s;z-index:10"><figure class="media"><img src="assets/fotos/locura/04.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="2" style="left:640px;top:300px;width:286px;height:221px;--r:3.1deg;--fx:-143px;--fy:-50px;--d:0.05s;z-index:10"><figure class="media"><img src="assets/fotos/locura/03.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="2" style="left:239px;top:303px;width:286px;height:244px;--r:-10.8deg;--fx:258px;--fy:-65px;--d:0.1s;z-index:13"><figure class="media"><img src="assets/fotos/locura/14.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="2" style="left:474px;top:79px;width:252px;height:218px;--r:-5deg;--fx:40px;--fy:172px;--d:0.15s;z-index:12"><figure class="media"><img src="assets/fotos/locura/16.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="2" style="left:655px;top:92px;width:270px;height:236px;--r:-4.6deg;--fx:-150px;--fy:150px;--d:0.2s;z-index:12"><figure class="media"><img src="assets/fotos/locura/13.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="3" style="left:690px;top:498px;width:262px;height:226px;--r:3.3deg;--fx:-181px;--fy:-251px;--d:0.25s;z-index:25"><figure class="media"><img src="assets/fotos/locura/10.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="3" style="left:252px;top:74px;width:256px;height:221px;--r:1.5deg;--fx:260px;--fy:176px;--d:0s;z-index:23"><figure class="media"><img src="assets/fotos/locura/17.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="3" style="left:900px;top:322px;width:281px;height:240px;--r:-1.7deg;--fx:-400px;--fy:-82px;--d:0.05s;z-index:25"><figure class="media"><img src="assets/fotos/locura/12.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="3" style="left:895px;top:105px;width:283px;height:192px;--r:5.5deg;--fx:-396px;--fy:159px;--d:0.2s;z-index:24"><figure class="media"><img src="assets/fotos/locura/09.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="4" style="left:-15px;top:300px;width:288px;height:245px;--r:0.3deg;--fx:511px;--fy:-62px;--d:0.25s;z-index:32"><figure class="media"><img src="assets/fotos/locura/02.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="4" style="left:1029px;top:315px;width:271px;height:232px;--r:-1.9deg;--fx:-524px;--fy:-71px;--d:0s;z-index:31"><figure class="media"><img src="assets/fotos/locura/01.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="4" style="left:899px;top:499px;width:285px;height:243px;--r:-3.8deg;--fx:-402px;--fy:-260px;--d:0.05s;z-index:35"><figure class="media"><img src="assets/fotos/locura/18.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="4" style="left:12px;top:110px;width:288px;height:200px;--r:7.1deg;--fx:484px;--fy:150px;--d:0.1s;z-index:31"><figure class="media"><img src="assets/fotos/locura/11.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
+  <figure class="pol" data-step="4" style="left:1045px;top:100px;width:255px;height:220px;--r:4.7deg;--fx:-532px;--fy:150px;--d:0.15s;z-index:31"><figure class="media"><img src="assets/fotos/locura/05.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
  </div>
  <aside class="notes"><p>Estas últimas semanas fueron una locura. (Ir apretando → y que exploten las fotos.)</p><p>Hice cowork con Richard Hipp, el creador de SQLite. Conocí a midudev. Compartí con amigos que son líderes tech: Artu Grande, Erasmo Hernández, Carli Code.</p><p>Más laburo de automatización, reuniones, coworking con amigos, hackatones, eventos y hackatones en simultáneo, redes…</p></aside>
 </section>
@@ -374,6 +378,7 @@
   <li class="step pum" data-step="5"><i>05</i>¡Pum! Esperanza</li>
  </ol>
  <figure class="media neg pop" data-step="3" data-label="CAPTURA: posts en contra de la IA"><img src="assets/fotos/09-posts-en-contra.png" alt=""><span class="tag tag--solid cap">Mi timeline</span></figure>
+ <figure class="media tif pop" data-step="4"><img src="assets/fotos/09-this-is-fine.jpg" alt="Franco con su laptop en un set de “This is fine”"></figure>
  <figure class="media pos pop" data-step="5" data-label="CAPTURA: el post que dio esperanza"><img src="assets/fotos/09-post-esperanza.png" alt=""><span class="tag tag--violet cap">El post que lo cambió todo</span></figure>
  <aside class="notes"><p>Las 5 etapas del duelo con la IA. Mis compañeros, varios de +40, vivieron esto: la IA estaba mal vista.</p><p>Miedo, el miedo del programador viejo. Negación. Ver posts en contra todo el tiempo…</p><p>Y de golpe, pum: un post que daba esperanza. [Contar el post — el de “cielo” / Martín.]</p><p>Yo esto lo viví 5 meses antes que ellos.</p></aside>
 </section>
@@ -391,7 +396,8 @@
  <div class="from step" data-step="5">Desde Argentina, LATAM o <span class="hl">cualquier país</span>.</div>
  <div class="lead end step" data-step="6">Ahí me metí en la <b>ingeniería de agentes de IA</b>.</div>
  <div class="orb"></div>
- <figure class="media photo" data-label="FOTO: Franco en una hackatón"><img src="assets/fotos/10-hackaton.jpg" alt=""></figure>
+ <figure class="media photo" data-label="FOTO: Franco en una hackatón"><img src="assets/fotos/10-hackaton.jpg" alt="Franco pitcheando en HackCBA"></figure>
+ <figure class="media sala" data-label="FOTO: sala de HackCBA"><img src="assets/fotos/10-hackaton-sala.jpg" alt="Sala de HackCBA llena de hackers"></figure>
  <aside class="notes"><p>La puerta de entrada fueron las hackatones. Programar con IA, y seguir a la gente que ganaba hackatones, levantaba rondas y armaba su empresa en San Francisco… desde Argentina, desde LATAM, desde cualquier país.</p><p>Ahí me perfeccioné y me metí en la ingeniería de agentes de IA.</p></aside>
 </section>
 
@@ -529,10 +535,10 @@
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Delegar lo automático para <span class="hl">vivir lo real</span></h2></div>
  <div class="row">
-  <figure class="media sm p1 pop" data-step="1" data-label="FOTO: café con amigos"><img src="assets/fotos/18-cafe-amigos.jpg" alt=""><span class="tag tag--solid cap">☕ Un café con amigos</span></figure>
+  <figure class="media sm p1 pop" data-step="1" data-label="FOTO: café con amigos"><img src="assets/fotos/18-cafe-amigos.jpg" alt="Mate y código con amigos de jujuy.dev"><span class="tag tag--solid cap">☕ Un café con amigos</span></figure>
   <figure class="media sm p2 pop" data-step="2" data-label="FOTO: mate con los abuelos"><img src="assets/fotos/18-mate-abuelos.jpg" alt=""><span class="tag tag--solid cap">🧉 Un mate con los abuelos</span></figure>
-  <figure class="media sm p3 pop" data-step="3" data-label="FOTO: dando esta charla"><img src="assets/fotos/18-charla.jpg" alt=""><span class="tag tag--solid cap">🎤 Explicar esto acá</span></figure>
-  <figure class="media sm p4 pop" data-step="4" data-label="FOTO: estudiando / pizarrón"><img src="assets/fotos/18-estudiar.jpg" alt=""><span class="tag tag--violet cap">📚 Estudiar el producto y el problema</span></figure>
+  <figure class="media sm p3 pop" data-step="3" data-label="FOTO: dando esta charla"><img src="assets/fotos/18-charla.jpg" alt="Charla de jujuy.dev"><span class="tag tag--solid cap">🎤 Explicar esto acá</span></figure>
+  <figure class="media sm p4 pop" data-step="4" data-label="FOTO: estudiando / pizarrón"><img src="assets/fotos/18-estudiar.jpg" alt="Mentoría con laptop en jujuy.dev"><span class="tag tag--violet cap">📚 Estudiar el producto y el problema</span></figure>
  </div>
  <aside class="notes"><p>¿Para qué todo esto? Para delegar lo automático y vivir lo real.</p><p>Un café con amigos. Un mate con los abuelos. Venir a explicar esto acá. Y estudiar más el producto y el problema.</p></aside>
 </section>
@@ -554,4 +560,4 @@
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=19"></script></body></html>
+<script src="deck.js?v=20"></script></body></html>
