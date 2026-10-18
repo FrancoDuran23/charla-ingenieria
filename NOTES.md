@@ -67,7 +67,7 @@ Removed: "Analista Programador Universitario", "y gané unas cuantas", "Hackaton
 - Slide "¿Técnica, práctica, teórica o sentimental?" eliminada; su nota ("Cuando estaba armando esta charla…") pasó a la portada.
 - Portada: dibujo real que mandó Franco (assets/memes/01-dad-agentic-workflows.jpg, "To relax my dad likes to make agentic workflows") en lugar de la foto placeholder.
 - Quién soy: logos Stellar, Superteam, CrecimientoAR, Celo, Ripio.
-- Slide ColeJUY eliminada; su contenido (colectivos en vivo, open source, +1500 usuarios/día) pasó a las notas de Quién soy, y el logo real de ColeJUY (assets/logos/colejuy.svg, de src/app/icon.svg del repo FrancoDuran23/colejuy-abierto) va en la fila de logos junto a jujuy.dev ("Founder · creador").
+- Slide ColeJUY eliminada; su contenido (colectivos en vivo, open source, +1500 usuarios/día) pasó a las notas de Quién soy, y el logo oficial de ColeJUY (assets/logos/colejuy.png, enviado por Franco) va en la fila de logos junto a jujuy.dev ("Founder · creador").
 Orden final (20): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Quién programa hoy a mano? · 6 Pantallas compartidas · 7 5 etapas · 8 Hackatones · 9 Modelo ≠ agente · 10 Harness · 11 Orquestar · 12 IDE/ADE · 13 Worktrees · 14 Orca (+ los modelos que uso: Claude Sonnet, Haiku, Opus, Fable y ⭐ Jev) · 15 Final feliz · 16 FOMO · 17 Comunidades · 18 Se desbloquea · 19 Delegar · 20 Cierre.
 
 ## UPDATE (2026-10-17, 23:59)

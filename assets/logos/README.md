@@ -5,7 +5,7 @@ Logos que nombró Franco, guardados localmente (sin hotlinking):
 | Grupo en la slide | Archivo | Fuente |
 |---|---|---|
 | Founder · creador | `assets/jujuydev-logo.webp` | jujuy.dev.ar |
-| Founder · creador | `assets/logos/colejuy.svg` | logo oficial de ColeJUY (`src/app/icon.svg` del repo FrancoDuran23/colejuy-abierto, colejuy.vercel.app) + texto “ColeJUY” |
+| Founder · creador | `assets/logos/colejuy.png` | logo oficial de ColeJUY que mandó Franco (recortado, fondo transparente, 480px) + texto “ColeJUY” |
 | Embajador · charlas · hackatones | `assets/logos/stellar.png` | Logo Press Kit oficial de stellar.org/brand-resources (Stellar Logo Final Black RGB, recortado a 800px) |
 | Embajador · charlas · hackatones | `assets/logos/comunidades/superteam-argentina.svg` | jujuy.dev.ar |
 | Embajador · charlas · hackatones | `assets/logos/comunidades/crecimientoar.webp` | jujuy.dev.ar |
