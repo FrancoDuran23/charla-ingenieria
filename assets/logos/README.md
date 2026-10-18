@@ -1,20 +1,15 @@
 # Logos (slide 3 · Quién soy)
 
-Soltá cada archivo con **exactamente** este nombre y aparece solo en la slide (si falta, se ve el placeholder rotulado).
-Si usás otra extensión, cambiala también en `charla.html` **y** `index.html` (son idénticos). Memes: se muestran enteros (contain) sobre fondo negro. Fotos: recortadas para llenar (cover). Logos: contain sobre blanco.
+Logos que nombró Franco, guardados localmente (sin hotlinking):
 
-| Archivo | Qué va | Estado |
+| Grupo en la slide | Archivo | Fuente |
 |---|---|---|
-| `assets/logos/01.png` | LOGO 01 | ⏳ falta |
-| `assets/logos/02.png` | LOGO 02 | ⏳ falta |
-| `assets/logos/03.png` | LOGO 03 | ⏳ falta |
-| `assets/logos/04.png` | LOGO 04 | ⏳ falta |
-| `assets/logos/05.png` | LOGO 05 | ⏳ falta |
-| `assets/logos/06.png` | LOGO 06 | ⏳ falta |
-| `assets/logos/07.png` | LOGO 07 | ⏳ falta |
-| `assets/logos/08.png` | LOGO 08 | ⏳ falta |
+| Founder | `assets/jujuydev-logo.webp` | jujuy.dev.ar |
+| Embajador · charlas · hackatones | `assets/logos/stellar.png` | Logo Press Kit oficial de stellar.org/brand-resources (Stellar Logo Final Black RGB, recortado a 800px) |
+| Embajador · charlas · hackatones | `assets/logos/comunidades/superteam-argentina.svg` | jujuy.dev.ar |
+| Embajador · charlas · hackatones | `assets/logos/comunidades/crecimientoar.webp` | jujuy.dev.ar |
 
-Grupos: 01–03 **Embajador** · 04–06 **Hackatones ganadas** · 07–08 **Hackatones hosteadas**. PNG/SVG con fondo transparente, idealmente horizontales.
+No hay slots vacíos: un logo cuyo archivo falta se oculta. Para sumar uno, agregá `<div class="lg wide"><img src="assets/logos/…" alt="Marca"></div>` en el grupo (en `charla.html` **y** `index.html`).
 
 ## assets/logos/comunidades/ (slide 19 · mapa)
 Descargados de la sección “Los que empujan” de https://jujuy.dev.ar: saltadev.webp, cuyoconnect.webp, crecimientoar.webp, superteam-argentina.svg, formosa-dev.webp, mardelplata-dev.webp, nerdearla.webp. Superteam Brasil no figura en el sitio → nodo con iniciales “ST”.

@@ -1,7 +1,9 @@
 <!doctype html><html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>¿Quién programa a mano hoy? — Franco Durán · jujuy.dev</title>
+<title>Del miedo a orquestar agentes — Franco Durán · Facultad de Ingeniería · jujuy.dev</title>
+<meta name="description" content="Charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu: del miedo a la IA a orquestar agentes.">
+<meta property="og:title" content="Del miedo a orquestar agentes — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=3"><link rel="stylesheet" href="charla.css?v=3">
+<link rel="stylesheet" href="base.css?v=4"><link rel="stylesheet" href="charla.css?v=4">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -13,7 +15,7 @@
 .s01 .llama{right:28px;bottom:0;height:330px;-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent);mask-image:linear-gradient(180deg,#000 80%,transparent)}
 .s01 .hint{position:absolute;left:56px;bottom:30px}
 /* 02 */
-.s02 .head h2{font-size:72px;margin-top:22px}
+.s02 .head h2{font-size:54px;margin-top:22px;white-space:nowrap}
 .s02 .meme{z-index:1;left:56px;right:56px;top:250px;bottom:44px}
 .s02 .orb{width:200px;height:200px;left:-60px;top:190px;z-index:0}
 .s02 .llama{right:50px;top:30px;height:175px;transform:rotate(8deg)}
@@ -34,7 +36,8 @@
 .s03 .grp .row{display:flex;gap:10px}
 .s03 .lg{position:relative;width:120px;height:96px;border-radius:14px;background:var(--paper-raised);box-shadow:var(--shadow-tile);border:1.5px solid var(--line-soft)}
 .s03 .lg img{object-fit:contain;padding:12px;background:var(--paper-raised)}
-.s03 .lg.missing{border:2px dashed var(--ink-muted);background:var(--paper-raised)}
+.s03 .lg.missing{display:none}
+.s03 .lg.wide{width:190px}
 .s03 .lg.missing .ph{padding:6px;gap:4px}
 .s03 .lg.missing .ph b{font:400 22px/1 var(--font-condensed)}
 .s03 .lg.missing .ph small{font-size:9px;letter-spacing:1px}
@@ -75,6 +78,7 @@
 .pol.meme5{padding-bottom:50px}
 .pol .media.missing .ph{padding:10px 10px 12px;gap:4px}
 .s03 .lg{width:96px;height:84px}.s03 .lg.jdlogo{width:176px}.s03 .lg.jdlogo img{width:150px}.s03 .wall{gap:16px}.s03 .grp .row{gap:8px}
+.s03 .lg:not(.jdlogo){display:flex;align-items:center;justify-content:center;overflow:hidden}.s03 .lg:not(.jdlogo) img{position:static;display:block;max-width:100%;max-height:100%;width:auto;height:auto;padding:14px;box-sizing:border-box;object-fit:contain}.s03 .lg.wide{width:190px}
 .s03 .lg.missing .ph b{font-size:20px}
 .pol.hi .media.missing .ph b{font-size:17px;line-height:1.1}.pol.hi .media.missing .ph small{display:none}
 .pol.hi .media.missing .ph:before{content:"📸";font-size:28px}
@@ -161,7 +165,7 @@
 .s13 .stack div span{font:600 18px/1.2 var(--font-sans);text-transform:none;color:var(--ink-muted);margin-left:auto;text-align:right}
 .s13 .stack .tot{background:var(--ink);color:#fff;border:0;border-radius:12px;padding:12px 16px;margin-top:6px}
 .s13 .stack .tot i{color:var(--violet-soft)} .s13 .stack .tot span{color:#d8d6ce}
-.s13 .sticker{left:70px;top:520px;right:auto}
+.s16 .sticker{left:56px;top:574px;right:auto}
 /* 14 orquestar */
 .s14 .col{position:absolute;top:236px;width:540px;height:300px}
 .s14 .no{left:56px}.s14 .si{right:56px}
@@ -268,24 +272,24 @@
  <div class="copy">
   <div class="tags"><span class="tag"><b>Jujuy</b><span class="v">Dev</span>&nbsp;presenta</span><span class="tag tag--solid">Charla en vivo</span></div>
   <div class="bar"></div>
-  <h1 class="display">¿Quién programa<br><span class="hl">a mano</span> hoy?</h1>
-  <div class="lead sub"><b>Franco Durán</b> · Facultad de Ingeniería</div>
+  <h1 class="display">Del miedo a<br><span class="hl">orquestar agentes</span></h1>
+  <div class="lead sub"><b>Franco Durán</b> · Facultad de Ingeniería · UNJu</div>
  </div>
  <div class="orb"></div>
  <figure class="media photo" data-label="FOTO: Franco"><img src="assets/fotos/01-franco-portada.jpg" alt="Franco Durán"></figure>
  <img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
  <div class="mono hint">Deslizá →</div>
- <aside class="notes"><p>¡Buenas! Soy Franco. Arranco con una pregunta y quiero manos arriba: <b>¿quién programa a mano hoy?</b></p><p>Guarden la respuesta, que la vamos a retomar.</p></aside>
+ <aside class="notes"><p>(Portada mientras se acomoda la gente.)</p><p>¡Buenas! Soy Franco Durán, de jujuy.dev. → Paso a la primera slide.</p></aside>
 </section>
 
 <!-- 02 TÉCNICA / PRÁCTICA / SENTIMENTAL -->
-<section class="slide s02" data-title="¿Técnica, práctica o sentimental?">
+<section class="slide s02" data-title="¿Técnica, práctica, teórica o sentimental?">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
- <div class="head"><div class="bar"></div><h2 class="display">¿Técnica, práctica o <span class="hl">sentimental</span>?</h2></div>
+ <div class="head"><div class="bar"></div><h2 class="display">¿Técnica, práctica, teórica o <span class="hl">sentimental</span>?</h2></div>
  <img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
- <figure class="media meme" data-label="MEME: two buttons / perro indeciso — botones: técnica · práctica · sentimental"><img src="assets/memes/02-two-buttons.jpg" alt=""><span class="tag tag--solid cap">Yo armando esta charla</span></figure>
+ <figure class="media meme" data-label="MEME: two buttons / perro indeciso — botones: técnica · práctica · teórica · sentimental"><img src="assets/memes/02-two-buttons.jpg" alt=""><span class="tag tag--solid cap">Yo armando esta charla</span></figure>
  <div class="orb"></div>
- <aside class="notes"><p>Cuando armaba esta charla, que es súper importante para mí, no sabía si hablar muy técnico, muy por arriba, más práctico, más teórico, más sentimental…</p><p>Estar parado acá, en la facultad donde me gradué, era impensable hace unos meses. Si no fuera por el libre albedrío, los modelos de IA y la orquestación de agentes, no estaría acá.</p></aside>
+ <aside class="notes"><p>Cuando estaba armando esta charla, que es súper importante para mí, no sabía si hacerla muy técnica, muy por arriba, más práctica, más teórica o más sentimental…</p><p>Estar parado acá, en la facultad donde me gradué, era impensable hace unos meses. Si no fuera por el libre albedrío, los modelos de IA y la orquestación de agentes, no estaría acá.</p></aside>
 </section>
 
 <!-- 03 QUIÉN SOY -->
@@ -299,20 +303,18 @@
   <div class="tags age"><span class="tag tag--solid">26 años</span><span class="tag">Jujuy, Argentina</span></div>
   <ul>
    <li class="step" data-step="1"><i>01</i><span>Lic. en <b>Tecnologías de la Información</b></span></li>
-   <li class="step" data-step="1"><i>02</i><span>Analista Programador Universitario</span></li>
-   <li class="step" data-step="2"><i>03</i><span>Consultor en <b>automatización de procesos e IA</b></span></li>
-   <li class="step" data-step="2"><i>04</i><span>Founder de <b>jujuy.dev</b> · +600 entusiastas tech</span></li>
-   <li class="step" data-step="3"><i>05</i><span>Embajador de redes blockchain · charlas</span></li>
-   <li class="step" data-step="3"><i>06</i><span>Host de hackatones web2 y web3 <b>(y gané unas cuantas 🏆)</b></span></li>
+   <li class="step" data-step="2"><i>02</i><span>Consultor en <b>automatización de procesos e IA</b></span></li>
+   <li class="step" data-step="3"><i>03</i><span>Founder de <b>jujuy.dev</b> · +600 entusiastas tech</span></li>
+   <li class="step" data-step="4"><i>04</i><span>Creador de <b>ColeJUY</b> (ahora les cuento)</span></li>
+   <li class="step" data-step="5"><i>05</i><span>Embajador de redes blockchain · charlas</span></li>
+   <li class="step" data-step="5"><i>06</i><span>Organizo y hosteo <b>hackatones web2 y web3</b></span></li>
   </ul>
  </div>
  <div class="wall">
-  <div class="grp step" data-step="2"><div class="mono v">Founder</div><div class="row"><div class="lg jdlogo"><img src="assets/jujuydev-logo.webp" alt="jujuy.dev"></div></div></div>
-  <div class="grp step" data-step="3"><div class="mono">Embajador</div><div class="row"><figure class="media lg" data-label="LOGO 01"><img src="assets/logos/01.png" alt=""></figure><figure class="media lg" data-label="LOGO 02"><img src="assets/logos/02.png" alt=""></figure><figure class="media lg" data-label="LOGO 03"><img src="assets/logos/03.png" alt=""></figure></div></div>
-  <div class="grp step" data-step="4"><div class="mono">Hackatones ganadas</div><div class="row"><figure class="media lg" data-label="LOGO 04"><img src="assets/logos/04.png" alt=""></figure><figure class="media lg" data-label="LOGO 05"><img src="assets/logos/05.png" alt=""></figure><figure class="media lg" data-label="LOGO 06"><img src="assets/logos/06.png" alt=""></figure></div></div>
-  <div class="grp step" data-step="4"><div class="mono">Hackatones hosteadas</div><div class="row"><figure class="media lg" data-label="LOGO 07"><img src="assets/logos/07.png" alt=""></figure><figure class="media lg" data-label="LOGO 08"><img src="assets/logos/08.png" alt=""></figure></div></div>
+  <div class="grp step" data-step="3"><div class="mono v">Founder</div><div class="row"><div class="lg jdlogo"><img src="assets/jujuydev-logo.webp" alt="jujuy.dev"></div></div></div>
+  <div class="grp step" data-step="5"><div class="mono">Embajador · charlas · hackatones</div><div class="row"><div class="lg wide"><img src="assets/logos/stellar.png" alt="Stellar"></div><div class="lg wide"><img src="assets/logos/comunidades/superteam-argentina.svg" alt="Superteam"></div><div class="lg"><img src="assets/logos/comunidades/crecimientoar.webp" alt="CrecimientoAR"></div></div></div>
  </div>
- <aside class="notes"><p>Soy Franco Durán, tengo 26 años. Licenciado en Tecnologías de la Información y Analista Programador Universitario, acá en la UNJu.</p><p>Hoy soy consultor en automatización de procesos e IA en varias empresas.</p><p>Soy founder de jujuy.dev, una comunidad de +600 entusiastas tecnológicos donde conectamos y aprendemos.</p><p>Soy embajador de redes blockchain, doy charlas, hosteo hackatones web2 y web3… y gané unas cuantas. [Nombrar las marcas de los logos.]</p></aside>
+ <aside class="notes"><p>Soy Franco Durán, tengo 26 años. Licenciado en Tecnologías de la Información, acá en la UNJu.</p><p>Hoy soy consultor en automatización de procesos e IA en varias empresas.</p><p>Soy founder de jujuy.dev, una comunidad de +600 entusiastas tecnológicos donde conectamos y aprendemos.</p><p>Hice ColeJUY (ya les cuento en la próxima).</p><p>Soy embajador de redes blockchain, doy charlas, organizo y hosteo hackatones web2 y web3. [Logos: Stellar, Superteam y CrecimientoAR.]</p></aside>
 </section>
 
 <!-- 04 COLEJUY -->
@@ -400,7 +402,7 @@
  <div class="q"><div class="bar"></div><h2 class="display">¿Quién programa<br>hoy <span class="hl">a mano</span>?</h2></div>
  <div class="a step" data-step="1"><div class="big">Yo hace casi <span class="hl">1 año</span> que no programo a mano.</div></div>
  <figure class="media meme pop" data-step="1" data-label="MEME: Titanic, Rose anciana — “Han pasado 84 años…”"><img src="assets/memes/07-84-anios.jpg" alt=""><span class="tag tag--solid cap">Yo cuando me piden escribir un for a mano</span></figure>
- <aside class="notes"><p>Vuelvo a la pregunta del principio: ¿quién programa hoy a mano? …</p><p>Yo hace casi un año que no programo a mano.</p></aside>
+ <aside class="notes"><p>Y acá una pregunta, manos arriba: ¿quién programa hoy a mano? …</p><p>Yo hace casi un año que no programo a mano.</p></aside>
 </section>
 
 <!-- 08 PANTALLAS COMPARTIDAS -->
@@ -424,15 +426,15 @@
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Las 5 etapas del duelo <span class="hl">con la IA</span></h2></div>
  <ol>
-  <li class="step" data-step="1"><i>01</i>Negación</li>
-  <li class="step" data-step="2"><i>02</i>Miedo</li>
+  <li class="step" data-step="1"><i>01</i>Miedo</li>
+  <li class="step" data-step="2"><i>02</i>Negación</li>
   <li class="step" data-step="3"><i>03</i>Posts en contra</li>
   <li class="step" data-step="4"><i>04</i>…</li>
   <li class="step pum" data-step="5"><i>05</i>¡Pum! Esperanza</li>
  </ol>
  <figure class="media neg pop" data-step="3" data-label="CAPTURA: posts en contra de la IA"><img src="assets/fotos/09-posts-en-contra.png" alt=""><span class="tag tag--solid cap">Mi timeline</span></figure>
  <figure class="media pos pop" data-step="5" data-label="CAPTURA: el post que dio esperanza"><img src="assets/fotos/09-post-esperanza.png" alt=""><span class="tag tag--violet cap">El post que lo cambió todo</span></figure>
- <aside class="notes"><p>Las 5 etapas del duelo con la IA. Mis compañeros, varios de +40, vivieron esto: la IA estaba mal vista.</p><p>Negación. Miedo, el miedo del programador viejo. Ver posts en contra todo el tiempo…</p><p>Y de golpe, pum: un post que daba esperanza. [Contar el post — el de “cielo” / Martín.]</p><p>Yo esto lo viví 5 meses antes que ellos.</p></aside>
+ <aside class="notes"><p>Las 5 etapas del duelo con la IA. Mis compañeros, varios de +40, vivieron esto: la IA estaba mal vista.</p><p>Miedo, el miedo del programador viejo. Negación. Ver posts en contra todo el tiempo…</p><p>Y de golpe, pum: un post que daba esperanza. [Contar el post — el de “cielo” / Martín.]</p><p>Yo esto lo viví 5 meses antes que ellos.</p></aside>
 </section>
 
 <!-- 10 PUERTA DE ENTRADA -->
@@ -452,16 +454,7 @@
  <aside class="notes"><p>La puerta de entrada fueron las hackatones. Programar con IA, y seguir a la gente que ganaba hackatones, levantaba rondas y armaba su empresa en San Francisco… desde Argentina, desde LATAM, desde cualquier país.</p><p>Ahí me perfeccioné y me metí en la ingeniería de agentes de IA.</p></aside>
 </section>
 
-<!-- 11 IDE vs ADE -->
-<section class="slide s11" data-title="¿Quién usa un IDE?">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
- <div class="q"><div class="bar"></div><h2 class="display">¿Quién de ustedes<br>usa un <span class="hl">IDE</span>?</h2></div>
- <div class="a step" data-step="1"><div class="lead">Bueno… yo uso un</div><div class="big">ADE: <span class="hl">Orca</span></div></div>
- <figure class="media meme pop" data-step="2" data-label="MEME: vergüenza ajena / cara de mis compañeros"><img src="assets/memes/11-verguenza.jpg" alt=""><span class="tag tag--solid cap">Mis compañeros cuando saqué el ADE</span></figure>
- <aside class="notes"><p>¿Quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca.</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p><p>Tranquis: esto tiene final feliz, ya lo cuento.</p></aside>
-</section>
-
-<!-- 12 MODELO ≠ AGENTE -->
+<!-- 11 MODELO ≠ AGENTE -->
 <section class="slide s12 ag" data-title="Un modelo no es un agente">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 1/5</div>
  <div class="head"><div class="bar"></div><h2 class="display">Un modelo <span class="hl">no es</span> un agente</h2><div class="lead muted">Un modelo responde una vez. Un agente actúa, observa y vuelve a empezar.</div></div>
@@ -483,10 +476,10 @@
  <div class="nbox v step" data-step="2" style="left:600px;top:454px;width:220px;height:80px"><div>Observa<small>y vuelve a empezar</small></div></div>
  <div class="punch step" data-step="3">Modelo = motor. <span class="hl">Agente = modelo + herramientas + contexto + loop.</span></div>
  <div class="mono credit">Basado en la charla de Facu Padilla · charla.facundopadilla.com/orca</div>
- <aside class="notes"><p>Primera distinción, la más importante: un modelo no es un agente.</p><p>Un modelo recibe un prompt y produce una respuesta. Y listo.</p><p>Un agente agrega un loop: tiene un objetivo, lee el contexto, usa herramientas, ejecuta acciones, observa qué pasó… y con eso decide qué hacer después.</p><p>Modelo = motor de inferencia. Agente = motor + herramientas + contexto + loop de acción.</p><p>(Basado en la charla de Facu Padilla.)</p></aside>
+ <aside class="notes"><p>Vuelvo a la evolución de cómo se programa: para entender cómo trabajo, hablemos de agentes, harness y orquestación.</p><p>Primera distinción, la más importante: un modelo no es un agente.</p><p>Un modelo recibe un prompt y produce una respuesta. Y listo.</p><p>Un agente agrega un loop: tiene un objetivo, lee el contexto, usa herramientas, ejecuta acciones, observa qué pasó… y con eso decide qué hacer después.</p><p>Modelo = motor de inferencia. Agente = motor + herramientas + contexto + loop de acción.</p><p>(Basado en la charla de Facu Padilla.)</p></aside>
 </section>
 
-<!-- 13 HARNESS -->
+<!-- 12 HARNESS -->
 <section class="slide s13 ag" data-title="¿Qué es el harness?">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 2/5</div>
  <div class="left"><div class="bar"></div>
@@ -494,12 +487,11 @@
   <div class="big step" data-step="6">El <span class="hl">harness</span> es el sistema que lo pone a trabajar.</div>
  </div>
  <div class="stack"><div><i></i>Modelo<span>el cerebro</span></div><div class="step" data-step="1"><i>+</i>Herramientas<span>qué puede usar</span></div><div class="step" data-step="2"><i>+</i>Contexto<span>qué recibe</span></div><div class="step" data-step="3"><i>+</i>Permisos<span>qué puede tocar</span></div><div class="step" data-step="4"><i>+</i>Loop<span>cómo sigue</span></div><div class="step" data-step="5"><i>+</i>Estado<span>qué recuerda</span></div><div class="tot step" data-step="6"><i>=</i>Harness<span>el entorno donde la inferencia se vuelve trabajo</span></div></div>
- <div class="sticker pop" data-step="7">Gracias, Jev 🙌</div>
  <div class="mono credit">Basado en la charla de Facu Padilla · charla.facundopadilla.com/orca</div>
- <aside class="notes"><p>Ahora una palabra que van a escuchar cada vez más: harness.</p><p>El modelo hace la inferencia: es el cerebro. El harness construye el entorno donde esa inferencia se convierte en trabajo: qué herramientas puede usar, qué contexto recibe, qué permisos tiene, cómo continúa el loop, qué estado mantiene, qué pasa cuando falla.</p><p>[Mencionar brevemente los modelos que usás hoy: completar.]</p><p>Y no me puedo olvidar de Jev. [Completar: por qué Jev.]</p><p>(Basado en la charla de Facu Padilla.)</p></aside>
+ <aside class="notes"><p>Ahora una palabra que van a escuchar cada vez más: harness.</p><p>El modelo hace la inferencia: es el cerebro. El harness construye el entorno donde esa inferencia se convierte en trabajo: qué herramientas puede usar, qué contexto recibe, qué permisos tiene, cómo continúa el loop, qué estado mantiene, qué pasa cuando falla.</p><p>(Basado en la charla de Facu Padilla.)</p></aside>
 </section>
 
-<!-- 14 ORQUESTAR -->
+<!-- 13 ORQUESTAR -->
 <section class="slide s14 ag" data-title="Orquestar es coordinar trabajo">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 3/5</div>
  <div class="head"><div class="bar"></div><h2 class="display">Orquestar es <span class="hl">coordinar trabajo</span></h2></div>
@@ -508,6 +500,15 @@
  <div class="punch step" data-step="3"><span>Más agentes <b class="neq">=</b> más productividad</span></div>
  <div class="mono credit">Basado en la charla de Facu Padilla · charla.facundopadilla.com/orca</div>
  <aside class="notes"><p>¿Qué es orquestar? No es abrir diez terminales. No es lanzar diez modelos.</p><p>Orquestar es coordinar trabajo: quién hace qué, qué puede ir en paralelo, qué depende de qué, quién espera a quién, quién revisa, quién integra y qué hacemos cuando algo falla.</p><p>Ejemplo: quiero construir una landing → UX/UI, backend y tests en paralelo → review → merge.</p><p>Y ojo: más agentes no es más productividad. No hace falta orquestar todo.</p><p>(Basado en la charla de Facu Padilla.)</p></aside>
+</section>
+
+<!-- 14 IDE vs ADE -->
+<section class="slide s11" data-title="¿Quién usa un IDE?">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="q"><div class="bar"></div><h2 class="display">¿Quién de ustedes<br>usa un <span class="hl">IDE</span>?</h2></div>
+ <div class="a step" data-step="1"><div class="lead">Bueno… yo uso un</div><div class="big">ADE: <span class="hl">Orca</span></div></div>
+ <figure class="media meme pop" data-step="2" data-label="MEME: vergüenza ajena / cara de mis compañeros"><img src="assets/memes/11-verguenza.jpg" alt=""><span class="tag tag--solid cap">Mis compañeros cuando saqué el ADE</span></figure>
+ <aside class="notes"><p>Ahora sí: ¿quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca. (Lo explico técnicamente en dos slides.)</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p><p>Tranquis: esto tiene final feliz, ya lo cuento.</p></aside>
 </section>
 
 <!-- 15 WORKTREES -->
@@ -538,8 +539,9 @@
  </div>
  <div class="chaos step" data-step="1"><div class="colh" style="left:0;top:-26px">Antes:</div><span class="t" style="left:20px;top:10px;transform:rotate(-6deg)">terminal</span><span class="t" style="left:150px;top:52px;transform:rotate(0deg)">branch</span><span class="t" style="left:300px;top:0px;transform:rotate(6deg)">terminal</span><span class="t" style="left:460px;top:30px;transform:rotate(-6deg)">browser</span><span class="t" style="left:40px;top:110px;transform:rotate(0deg)">notes</span><span class="t" style="left:230px;top:120px;transform:rotate(6deg)">branch</span><span class="t" style="left:380px;top:96px;transform:rotate(-6deg)">terminal</span><span class="t" style="left:520px;top:120px;transform:rotate(0deg)">worktree</span><span class="t" style="left:20px;top:170px;transform:rotate(6deg)">notes</span><div class="q">¿cuál era cuál?</div></div>
  <div class="panel step" data-step="2"><div class="ph">ORCA</div><div class="cols"><div>A<small>🤖 worker</small></div><div>B<small>🤖 worker</small></div><div>C<small>🤖 worker</small></div><div>D<small>🤖 worker</small></div></div></div>
+ <div class="sticker pop" data-step="4">Gracias, Jev 🙌</div>
  <div class="mono credit">Basado en la charla de Facu Padilla · charla.facundopadilla.com/orca</div>
- <aside class="notes"><p>Y ahí aparece Orca, el ADE que les mostré. Se presenta como un Agent Development Environment: un entorno para trabajar con una flota de agentes. No reemplaza al modelo: es el entorno alrededor de los agentes — worktrees, terminales, navegador, revisión, tareas.</p><p>Antes: terminales por todos lados, branches, worktrees, browsers, notas… y encima recordar quién estaba haciendo qué. ¿Cuál era cuál?</p><p>Orca lo convierte en un solo lugar donde ves los agentes, sus entornos y su trabajo. Cada worker es un agente ejecutando una tarea concreta.</p><p>(Según la charla de Facu: lo desarrolla Stably, es gratuito y open source, MIT. Basado en charla.facundopadilla.com/orca.)</p></aside>
+ <aside class="notes"><p>Y ahí aparece Orca, el ADE que les mostré. Se presenta como un Agent Development Environment: un entorno para trabajar con una flota de agentes. No reemplaza al modelo: es el entorno alrededor de los agentes — worktrees, terminales, navegador, revisión, tareas.</p><p>Antes: terminales por todos lados, branches, worktrees, browsers, notas… y encima recordar quién estaba haciendo qué. ¿Cuál era cuál?</p><p>Orca lo convierte en un solo lugar donde ves los agentes, sus entornos y su trabajo. Cada worker es un agente ejecutando una tarea concreta.</p><p>Cierre técnico: en el medio, los modelos. [Mencionar brevemente los modelos que usás hoy: completar.] Y no me puedo olvidar de Jev 🙌 (aparece el sticker). [Completar: por qué Jev.]</p><p>(Según la charla de Facu: lo desarrolla Stably, es gratuito y open source, MIT. Basado en charla.facundopadilla.com/orca.)</p></aside>
 </section>
 
 <!-- 17 FINAL FELIZ -->
@@ -550,7 +552,7 @@
  <blockquote><span class="q">“</span>Franco, tenés razón. Estamos trabajando mal. <span class="hl">Gracias por abrirnos la cabeza.</span><span class="q">”</span></blockquote>
  <div class="who step" data-step="1"><b>Mi team leader</b>, al otro día (y cayó con Herd)</div>
  <img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
- <aside class="notes"><p>¿Se acuerdan que les dije que tenía final feliz? Al otro día, el team leader cayó con Herd y me dijo:</p><p>“Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”</p></aside>
+ <aside class="notes"><p>Volviendo a la historia de la vergüenza… ¿se acuerdan que les dije que tenía final feliz? Al otro día, el team leader cayó con Herd y me dijo:</p><p>“Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”</p></aside>
 </section>
 
 <!-- 18 FOMO -->
@@ -583,15 +585,15 @@
   <h2 class="display">Se desbloquea <span class="hl">algo nuevo</span></h2>
   <div class="lead now step" data-step="1">Agentes corriendo <b>24/7</b>.<br>Ya es el presente.</div>
  </div>
- <div class="ben step" data-step="5">PD: <b>Ben, si me estás viendo:</b> pronto espero ser ambassador de SpaceX 🚀</div>
+ <div class="ben step" data-step="4">PD: <b>Ben, si me estás viendo:</b> pronto espero ser ambassador de SpaceX 🚀</div>
  <div class="right">
   <div class="gb step" data-step="2"><b>Grok Bot</b><span>~2 meses en el mercado<br>y ya es parte de mi rutina</span></div>
   <div class="chips">
    <span class="tag pop" data-step="3">📅 Eventos de la comunidad</span><span class="tag pop" data-step="3">🤝 Conseguir contactos</span><span class="tag pop" data-step="3">🎤 Armar esta presentación</span><span class="tag pop" data-step="3">🥊 Pelearme con empresas</span><span class="tag tag--violet pop" data-step="3">💜 Conectar con gente hermosa</span>
   </div>
  </div>
- <figure class="media meme pop" data-step="4" data-label="MEME: pelea con el bondi"><img src="assets/memes/17-pelea-bondi.jpg" alt=""><span class="tag tag--solid cap">Yo vs. las empresas (con refuerzos)</span></figure>
- <aside class="notes"><p>Y acá se desbloquea algo nuevo: agentes corriendo 24/7. No es el futuro, ya es el presente.</p><p>[Grok Bot es... completar]</p><p>Grok Bot lleva unos 2 meses en el mercado y ya es parte de mi rutina. Me permitió hacer los eventos de la comunidad, conseguir contactos, armar esta presentación, pelearme con empresas y conectar con gente hermosa.</p><p>Ben, si me estás viendo: pronto espero ser ambassador de SpaceX. 😄</p></aside>
+ <figure class="media meme pop" data-step="5" data-label="MEME: pelea con el bondi"><img src="assets/memes/17-pelea-bondi.jpg" alt=""><span class="tag tag--solid cap">Yo vs. las empresas (con refuerzos)</span></figure>
+ <aside class="notes"><p>Y acá se desbloquea algo nuevo: agentes corriendo 24/7. No es el futuro, ya es el presente.</p><p>[Grok Bot es... completar]</p><p>Grok Bot lleva unos 2 meses en el mercado y ya es parte de mi rutina. Me permitió hacer los eventos de la comunidad, conseguir contactos, armar esta presentación, pelearme con empresas y conectar con gente hermosa.</p><p>Ben, si me estás viendo: pronto espero ser ambassador de SpaceX. 😄</p><p>(Meme de la pelea con el bondi: yo vs. las empresas, con refuerzos.)</p></aside>
 </section>
 
 <!-- 21 DELEGAR -->
@@ -624,4 +626,4 @@
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=3"></script></body></html>
+<script src="deck.js?v=4"></script></body></html>

@@ -57,4 +57,4 @@ body{background:#000;font-family:var(--font-sans);color:var(--ink)}
 .mid{transform:translate(-50%,-50%)}
 .pop.mid{transform:translate(-50%,-50%) scale(.6)} .pop.mid.on{transform:translate(-50%,-50%) scale(1)}
 .slide.dark.active~.counter{color:var(--on-ink);text-shadow:0 0 6px #000;z-index:11}
-.counter{right:auto!important;left:50%;transform:translateX(-50%)}
+.counter{right:auto!important;left:50%;transform:translateX(-50%);top:34px;bottom:auto!important}
