@@ -2,11 +2,12 @@
 
 Fotos: recortadas para llenar (cover). Cambios en `charla.html` **y** `index.html` (son idénticos). Si un archivo de una tarjeta falta, la tarjeta se oculta (no hay placeholders vacíos en la slide 3).
 
-## Slide 3 · Estas semanas fueron una locura (22 imágenes: fotos reales distintas + 1 captura intencional de ColeJUY)
+## Slide 3 · Estas semanas fueron una locura (23 imágenes: fotos reales distintas + 1 captura intencional de ColeJUY)
 Solo fotos reales: sin capturas (salvo ColeJUY en vivo, a pedido), flyers, ilustraciones ni duplicados. Las imágenes de historias de IG se recortan para sacar la interfaz y los textos.
 
 | Archivo | Origen | Burst |
 |---|---|---|
+| `assets/fotos/locura/this-is-fine.jpg` | Foto real de Franco en un set de “THIS IS FINE” — tarjeta grande que cae última y arriba de todo, sin caption | 5 |
 | `assets/fotos/locura/hackcba-pitch.jpg` | Foto de Franco pitcheando en HackCBA (recortada de historia de IG: sin barra ni cajas de texto) — tarjeta grande, caption “HackCBA” | 1 |
 | `assets/fotos/locura/hackcba-sala.jpg` | Sala de HackCBA llena de hackers (foto interior recortada de una historia de IG, sin blur ni texto) | 2 |
 | `assets/fotos/locura/colejuy-app.jpg` | ColeJUY en vivo (captura intencional del producto, sin barra de estado ni barra de Safari) — caption “ColeJUY en vivo” | 2 |
