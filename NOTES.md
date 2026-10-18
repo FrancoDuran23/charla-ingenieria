@@ -98,3 +98,7 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Slide 3 Locura: nuevas diario-cabildo-tech.jpg (“Salimos en el diario”, burst 1) y perro-robot.jpg (burst 2); explosión reacomodada (20 tarjetas, 4 bursts).
 - Global: `.slide figure.media.missing{display:none}` — ningún placeholder rayado en el deck (memes 11/15/17 y capturas de la slide 7 ocultos hasta que existan).
 - tools/shot_steps.py: renders de pasos sueltos (`python3 tools/shot_steps.py 3:1 7:4`).
+
+## UPDATE (2026-10-18, 20:30)
+- Slide 2 Quién soy: nuevo perfil = foto de Franco de perfil con remera Superteam ARG (attachment 2d1c027d…png → assets/fotos/03-franco-perfil.jpg, recorte cara + logo). Se descarta la foto anterior (Franco con el señor que lo abraza). Como era la misma que locura/franco-01.jpg, esa se sacó de la slide 3 (archivo eliminado).
+- Slide 3 Locura: 8 fotos nuevas de Franco (coworking-llama, coworking-noche-2, franco-charla, franco-amigo-speaker, selfie-auditorio-2, grokbot-salta “Grok Bot Salta”, grupo-carpa, selfie-grupo-sala). 02.jpg eliminada (casi idéntica a selfie-auditorio-2, de menor calidad). Explosión rearmada: 26 tarjetas; burst 1 = diario, franco-charla, midudev, franco-amigo-speaker, selfie-grupo-sala; burst 2 = selfie-auditorio-2, ColeJUY, Grok Bot Salta, Metropolis, perro robot + jujuy.dev 03/04/14/16; burst 3 = coworking-llama, coworking-noche-2, grupo-carpa + jujuy.dev 09/10/11/12/17; burst 4 = jujuy.dev 01/05/13/18. Detalle en assets/fotos/README.md.
