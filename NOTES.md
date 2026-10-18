@@ -73,3 +73,7 @@ Orden final (20): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 ## UPDATE (2026-10-17, 23:59)
 - Slide 14 Orca: el sticker "Gracias, Jev" se reemplaza por "Los modelos que uso": chips de texto Claude Sonnet, Haiku, Opus, Fable (paso 4) y Jev destacado con ⭐ y "¡y Jev!" (paso 5). Jev es un modelo, no una persona. Sin logos.
 - Slide 3 Locura: se eliminó la tarjeta "Me amenazaron por una app…" (meme this is fine) y la mención en las notas.
+
+## UPDATE (2026-10-18, 00:10) — 19 slides
+- Slide "Final feliz" eliminada. La anécdota del team leader ("Franco, tenés razón…", cayó con Herd) queda como intro opcional en las notas de "El FOMO me hizo la casa". En la slide IDE/ADE se sacó "esto tiene final feliz, ya lo cuento".
+Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Quién programa hoy a mano? · 6 Pantallas compartidas · 7 5 etapas · 8 Hackatones · 9 Modelo ≠ agente · 10 Harness · 11 Orquestar · 12 IDE/ADE · 13 Worktrees · 14 Orca (+ modelos) · 15 FOMO · 16 Comunidades · 17 Se desbloquea · 18 Delegar · 19 Cierre.

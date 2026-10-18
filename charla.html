@@ -3,7 +3,7 @@
 <meta name="description" content="Orquestación de agentes y modelos de IA — charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu.">
 <meta property="og:title" content="Orquestación de agentes y modelos de IA — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=11"><link rel="stylesheet" href="charla.css?v=11">
+<link rel="stylesheet" href="base.css?v=12"><link rel="stylesheet" href="charla.css?v=12">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -182,14 +182,6 @@
 .s16 .panel .cols div{flex:1;border-right:1.5px solid var(--line-soft);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font:400 44px/1 var(--font-condensed)}
 .s16 .panel .cols div:last-child{border-right:0}
 .s16 .panel .cols div small{font:700 15px/1 var(--font-sans);background:var(--violet);color:#fff;padding:6px 10px}
-/* 14 */
-.s17 .orb{width:520px;height:520px;right:-120px;top:-120px;opacity:.9}
-.s17 .kick{position:absolute;left:56px;top:110px}
-.s17 blockquote{position:absolute;left:56px;top:160px;width:900px;font:400 92px/.95 var(--font-condensed);text-transform:uppercase}
-.s17 blockquote .q{color:var(--violet-soft)}
-.s17 .who{position:absolute;left:56px;bottom:70px;font:600 26px/1.3 var(--font-sans);color:#d8d6ce}
-.s17 .who b{color:#fff}
-.s17 .llama{right:90px;bottom:0;height:380px}
 /* 15 */
 .s18 .head h2{font-size:88px}
 .s18 .left{position:absolute;left:56px;top:330px;width:560px}
@@ -469,7 +461,7 @@
  <div class="q"><div class="bar"></div><h2 class="display">¿Quién de ustedes<br>usa un <span class="hl">IDE</span>?</h2></div>
  <div class="a step" data-step="1"><div class="lead">Bueno… yo uso un</div><div class="big">ADE: <span class="hl">Orca</span></div></div>
  <figure class="media meme pop" data-step="2" data-label="MEME: vergüenza ajena / cara de mis compañeros"><img src="assets/memes/11-verguenza.jpg" alt=""><span class="tag tag--solid cap">Mis compañeros cuando saqué el ADE</span></figure>
- <aside class="notes"><p>Ahora sí: ¿quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca. (Lo explico técnicamente en dos slides.)</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p><p>Tranquis: esto tiene final feliz, ya lo cuento.</p></aside>
+ <aside class="notes"><p>Ahora sí: ¿quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca. (Lo explico técnicamente en dos slides.)</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p></aside>
 </section>
 
 <!-- 13 WORKTREES -->
@@ -508,28 +500,17 @@
  <aside class="notes"><p>Y ahí aparece Orca, el ADE que les mostré. Se presenta como un Agent Development Environment: un entorno para trabajar con una flota de agentes. No reemplaza al modelo: es el entorno alrededor de los agentes — worktrees, terminales, navegador, revisión, tareas.</p><p>Antes: terminales por todos lados, branches, worktrees, browsers, notas… y encima recordar quién estaba haciendo qué. ¿Cuál era cuál?</p><p>Orca lo convierte en un solo lugar donde ves los agentes, sus entornos y su trabajo. Cada worker es un agente ejecutando una tarea concreta.</p><p>Cierre técnico: los modelos que uso (aparecen los chips): Claude Sonnet, Haiku, Opus, Fable… y no me puedo olvidar de Jev ⭐ (último reveal).</p><p>(Según la charla de Facu: lo desarrolla Stably, es gratuito y open source, MIT. Basado en charla.facundopadilla.com/orca.)</p></aside>
 </section>
 
-<!-- 15 FINAL FELIZ -->
-<section class="slide s17 dark" data-title="Final feliz">
- <img class="logo" src="assets/jujuydev-logo-white.webp" alt="jujuy.dev">
- <div class="orb"></div>
- <div class="kick tags"><span class="tag tag--violet">Final feliz</span></div>
- <blockquote><span class="q">“</span>Franco, tenés razón. Estamos trabajando mal. <span class="hl">Gracias por abrirnos la cabeza.</span><span class="q">”</span></blockquote>
- <div class="who step" data-step="1"><b>Mi team leader</b>, al otro día (y cayó con Herd)</div>
- <img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
- <aside class="notes"><p>Volviendo a la historia de la vergüenza… ¿se acuerdan que les dije que tenía final feliz? Al otro día, el team leader cayó con Herd y me dijo:</p><p>“Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”</p></aside>
-</section>
-
-<!-- 16 FOMO -->
+<!-- 15 FOMO -->
 <section class="slide s18" data-title="El FOMO me hizo la casa">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">El FOMO me<br>hizo <span class="hl">la casa</span></h2></div>
  <div class="left lead">Vivía en una burbuja de Twitter: gente muy avanzada y <b>cosas nuevas cada semana</b>.</div>
  <div class="lesson step" data-step="1"><div class="mono">Aprendizaje</div><p>Comunicar y transmitir esto es súper importante.</p></div>
  <figure class="media meme" data-label="MEME: distracted boyfriend — yo / herramienta nueva / la de la semana pasada"><img src="assets/memes/15-fomo.jpg" alt=""><span class="tag tag--solid cap">Yo cada lunes con una herramienta nueva</span></figure>
- <aside class="notes"><p>El FOMO me hizo la casa. Vivía en una burbuja de Twitter con gente muy avanzada, y cada semana salía algo nuevo.</p><p>Aprendizaje: comunicar y transmitir esto es súper importante. Si no lo contás, te quedás solo en tu burbuja.</p></aside>
+ <aside class="notes"><p>(Opcional, para cerrar la historia de la vergüenza: al otro día el team leader cayó con Herd y me dijo “Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”)</p><p>El FOMO me hizo la casa. Vivía en una burbuja de Twitter con gente muy avanzada, y cada semana salía algo nuevo.</p><p>Aprendizaje: comunicar y transmitir esto es súper importante. Si no lo contás, te quedás solo en tu burbuja.</p></aside>
 </section>
 
-<!-- 17 COMUNIDADES -->
+<!-- 16 COMUNIDADES -->
 <section class="slide s19" data-title="Comunidades">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="left"><div class="bar"></div><h2 class="display">Salí a buscar más gente <span class="hl">como yo</span></h2></div>
@@ -541,7 +522,7 @@
  <aside class="notes"><p>Entonces salí a buscar más gente como yo: Superteam Brasil, Superteam Argentina… y las comunidades hermanas de todo el país: SaltaDev, CuyoConnect, CrecimientoAR, Nerdearla, Formosa.dev, Mar del Plata Dev.</p><p>Conecté con gente como midudev, Artu Grande, Erasmo Hernández, Carli Code.</p><p>Y me animaron a crear la primera comunidad tech con eventos de la provincia. Había una antes, estuve 4 años, pero nunca organizaban eventos. Así nació jujuy.dev.</p></aside>
 </section>
 
-<!-- 18 SE DESBLOQUEA -->
+<!-- 17 SE DESBLOQUEA -->
 <section class="slide s20" data-title="Se desbloquea algo nuevo">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="left">
@@ -560,7 +541,7 @@
  <aside class="notes"><p>Y acá se desbloquea algo nuevo: agentes corriendo 24/7. No es el futuro, ya es el presente.</p><p>[Grok Bot es... completar]</p><p>Grok Bot lleva unos 2 meses en el mercado y ya es parte de mi rutina. Me permitió hacer los eventos de la comunidad, conseguir contactos, armar esta presentación, pelearme con empresas y conectar con gente hermosa.</p><p>Ben, si me estás viendo: pronto espero ser ambassador de SpaceX. 😄</p><p>(Meme de la pelea con el bondi: yo vs. las empresas, con refuerzos.)</p></aside>
 </section>
 
-<!-- 19 DELEGAR -->
+<!-- 18 DELEGAR -->
 <section class="slide s21" data-title="Delegar lo automático para vivir lo real">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Delegar lo automático para <span class="hl">vivir lo real</span></h2></div>
@@ -573,7 +554,7 @@
  <aside class="notes"><p>¿Para qué todo esto? Para delegar lo automático y vivir lo real.</p><p>Un café con amigos. Un mate con los abuelos. Venir a explicar esto acá. Y estudiar más el producto y el problema.</p></aside>
 </section>
 
-<!-- 20 CIERRE -->
+<!-- 19 CIERRE -->
 <section class="slide s22" data-title="Cierre">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="left">
@@ -590,4 +571,4 @@
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=11"></script></body></html>
+<script src="deck.js?v=12"></script></body></html>
