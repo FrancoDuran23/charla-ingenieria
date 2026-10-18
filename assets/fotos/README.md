@@ -2,11 +2,12 @@
 
 Fotos: recortadas para llenar (cover). Cambios en `charla.html` **y** `index.html` (son idénticos). Si un archivo de una tarjeta falta, la tarjeta se oculta (no hay placeholders vacíos en la slide 3).
 
-## Slide 3 · Estas semanas fueron una locura (18 fotos reales, distintas)
+## Slide 3 · Estas semanas fueron una locura (19 fotos reales, distintas)
 Solo fotos reales: sin capturas, flyers, ilustraciones ni duplicados.
 
 | Archivo | Origen | Burst |
 |---|---|---|
+| `assets/fotos/locura/midudev.jpg` | Foto que mandó Franco con midudev (recortada de una historia de IG: sin barra, header, caption ni botones) — tarjeta grande, caption “midudev” | 1 |
 | `assets/fotos/locura/franco-01.jpg` | Foto que mandó Franco (remera Superteam ARG) — tarjeta grande central | 1 |
 | `assets/fotos/locura/01.jpg` | https://jujuy.dev.ar/assets/fotos/evento-grupal-cerros.webp | 3 |
 | `assets/fotos/locura/02.jpg` | https://jujuy.dev.ar/assets/fotos/evento-selfie-auditorio.webp | 3 |
