@@ -81,3 +81,6 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 ## UPDATE (2026-10-18, 00:15)
 - Slide 3 Locura: fotos reales de Franco (assets/fotos/locura/franco-01..04.jpg) en las tarjetas grandes del primer burst; fotos de jujuy.dev.ar (01-18) como relleno en bursts 2-4. Se sacaron los slots vacíos (Richard Hipp, midudev, Artu, Erasmo, Carli, hackatones, coworking) y las tarjetas llama #19-30; cualquier tarjeta sin imagen se oculta.
 - Sin referencias a otras charlas: se quitaron los créditos de las slides de agentes y sus menciones en notas.
+
+## UPDATE (2026-10-18, 00:25)
+- Slide 3 Locura: solo fotos reales y distintas (franco-01 + 17 de jujuy.dev.ar). Eliminadas franco-02/04 (capturas), franco-03 (ilustración), 15.jpg (casi duplicado de franco-01). Explosión rebalanceada: tarjetas más grandes en 3 bursts. Detalle en assets/fotos/README.md.
