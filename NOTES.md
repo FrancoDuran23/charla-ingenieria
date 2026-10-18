@@ -35,7 +35,7 @@ Image files expected (also in assets/memes/README.md and assets/fotos/README.md)
 | `assets/fotos/05-amigos-tech.jpg` | FOTO: Artu Grande, Erasmo Hernández, Carli Code |
 | `assets/fotos/05-hackatones.jpg` | FOTO: hackatones y eventos en simultáneo |
 | `assets/fotos/05-coworking.jpg` | FOTO: coworking con amigos / reuniones |
-| `assets/memes/05-this-is-fine.jpg` | MEME: This is fine (perro en la casa en llamas) |
+| ~~`assets/memes/05-this-is-fine.jpg`~~ | (eliminado) |
 | `assets/memes/07-claude-daily-limit.webp` | MEME: Claude y el límite diario (real, de Franco) |
 | `assets/fotos/09-posts-en-contra.png` | CAPTURA: posts en contra de la IA |
 | `assets/fotos/09-post-esperanza.png` | CAPTURA: el post que dio esperanza |
@@ -52,7 +52,7 @@ Image files expected (also in assets/memes/README.md and assets/fotos/README.md)
 Repo: /workspace/charla-ingenieria (GitHub Pages: https://francoduran23.github.io/charla-ingenieria/). index.html == charla.html (keep identical). Render check: `python3 tools/shot_full.py` → renders/full/ (gitignored).
 Changes:
 - Slide 3 Quién soy: logo wall — Founder (jujuy.dev) · Embajador · charlas · hackatones (Stellar from stellar.org press kit; Superteam and CrecimientoAR from jujuy.dev.ar); missing logos are hidden (no empty slots).
-- Slide 5 Locura: explosion of 38 polaroid cards in 4 bursts (steps 1-4, pop/burst animation from center), title in black tag on top. Labeled highlight slots: assets/fotos/05-richard-hipp.jpg, 05-midudev.jpg, 05-artu-grande.jpg, 05-erasmo-hernandez.jpg, 05-carli-code.jpg, 05-hackatones.jpg, 05-coworking.jpg (05-amigos-tech.jpg removed), meme assets/memes/05-this-is-fine.jpg; generic assets/fotos/locura/01-30.jpg (01-18 = real event photos from jujuy.dev.ar; 19-30 show llama/gradient tiles).
+- Slide 5 Locura: explosion of 38 polaroid cards in 4 bursts (steps 1-4, pop/burst animation from center), title in black tag on top. Labeled highlight slots: assets/fotos/05-richard-hipp.jpg, 05-midudev.jpg, 05-artu-grande.jpg, 05-erasmo-hernandez.jpg, 05-carli-code.jpg, 05-hackatones.jpg, 05-coworking.jpg (05-amigos-tech.jpg removed), generic assets/fotos/locura/01-30.jpg (01-18 = real event photos from jujuy.dev.ar; 19-30 show llama/gradient tiles).
 - Agents sub-section (old 12-13 → new 12-16), condensed from Facu Padilla's deck (charla.facundopadilla.com/orca, credited on each): 12 Un modelo no es un agente (modelo: prompt→respuesta vs agente: percibe→decide→actúa→observa loop) · 13 ¿Qué es el harness? (modelo + herramientas + contexto + permisos + loop + estado = harness; "Gracias, Jev") · 14 Orquestar es coordinar trabajo (no es: malla de agentes / es: quién hace qué, cuándo y cómo se integra; "Más agentes ≠ más productividad") · 15 Un agente, un espacio de trabajo (mismo checkout → conflictos; repo → worktrees A/B/C → review (si falla, volvemos) → merge; fan-out/fan-in) · 16 Orca (ADE = Agent Development Environment; antes: caos de terminales/branches/notas "¿cuál era cuál?" → panel Orca con workers A-D; Worker = agente con tarea concreta).
 - Old 14-19 → now 17-22 (CSS classes renamed s17-s22).
 - Slide 19 Comunidades: nodes with real logos from jujuy.dev.ar "Los que empujan" (assets/logos/comunidades/): Superteam Argentina, SaltaDev, CuyoConnect, CrecimientoAR, Nerdearla, Formosa.dev, Mar del Plata Dev; Superteam Brasil (not on site, initials node, named by Franco). Not used (not communities): Fundación CIDEJ, Municipalidad SSJ, Gobierno de Jujuy, Celo, Ripio.
@@ -72,3 +72,4 @@ Orden final (20): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 
 ## UPDATE (2026-10-17, 23:59)
 - Slide 14 Orca: el sticker "Gracias, Jev" se reemplaza por "Los modelos que uso": chips de texto Claude Sonnet, Haiku, Opus, Fable (paso 4) y Jev destacado con ⭐ y "¡y Jev!" (paso 5). Jev es un modelo, no una persona. Sin logos.
+- Slide 3 Locura: se eliminó la tarjeta "Me amenazaron por una app…" (meme this is fine) y la mención en las notas.
