@@ -1,4 +1,4 @@
-# Charla "Del miedo a orquestar agentes" (Franco Durán · Facultad de Ingeniería · jujuy.dev) — HTML web deck
+# Charla "Orquestación de agentes y modelos de IA" (Franco Durán · Facultad de Ingeniería · jujuy.dev) — HTML web deck
 Workflow: new-plain (HTML, not pptx). Last phase: family (style samples).
 Nav (mirrors charla.facundopadilla.com/orca: ?slide=N 1-based, ref also has &step=M for fragments): deck.js — ←/→, ↑/↓, Space/Enter, PageUp/Down, Home/End, f=fullscreen, click halves, swipe; 1280x720 stage scaled to viewport; URL synced via replaceState.
 Files: base.css, deck.js, fonts/ (bundled TTFs, no CDN), estilo-a-quebrada.html, estilo-b-terminal.html, shot.py (playwright renders -> renders/).
@@ -36,7 +36,7 @@ Image files expected (also in assets/memes/README.md and assets/fotos/README.md)
 | `assets/fotos/05-hackatones.jpg` | FOTO: hackatones y eventos en simultáneo |
 | `assets/fotos/05-coworking.jpg` | FOTO: coworking con amigos / reuniones |
 | `assets/memes/05-this-is-fine.jpg` | MEME: This is fine (perro en la casa en llamas) |
-| `assets/memes/07-84-anios.jpg` | MEME: Titanic, Rose anciana — “Han pasado 84 años…” |
+| `assets/memes/07-claude-daily-limit.webp` | MEME: Claude y el límite diario (real, de Franco) |
 | `assets/fotos/09-posts-en-contra.png` | CAPTURA: posts en contra de la IA |
 | `assets/fotos/09-post-esperanza.png` | CAPTURA: el post que dio esperanza |
 | `assets/fotos/10-hackaton.jpg` | FOTO: Franco en una hackatón |
@@ -60,5 +60,5 @@ Storyboard now: 1 Portada · 2 Técnica/práctica/sentimental · 3 Quién soy ·
 Asset lists: assets/memes/README.md, assets/fotos/README.md, assets/logos/README.md.
 
 ## REORDER (2026-10-17, noche) — orden exacto del guion
-1 Portada (neutral: "Del miedo a orquestar agentes" · Franco Durán · Facultad de Ingeniería · UNJu · jujuy.dev) · 2 ¿Técnica, práctica, teórica o sentimental? (primera línea real: "Cuando estaba armando esta charla…") · 3 Quién soy (reveals: 26 años → Lic. en TI → consultor → founder jujuy.dev → ColeJUY → embajador/charlas + organizo/hosteo hackatones; logos Stellar, Superteam, CrecimientoAR) · 4 ColeJUY · 5 Estas semanas fueron una locura · 6 Plot twist · 7 ¿Quién programa hoy a mano? (acá aparece la pregunta por primera vez) · 8 Pantallas compartidas · 9 5 etapas (miedo → negación → posts en contra → … → esperanza) · 10 Hackatones · 11 Un modelo no es un agente · 12 ¿Qué es el harness? · 13 Orquestar es coordinar trabajo · 14 ¿Quién usa un IDE? Yo uso un ADE (+ vergüenza) · 15 Un agente, un espacio de trabajo · 16 Orca (cierre técnico: modelos + sticker "Gracias, Jev") · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea algo nuevo (24/7 → Grok Bot → Ben/SpaceX → pelea con el bondi) · 21 Delegar · 22 Cierre.
+1 Portada (neutral: "Orquestación de agentes y modelos de IA" · Franco Durán · Facultad de Ingeniería · jujuy.dev) · 2 ¿Técnica, práctica, teórica o sentimental? (primera línea real: "Cuando estaba armando esta charla…") · 3 Quién soy (reveals: 26 años → Lic. en TI → consultor → founder jujuy.dev → ColeJUY → embajador/charlas + organizo/hosteo hackatones; logos Stellar, Superteam, CrecimientoAR) · 4 ColeJUY · 5 Estas semanas fueron una locura · 6 Plot twist · 7 ¿Quién programa hoy a mano? (acá aparece la pregunta por primera vez) · 8 Pantallas compartidas · 9 5 etapas (miedo → negación → posts en contra → … → esperanza) · 10 Hackatones · 11 Un modelo no es un agente · 12 ¿Qué es el harness? · 13 Orquestar es coordinar trabajo · 14 ¿Quién usa un IDE? Yo uso un ADE (+ vergüenza) · 15 Un agente, un espacio de trabajo · 16 Orca (cierre técnico: modelos + sticker "Gracias, Jev") · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea algo nuevo (24/7 → Grok Bot → Ben/SpaceX → pelea con el bondi) · 21 Delegar · 22 Cierre.
 Removed: "Analista Programador Universitario", "y gané unas cuantas", "Hackatones ganadas/hosteadas". The CSS classes s11–s16 keep their old names (s11 = IDE slide, now 14th) — styling only, not position.

@@ -7,7 +7,7 @@ Si usás otra extensión, cambiala también en `charla.html` **y** `index.html` 
 |---|---|---|
 | `assets/memes/02-two-buttons.jpg` | MEME: two buttons / perro indeciso — botones: técnica · práctica · sentimental | ⏳ falta |
 | `assets/memes/05-this-is-fine.jpg` | MEME: This is fine (perro en la casa en llamas) | ⏳ falta |
-| `assets/memes/07-84-anios.jpg` | MEME: Titanic, Rose anciana — “Han pasado 84 años…” | ⏳ falta |
+| `assets/memes/07-claude-daily-limit.webp` | MEME: orangután serruchando — “Claude watching me write code manually after I hit the daily limit” (lo mandó Franco; trae su caption) | ✅ listo |
 | `assets/memes/11-verguenza.jpg` | MEME: vergüenza ajena / cara de mis compañeros | ⏳ falta |
 | `assets/memes/15-fomo.jpg` | MEME: distracted boyfriend — yo / herramienta nueva / la de la semana pasada | ⏳ falta |
 | `assets/memes/17-pelea-bondi.jpg` | MEME: pelea con el bondi | ⏳ falta |
