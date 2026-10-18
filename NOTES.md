@@ -88,3 +88,4 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Slide 3: nueva foto de Franco con midudev (assets/fotos/locura/midudev.jpg, recortada de historia de IG) como tarjeta grande del primer burst.
 - Slide 3: nuevas fotos de Franco recortadas de historias de IG: hackcba-pitch.jpg ("HackCBA"), hackcba-sala.jpg, colejuy-app.jpg ("ColeJUY en vivo", captura intencional). Burst 1: HackCBA pitch, Superteam, midudev; burst 2: sala HackCBA, ColeJUY; fotos de jujuy.dev.ar en bursts 2-4.
 - Slide 3: foto real "This is fine" (assets/fotos/locura/this-is-fine.jpg) como último burst (paso 5), tarjeta grande arriba de todo, sin caption.
+- Slide 3: flyer Metropolis Argentina & LATAM (metropolis.jpg) en burst 2; "This is fine" achicada y movida abajo al centro para no tapar la cara de Franco en la foto Superteam.
