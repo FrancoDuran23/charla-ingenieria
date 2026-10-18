@@ -7,7 +7,7 @@ Si usás otra extensión, cambiala también en `charla.html` **y** `index.html` 
 |---|---|---|
 | `assets/fotos/01-franco-portada.jpg` | FOTO: Franco | ⏳ falta |
 | `assets/fotos/03-franco-perfil.jpg` | FOTO: Franco (perfil) | ⏳ falta |
-| `assets/fotos/04-colejuy-screenshot.png` | SCREENSHOT: ColeJUY (mapa con colectivos en vivo) | ⏳ falta |
+| ~~`assets/fotos/04-colejuy-screenshot.png`~~ | (slide ColeJUY eliminada; ya no se usa) | — |
 | `assets/fotos/05-richard-hipp.jpg` | FOTO: cowork con Richard Hipp | ⏳ falta |
 | `assets/fotos/05-midudev.jpg` | FOTO: con midudev | ⏳ falta |
 | `assets/fotos/locura/01.jpg` | #01 | ✅ incluida (de jujuy.dev.ar) |
