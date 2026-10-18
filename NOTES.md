@@ -22,7 +22,7 @@ Notes: n = toggle notes overlay; p = open presenter window (?notes=1): slide lef
 Placeholders: <figure class="media [meme|sm|contain]" data-label="..."><img src="assets/..."></figure> → labelled striped box until the file exists.
 Orca facts (slide 12) from charla.facundopadilla.com/orca: "Agent Development Environment"; worktrees = mismo repo, varios directorios de trabajo separados; "un agente, un espacio de trabajo". Credit on slide.
 Storyboard: 1 Portada · 2 Técnica/práctica/sentimental (meme) · 3 Quién soy (steps 3) · 4 ColeJUY (+1500 usuarios/día, ponele) · 5 Locura (collage, steps 3) · 6 Plot twist (chips, steps 5) · 7 Hace casi 1 año (meme) · 8 Pantallas compartidas (timeline, steps 7) · 9 5 etapas del duelo (steps 5) · 10 Hackatones (steps 6) · 11 IDE/ADE (meme) · 12 Orca simple (diagrama, steps 3) · 13 Harness = agente, orquestación, Gracias Jev (steps 4) · 14 Final feliz (quote, dark) · 15 FOMO (meme) · 16 Comunidades (mapa, steps 4) · 17 Se desbloquea (candado, Grok Bot, steps 5) · 18 Delegar (4 fotos, steps 4) · 19 Cierre (steps 3).
-Placeholders Franco completes in notes: slide 9 post de esperanza ("cielo"/Martín), slide 13 modelos + contexto de Jev, slide 16 otras comunidades AR, slide 17 "[Grok Bot es... completar]".
+Placeholders Franco completes in notes: slide 9 post de esperanza ("cielo"/Martín), slide 16 otras comunidades AR, slide 17 "[Grok Bot es... completar]".
 Image files expected (also in assets/memes/README.md and assets/fotos/README.md):
 | Archivo | Qué va |
 |---|---|
@@ -68,4 +68,7 @@ Removed: "Analista Programador Universitario", "y gané unas cuantas", "Hackaton
 - Portada: dibujo real que mandó Franco (assets/memes/01-dad-agentic-workflows.jpg, "To relax my dad likes to make agentic workflows") en lugar de la foto placeholder.
 - Quién soy: logos Stellar, Superteam, CrecimientoAR, Celo, Ripio.
 - Slide ColeJUY eliminada; su contenido (colectivos en vivo, open source, +1500 usuarios/día) pasó a las notas de Quién soy, y el logo real de ColeJUY (assets/logos/colejuy.svg, de src/app/icon.svg del repo FrancoDuran23/colejuy-abierto) va en la fila de logos junto a jujuy.dev ("Founder · creador").
-Orden final (20): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Quién programa hoy a mano? · 6 Pantallas compartidas · 7 5 etapas · 8 Hackatones · 9 Modelo ≠ agente · 10 Harness · 11 Orquestar · 12 IDE/ADE · 13 Worktrees · 14 Orca (+Jev) · 15 Final feliz · 16 FOMO · 17 Comunidades · 18 Se desbloquea · 19 Delegar · 20 Cierre.
+Orden final (20): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Quién programa hoy a mano? · 6 Pantallas compartidas · 7 5 etapas · 8 Hackatones · 9 Modelo ≠ agente · 10 Harness · 11 Orquestar · 12 IDE/ADE · 13 Worktrees · 14 Orca (+ los modelos que uso: Claude Sonnet, Haiku, Opus, Fable y ⭐ Jev) · 15 Final feliz · 16 FOMO · 17 Comunidades · 18 Se desbloquea · 19 Delegar · 20 Cierre.
+
+## UPDATE (2026-10-17, 23:59)
+- Slide 14 Orca: el sticker "Gracias, Jev" se reemplaza por "Los modelos que uso": chips de texto Claude Sonnet, Haiku, Opus, Fable (paso 4) y Jev destacado con ⭐ y "¡y Jev!" (paso 5). Jev es un modelo, no una persona. Sin logos.
