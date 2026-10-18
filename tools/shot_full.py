@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 from PIL import Image, ImageDraw, ImageFont
 import pathlib
 d=pathlib.Path(__file__).resolve().parent.parent; out=d/'renders'/'full'; out.mkdir(parents=True,exist_ok=True)
-N=22
+N=21
 with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page(viewport={'width':1280,'height':720})
     for n in range(1,N+1):

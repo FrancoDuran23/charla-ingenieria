@@ -8,6 +8,8 @@ Logos que nombró Franco, guardados localmente (sin hotlinking):
 | Embajador · charlas · hackatones | `assets/logos/stellar.png` | Logo Press Kit oficial de stellar.org/brand-resources (Stellar Logo Final Black RGB, recortado a 800px) |
 | Embajador · charlas · hackatones | `assets/logos/comunidades/superteam-argentina.svg` | jujuy.dev.ar |
 | Embajador · charlas · hackatones | `assets/logos/comunidades/crecimientoar.webp` | jujuy.dev.ar |
+| Embajador · charlas · hackatones | `assets/logos/celo.svg` | jujuy.dev.ar (“Los que empujan”) |
+| Embajador · charlas · hackatones | `assets/logos/ripio.svg` | jujuy.dev.ar (“Los que empujan”) |
 
 No hay slots vacíos: un logo cuyo archivo falta se oculta. Para sumar uno, agregá `<div class="lg wide"><img src="assets/logos/…" alt="Marca"></div>` en el grupo (en `charla.html` **y** `index.html`).
 

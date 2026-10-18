@@ -27,7 +27,7 @@ Image files expected (also in assets/memes/README.md and assets/fotos/README.md)
 | Archivo | Qué va |
 |---|---|
 | `assets/fotos/01-franco-portada.jpg` | FOTO: Franco |
-| `assets/memes/02-two-buttons.jpg` | MEME: two buttons / perro indeciso — botones: técnica · práctica · sentimental |
+| ~~`assets/memes/02-two-buttons.jpg`~~ | (slide eliminada) |
 | `assets/fotos/03-franco-perfil.jpg` | FOTO: Franco (perfil) |
 | `assets/fotos/04-colejuy-screenshot.png` | SCREENSHOT: ColeJUY (mapa con colectivos en vivo) |
 | `assets/fotos/05-richard-hipp.jpg` | FOTO: cowork con Richard Hipp |
@@ -62,3 +62,9 @@ Asset lists: assets/memes/README.md, assets/fotos/README.md, assets/logos/README
 ## REORDER (2026-10-17, noche) — orden exacto del guion
 1 Portada (neutral: "Orquestación de agentes y modelos de IA" · Franco Durán · Facultad de Ingeniería · jujuy.dev) · 2 ¿Técnica, práctica, teórica o sentimental? (primera línea real: "Cuando estaba armando esta charla…") · 3 Quién soy (reveals: 26 años → Lic. en TI → consultor → founder jujuy.dev → ColeJUY → embajador/charlas + organizo/hosteo hackatones; logos Stellar, Superteam, CrecimientoAR) · 4 ColeJUY · 5 Estas semanas fueron una locura · 6 Plot twist · 7 ¿Quién programa hoy a mano? (acá aparece la pregunta por primera vez) · 8 Pantallas compartidas · 9 5 etapas (miedo → negación → posts en contra → … → esperanza) · 10 Hackatones · 11 Un modelo no es un agente · 12 ¿Qué es el harness? · 13 Orquestar es coordinar trabajo · 14 ¿Quién usa un IDE? Yo uso un ADE (+ vergüenza) · 15 Un agente, un espacio de trabajo · 16 Orca (cierre técnico: modelos + sticker "Gracias, Jev") · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea algo nuevo (24/7 → Grok Bot → Ben/SpaceX → pelea con el bondi) · 21 Delegar · 22 Cierre.
 Removed: "Analista Programador Universitario", "y gané unas cuantas", "Hackatones ganadas/hosteadas". The CSS classes s11–s16 keep their old names (s11 = IDE slide, now 14th) — styling only, not position.
+
+## UPDATE (2026-10-17, 23:50) — 21 slides
+- Slide "¿Técnica, práctica, teórica o sentimental?" eliminada; su nota ("Cuando estaba armando esta charla…") pasó a la portada.
+- Portada: dibujo real que mandó Franco (assets/memes/01-dad-agentic-workflows.jpg, "To relax my dad likes to make agentic workflows") en lugar de la foto placeholder.
+- Quién soy: logos Stellar, Superteam, CrecimientoAR, Celo, Ripio.
+Orden final: 1 Portada · 2 Quién soy · 3 ColeJUY · 4 Locura · 5 Plot twist · 6 ¿Quién programa hoy a mano? · 7 Pantallas compartidas · 8 5 etapas · 9 Hackatones · 10 Modelo ≠ agente · 11 Harness · 12 Orquestar · 13 IDE/ADE · 14 Worktrees · 15 Orca (+Jev) · 16 Final feliz · 17 FOMO · 18 Comunidades · 19 Se desbloquea · 20 Delegar · 21 Cierre.
