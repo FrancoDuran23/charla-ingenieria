@@ -131,3 +131,6 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 ## UPDATE (2026-10-19, 15:00) — slides 15 y 18
 - Slide 15 (FOMO): nuevo remate en el paso 2 (último), bloque punch negro con sombra violeta a la derecha: “Animate a instalar algo nuevo: no tiene que ser algo mejor.” Sumado a las notas.
 - Slide 18 (Delegar): caption “☕ Un café con amigos” → “🧉 Unos mates con amigos” (también label y notas).
+
+## UPDATE (2026-10-19, 15:10) — slide 19 Cierre: QRs
+- Nuevo paso 4: dos tarjetas QR grandes (196 px, borde negro + sombra violeta) bajo “¡Gracias!”: “Sumate a la comunidad” (WhatsApp de jujuy.dev, link del botón “Unite a la comunidad” de jujuy.dev.ar) y “Seguime en Instagram” (@francoduran.23). La llama se achica a la esquina inferior derecha y el orbe se apaga al aparecer los QR. Ver assets/qr/README.md. Notas actualizadas.

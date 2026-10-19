@@ -3,7 +3,7 @@
 <meta name="description" content="Orquestación de agentes y modelos de IA — charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu.">
 <meta property="og:title" content="Orquestación de agentes y modelos de IA — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=29"><link rel="stylesheet" href="charla.css?v=29">
+<link rel="stylesheet" href="base.css?v=30"><link rel="stylesheet" href="charla.css?v=30">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -276,6 +276,15 @@
 .s22 .orb{width:420px;height:420px;right:40px;top:230px}
 .s22 .llama{right:70px;bottom:0;height:470px}
 .s22 .gracias{position:absolute;right:56px;top:96px;font:400 64px/1 var(--font-condensed);text-transform:uppercase;z-index:5}
+.s22 .qrs{position:absolute;left:740px;top:224px;display:flex;gap:22px;z-index:6}
+.s22 .qr{width:222px;margin:0;background:#fff;border:2px solid var(--ink);padding:12px 12px 12px;box-shadow:8px 8px 0 var(--violet);transition-delay:var(--d,0s)}
+.s22 .qr img{display:block;width:196px;height:196px;image-rendering:pixelated}
+.s22 .qr figcaption{margin-top:8px;text-align:center}
+.s22 .qr b{display:block;font:400 25px/1.05 var(--font-condensed);text-transform:uppercase}
+.s22 .qr small{display:block;margin-top:4px;font:700 12px/1.2 var(--font-mono);color:var(--ink-muted)}
+.s22 .llama,.s22 .orb{transition:transform .5s ease,opacity .4s ease;transform-origin:100% 100%}
+.s22:has(.qr.on) .llama{transform:scale(.42)}
+.s22:has(.qr.on) .orb{opacity:0}
 </style></head><body>
 <div class="stage">
 
@@ -594,9 +603,13 @@
  <div class="orb"></div><img class="llama" src="assets/jujuydev-llama-hd.webp" alt="">
  <div class="gracias step" data-step="3">¡Gracias!</div>
  <div class="sign step" data-step="3"><span class="tag tag--solid">Franco Durán</span><span class="tag"><b>jujuy</b><span class="v">.dev</span></span></div>
- <aside class="notes"><p>El problema nunca fue el código. Lo que hacemos con código siempre fue arreglar un problema con software.</p><p>Usemos la IA como una herramienta que nos hace más productivos.</p><p>Innovar y ser atrevidos va a incomodar. Vas a pasar por estas cosas. Animate a instalar algo nuevo.</p><p>¡Gracias! Soy Franco Durán, de jujuy.dev.</p></aside>
+ <div class="qrs">
+  <figure class="qr pop" data-step="4"><img src="assets/qr/comunidad.svg" alt="QR para unirse a la comunidad jujuy.dev por WhatsApp"><figcaption><b>Sumate a la comunidad</b><small>WhatsApp de jujuy.dev</small></figcaption></figure>
+  <figure class="qr pop" data-step="4" style="--d:.15s"><img src="assets/qr/instagram.svg" alt="QR al Instagram de Franco Durán"><figcaption><b>Seguime en Instagram</b><small>@francoduran.23</small></figcaption></figure>
+ </div>
+ <aside class="notes"><p>El problema nunca fue el código. Lo que hacemos con código siempre fue arreglar un problema con software.</p><p>Usemos la IA como una herramienta que nos hace más productivos.</p><p>Innovar y ser atrevidos va a incomodar. Vas a pasar por estas cosas. Animate a instalar algo nuevo.</p><p>¡Gracias! Soy Franco Durán, de jujuy.dev.</p><p>[Paso 4: QRs] Si quieren sumarse a la comunidad, escaneen el primero (grupo de WhatsApp de jujuy.dev). Y si quieren seguirme, mi Instagram es @francoduran.23.</p></aside>
 </section>
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=29"></script></body></html>
+<script src="deck.js?v=30"></script></body></html>
