@@ -117,3 +117,6 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 
 ## UPDATE (2026-10-18, 21:40) — slide 7 paso 1 (Miedo)
 - 4 burbujas tipo post, anónimas y genéricas (avatar gris sin nombre, sin @, sin logos, sin contadores), pop escalonado con el paso 1, a la derecha de la lista: “Me echaron y me reemplazaron con un chatbot.” · “Despidieron a medio equipo de soporte por la IA.” · “Hice 10 años de diseño y ahora lo hace una app en 5 segundos.” · “¿Para qué estudié programación si ahora lo hace la IA?”. Se ven en los pasos 1–3 y se desvanecen al entrar “This is fine” (paso 4) para no taparla (`.s09:has(.tif.on) .fear`).
+
+## UPDATE (2026-10-19, 14:30) — slide 6
+- Se eliminó “Autocompletar en el IDE” y su captura (06-2 deja de usarse). Quedan 5 pasos: 1 Chat + copiar/pegar · 2 CLI · 3 Prompts larguísimos · 4 Skills / AGENTS.md · 5 “?” (pantalla misteriosa). Timeline vertical con 68 px entre nodos; badges de los mockups renumerados (CLI 2, prompt 3, AGENTS.md 4). Notas: “¿Y el 5?…”.
