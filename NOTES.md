@@ -114,3 +114,6 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 ## UPDATE (2026-10-18, 21:30) — slide 6
 - Franco no revela acá cómo trabaja: el punto 6 del timeline es solo un “?” grande violeta (sin “Agentes en paralelo · orquestación” ni “👈 yo”); en el paso 6 el marco de la derecha muestra una pantalla misteriosa (ventana negra con “?” en degradé orb, HTML/CSS en la slide). 06-6-agentes-paralelo.png ya no se usa.
 - Se eliminó el remate “…pero ninguno trabajaba como yo.” y su paso (la slide tiene 6 pasos). Notas: “¿Y el 6? Lo vemos después de las etapas del duelo.”
+
+## UPDATE (2026-10-18, 21:40) — slide 7 paso 1 (Miedo)
+- 4 burbujas tipo post, anónimas y genéricas (avatar gris sin nombre, sin @, sin logos, sin contadores), pop escalonado con el paso 1, a la derecha de la lista: “Me echaron y me reemplazaron con un chatbot.” · “Despidieron a medio equipo de soporte por la IA.” · “Hice 10 años de diseño y ahora lo hace una app en 5 segundos.” · “¿Para qué estudié programación si ahora lo hace la IA?”. Se ven en los pasos 1–3 y se desvanecen al entrar “This is fine” (paso 4) para no taparla (`.s09:has(.tif.on) .fear`).
