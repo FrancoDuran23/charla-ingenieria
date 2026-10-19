@@ -110,3 +110,7 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 
 ## UPDATE (2026-10-18, 21:25) — slide 3
 - Nueva foto en el burst 1: assets/fotos/locura/richard-hipp.jpg (cowork con Richard Hipp, creador de SQLite; adelante la laptop de Franco con Omarchy), tarjeta grande arriba a la derecha con caption “Cowork con el creador de SQLite”. selfie-auditorio-2 pasa al burst 3 (esquina superior derecha), coworking-llama a la franja de arriba y 16.jpg al burst 4. 27 tarjetas.
+
+## UPDATE (2026-10-18, 21:30) — slide 6
+- Franco no revela acá cómo trabaja: el punto 6 del timeline es solo un “?” grande violeta (sin “Agentes en paralelo · orquestación” ni “👈 yo”); en el paso 6 el marco de la derecha muestra una pantalla misteriosa (ventana negra con “?” en degradé orb, HTML/CSS en la slide). 06-6-agentes-paralelo.png ya no se usa.
+- Se eliminó el remate “…pero ninguno trabajaba como yo.” y su paso (la slide tiene 6 pasos). Notas: “¿Y el 6? Lo vemos después de las etapas del duelo.”

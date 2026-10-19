@@ -10,4 +10,4 @@ Una captura por punto del timeline; aparece con el mismo paso (1–6) en un marc
 | `06-3-cli-agente.png` | 3 CLI | Terminal con un agente CLI arreglando un test |
 | `06-4-prompt-larguisimo.png` | 4 Prompts larguísimos | Caja de prompt enorme con scroll (“4.812 palabras · 9 páginas”) |
 | `06-5-agents-md-skills.png` | 5 Skills / AGENTS.md | AGENTS.md abierto y carpeta `skills/` en el árbol |
-| `06-6-agentes-paralelo.png` | 6 Agentes en paralelo · orquestación | 4 agentes en worktrees (trabajando / en review / listo) → review → merge |
+| `06-6-agentes-paralelo.png` | (no se usa en la slide 6 desde 2026-10-18 21:30: el paso 6 muestra un “?” y una pantalla misteriosa hecha en HTML) | 4 agentes en worktrees (trabajando / en review / listo) → review → merge |
