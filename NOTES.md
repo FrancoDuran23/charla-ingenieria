@@ -120,3 +120,6 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 
 ## UPDATE (2026-10-19, 14:30) — slide 6
 - Se eliminó “Autocompletar en el IDE” y su captura (06-2 deja de usarse). Quedan 5 pasos: 1 Chat + copiar/pegar · 2 CLI · 3 Prompts larguísimos · 4 Skills / AGENTS.md · 5 “?” (pantalla misteriosa). Timeline vertical con 68 px entre nodos; badges de los mockups renumerados (CLI 2, prompt 3, AGENTS.md 4). Notas: “¿Y el 5?…”.
+
+## UPDATE (2026-10-19, 14:40) — slide 7 con las 5 etapas clásicas
+- 01 Negación (“La IA no sirve, escribe código malo”) · 02 Ira (Posts en contra y gente que se quedó sin laburo; acá entran las 4 burbujas anónimas y el slot oculto 09-posts-en-contra.png) · 03 Negociación (“La uso solo para autocompletar, nada más”) · 04 Depresión (foto This is fine; las burbujas se desvanecen) · 05 Aceptación (¡Pum! Esperanza, violeta; slot oculto 09-post-esperanza.png). Sin “Miedo”, “Posts en contra” ni “…”. Notas reescritas por etapa; cierran con que después se revela el punto “?” (cómo trabajo yo).
