@@ -2,7 +2,7 @@
 
 Fotos: recortadas para llenar (cover). Cambios en `charla.html` **y** `index.html` (son idénticos). Si un archivo de una tarjeta falta, la tarjeta se oculta (no hay placeholders vacíos en la slide 3).
 
-## Slide 3 · Estas semanas fueron una locura (26 imágenes, 4 bursts)
+## Slide 3 · Estas semanas fueron una locura (27 imágenes, 4 bursts)
 Solo fotos reales y distintas, sin repetir con otras slides; las de Franco van grandes y adelante (z-index alto). Excepciones pedidas: ColeJUY en vivo, flyer de Metropolis y la foto del diario. Las fotos nuevas se reducen a ≤1200 px (JPG q80).
 
 | Archivo | Origen | Burst |
@@ -12,7 +12,8 @@ Solo fotos reales y distintas, sin repetir con otras slides; las de Franco van g
 | `assets/fotos/locura/midudev.jpg` | Franco con midudev (recortada de historia de IG) — caption “midudev” | 1 |
 | `assets/fotos/locura/franco-amigo-speaker.jpg` | Franco con un amigo speaker de barba y gorra (foto de Franco; antes era el perfil de Quién soy) | 1 |
 | `assets/fotos/locura/selfie-grupo-sala.jpg` | Selfie grupal de Franco en una sala (remera blanca) | 1 |
-| `assets/fotos/locura/selfie-auditorio-2.jpg` | Selfie grupal en un auditorio (foto de Franco; reemplaza a la casi idéntica 02.jpg de jujuy.dev.ar, de menor calidad) | 2 |
+| `assets/fotos/locura/richard-hipp.jpg` | Cowork con Richard Hipp, creador de SQLite (él con laptop al fondo, adelante la laptop de Franco con Omarchy); recortada sin la mesa vacía de abajo — caption “Cowork con el creador de SQLite” | 1 |
+| `assets/fotos/locura/selfie-auditorio-2.jpg` | Selfie grupal en un auditorio (foto de Franco; reemplaza a la casi idéntica 02.jpg de jujuy.dev.ar, de menor calidad) — arriba a la derecha | 3 |
 | `assets/fotos/locura/colejuy-app.jpg` | ColeJUY en vivo (captura intencional) — caption “ColeJUY en vivo” | 2 |
 | `assets/fotos/locura/grokbot-salta.jpg` | Franco junto al banner “Welcome Grok Bot Salta” — caption “Grok Bot Salta” | 2 |
 | `assets/fotos/locura/metropolis.jpg` | Flyer de speakers de Metropolis Argentina & LATAM (excepción pedida) | 2 |
@@ -23,7 +24,7 @@ Solo fotos reales y distintas, sin repetir con otras slides; las de Franco van g
 | `assets/fotos/locura/04.jpg` | https://jujuy.dev.ar/assets/fotos/evento-pitch-llama.webp | 2 |
 | `assets/fotos/locura/03.jpg` | https://jujuy.dev.ar/assets/fotos/evento-hackaton-mural.webp | 2 |
 | `assets/fotos/locura/14.jpg` | https://jujuy.dev.ar/assets/eventos/meetup-01-grupo.webp | 2 |
-| `assets/fotos/locura/16.jpg` | https://jujuy.dev.ar/assets/eventos/cabildo-tech-conferencia-01.webp | 2 |
+| `assets/fotos/locura/16.jpg` | https://jujuy.dev.ar/assets/eventos/cabildo-tech-conferencia-01.webp | 4 |
 | `assets/fotos/locura/11.jpg` | https://jujuy.dev.ar/assets/eventos/cabildo-tech-grupo.webp | 3 |
 | `assets/fotos/locura/10.jpg` | https://jujuy.dev.ar/assets/fotos/evento-grupal-superteam.webp | 3 |
 | `assets/fotos/locura/17.jpg` | https://jujuy.dev.ar/assets/fotos/evento-charla-auditorio.webp | 3 |

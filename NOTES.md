@@ -107,3 +107,6 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Lead: “Hace 5 meses…” (sin “en el laburo”, también en las notas).
 - Timeline pasa a vertical a la izquierda (mismos 6 textos y pasos, “👈 yo” al lado del 6) y a la derecha una captura grande (614×345) que cambia en cada paso 1–6; el remate “…pero ninguno trabajaba como yo.” (paso 7) queda abajo, sin tapar nada.
 - Las 6 capturas son mockups genéricos (no había capturas reales que encajen): assets/capturas/06-*.png, fuente assets/capturas/src/06-mockups.html, render con tools/render_capturas.py. Detalle en assets/capturas/README.md.
+
+## UPDATE (2026-10-18, 21:25) — slide 3
+- Nueva foto en el burst 1: assets/fotos/locura/richard-hipp.jpg (cowork con Richard Hipp, creador de SQLite; adelante la laptop de Franco con Omarchy), tarjeta grande arriba a la derecha con caption “Cowork con el creador de SQLite”. selfie-auditorio-2 pasa al burst 3 (esquina superior derecha), coworking-llama a la franja de arriba y 16.jpg al burst 4. 27 tarjetas.
