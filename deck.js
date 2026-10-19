@@ -48,7 +48,7 @@
   const dots=$('.deck-dots',ui), hint=$('.deck-hint',ui), ov=$('.deck-overview',ui), thumbs=$('.deck-thumbs',ui);
   slides.forEach((sl,k)=>{ const t=document.createElement('button'); t.className='deck-thumb';
     t.innerHTML=`<b>${String(k+1).padStart(2,'0')}</b><span></span>`; $('span',t).textContent=sl.dataset.title||('Slide '+(k+1));
-    t.onclick=()=>{ toggleOverview(false); show(k,0); }; thumbs.appendChild(t); });
+    t.onclick=()=>{ toggleOverview(false); mode='jump'; show(k,0); }; thumbs.appendChild(t); });
   const notesBox=document.createElement('div'); notesBox.className='notes-panel'+(presenter?'':' hidden');
   notesBox.innerHTML='<div class="np-head"><span class="np-pos"></span><span class="np-timer"></span></div><div class="np-body"></div><div class="np-next"></div>';
   document.body.appendChild(notesBox);
@@ -63,8 +63,24 @@
   const stepsOn=()=>!portrait.matches;
   const ch=('BroadcastChannel' in window)?new BroadcastChannel('jd-deck'):null;
 
+  // transiciones entre slides: 'fwd'/'back' = deslizar+fade (450ms), 'jump' = fade corto (índice, URL, números)
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+  const wipe=document.createElement('div'); wipe.className='deck-wipe'; wipe.setAttribute('aria-hidden','true'); stage.appendChild(wipe);
+  let shown=-1, mode=null, tT=0;
+  function transition(from,to){
+    clearTimeout(tT);
+    slides.forEach(el=>el.classList.remove('t-in','t-out','t-fwd','t-back','t-jump'));
+    stage.classList.remove('t-fwd','t-back','t-jump'); wipe.classList.remove('go');
+    if(from<0||from===to||reduce.matches||false) return;
+    const m=mode||(Math.abs(to-from)===1?(to>from?'fwd':'back'):'jump');
+    void stage.offsetWidth; // reinicia animaciones si se navega rápido
+    slides[from].classList.add('t-out','t-'+m); slides[to].classList.add('t-in','t-'+m);
+    if(m!=='jump'){ stage.classList.add('t-'+m); wipe.classList.add('go'); }
+    tT=setTimeout(()=>{ slides.forEach(el=>el.classList.remove('t-in','t-out','t-fwd','t-back','t-jump')); stage.classList.remove('t-fwd','t-back','t-jump'); wipe.classList.remove('go'); },520);
+  }
   function render(silent){
     const eff=stepsOn()?st:maxStep[i];
+    if(shown!==i){ transition(shown,i); shown=i; } mode=null;
     slides.forEach((el,k)=>{ el.classList.toggle('active',k===i); el.setAttribute('aria-hidden',k!==i); });
     const cur=slides[i]; cur.dataset.cur=eff;
     $$('[data-step]',cur).forEach(e=>e.classList.toggle('on',(+e.dataset.step||0)<=eff));
@@ -86,7 +102,7 @@
     if(ch&&!silent) ch.postMessage({i,st});
   }
   function show(n,s,silent){ i=clamp(n,0,N-1); st=clamp(s,0,maxStep[i]); render(silent); }
-  if(ch) ch.onmessage=e=>show(e.data.i,e.data.st,true);
+  if(ch) ch.onmessage=e=>{ mode=Math.abs(e.data.i-i)===1?null:'jump'; show(e.data.i,e.data.st,true); };
   const next=()=>{ if(stepsOn()&&st<maxStep[i]) show(i,st+1); else if(i<N-1) show(i+1,0); };
   const prev=()=>{ if(stepsOn()&&st>0) show(i,st-1); else if(i>0) show(i-1,stepsOn()?maxStep[i-1]:0); };
   const nextSlide=()=>{ if(i<N-1) show(i+1,0); };
@@ -109,14 +125,14 @@
         if(e.key==='Enter'&&document.activeElement?.matches('button,a')) return;
         e.preventDefault(); if(!open) (e.shiftKey?nextSlide:next)(); break;
       case 'ArrowLeft': case 'ArrowUp': case 'PageUp': case 'Backspace': e.preventDefault(); if(!open) prev(); break;
-      case 'Home': show(0,0); break;
-      case 'End': show(N-1,maxStep[N-1]); break;
+      case 'Home': mode='jump'; show(0,0); break;
+      case 'End': mode='jump'; show(N-1,maxStep[N-1]); break;
       case 'o': case 'O': toggleOverview(); break;
       case 'f': case 'F': toggleFull(); break;
       case 'n': case 'N': if(!presenter) notesBox.classList.toggle('hidden'); break;
       case 'p': case 'P': { const q=new URLSearchParams(location.search); q.set('notes','1'); window.open(location.pathname+'?'+q+location.hash,'jd-presenter','width=1400,height=820'); break; }
       case 'Escape': if(open) toggleOverview(false); break;
-      default: if(/^[1-9]$/.test(e.key)) show(+e.key-1,0);
+      default: if(/^[1-9]$/.test(e.key)){ mode='jump'; show(+e.key-1,0); }
     }
     hideHint();
   });
@@ -133,7 +149,7 @@
   let wheelLock=0;
   vp.addEventListener('wheel',e=>{ if(portrait.matches) return; e.preventDefault(); const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;
     if(Math.abs(d)<12) return; const now=Date.now(); if(now<wheelLock) { wheelLock=now+250; return; } wheelLock=now+650; (d>0?next:prev)(); hideHint(); },{passive:false});
-  addEventListener('hashchange',()=>{ const [a,b]=fromURL(); if(a!==i||b!==st) show(a,b); });
+  addEventListener('hashchange',()=>{ const [a,b]=fromURL(); if(a!==i||b!==st){ mode='jump'; show(a,b); } });
   addEventListener('resize',fit); portrait.addEventListener?.('change',()=>{fit();render(true);});
   fit(); render(true);
 })();

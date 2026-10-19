@@ -134,3 +134,8 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 
 ## UPDATE (2026-10-19, 15:10) — slide 19 Cierre: QRs
 - Nuevo paso 4: dos tarjetas QR grandes (196 px, borde negro + sombra violeta) bajo “¡Gracias!”: “Sumate a la comunidad” (WhatsApp de jujuy.dev, link del botón “Unite a la comunidad” de jujuy.dev.ar) y “Seguime en Instagram” (@francoduran.23). La llama se achica a la esquina inferior derecha y el orbe se apaga al aparecer los QR. Ver assets/qr/README.md. Notas actualizadas.
+
+## UPDATE (2026-10-19, 17:50) — transiciones entre slides
+- deck.js + charla.css: al cambiar de slide, la saliente se desliza 90 px hacia el lado contrario al avance y se desvanece; la entrante entra desde 110 px del otro lado con fade (450 ms, cubic-bezier(.22,1,.36,1); hacia atrás, espejado). Saltos (índice O, URL/hash, teclas 1–9, Inicio/Fin, saltos sincronizados del presentador) = fade simple de 250 ms. Los pasos dentro de una slide no cambian.
+- Detalle jujuy.dev: barrido del gradiente del deck (magenta→violeta→azul, 6 px) sobre el borde superior en la dirección de avance; desaparece al terminar. No tapa contenido.
+- Solo transform/opacity (translate3d) → fluido en iPhone. prefers-reduced-motion: sin animación.

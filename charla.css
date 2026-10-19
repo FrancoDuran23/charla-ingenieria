@@ -58,3 +58,28 @@ body{background:#000;font-family:var(--font-sans);color:var(--ink)}
 .pop.mid{transform:translate(-50%,-50%) scale(.6)} .pop.mid.on{transform:translate(-50%,-50%) scale(1)}
 .slide.dark.active~.counter{color:var(--on-ink);text-shadow:0 0 6px #000;z-index:11}
 .counter{right:auto!important;left:50%;transform:translateX(-50%);top:34px;bottom:auto!important}
+
+/* ── transiciones entre slides (deck.js agrega .t-in/.t-out + .t-fwd/.t-back/.t-jump) ── */
+.slide.t-out{opacity:0;z-index:1}
+.slide.t-in{z-index:2}
+.slide.t-out.t-fwd{animation:jd-out-l .45s cubic-bezier(.22,1,.36,1) both}
+.slide.t-in.t-fwd{animation:jd-in-r .45s cubic-bezier(.22,1,.36,1) both}
+.slide.t-out.t-back{animation:jd-out-r .45s cubic-bezier(.22,1,.36,1) both}
+.slide.t-in.t-back{animation:jd-in-l .45s cubic-bezier(.22,1,.36,1) both}
+.slide.t-out.t-jump{animation:jd-fade-out .25s ease-out both}
+.slide.t-in.t-jump{animation:jd-fade-in .25s ease-out both}
+@keyframes jd-out-l{from{opacity:1;transform:translate3d(0,0,0)}to{opacity:0;transform:translate3d(-90px,0,0)}}
+@keyframes jd-out-r{from{opacity:1;transform:translate3d(0,0,0)}to{opacity:0;transform:translate3d(90px,0,0)}}
+@keyframes jd-in-r{from{opacity:0;transform:translate3d(110px,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes jd-in-l{from{opacity:0;transform:translate3d(-110px,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes jd-fade-out{from{opacity:1}to{opacity:0}}
+@keyframes jd-fade-in{from{opacity:0}to{opacity:1}}
+/* detalle jujuy.dev: barrido violeta→magenta sobre el borde superior (no tapa contenido) */
+.deck-wipe{position:absolute;left:0;top:0;width:100%;height:6px;z-index:12;pointer-events:none;background:var(--orb);opacity:0;transform:scaleX(0);transform-origin:0 50%}
+.stage.t-back .deck-wipe{transform-origin:100% 50%}
+.deck-wipe.go{animation:jd-wipe .5s cubic-bezier(.22,1,.36,1) both}
+@keyframes jd-wipe{0%{opacity:1;transform:scaleX(0)}60%{opacity:1;transform:scaleX(1)}100%{opacity:0;transform:scaleX(1)}}
+@media (prefers-reduced-motion: reduce){
+ .slide,.slide.t-in,.slide.t-out{animation:none!important;transition:none!important}
+ .deck-wipe{display:none}
+}
