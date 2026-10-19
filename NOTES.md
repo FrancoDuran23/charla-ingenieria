@@ -60,7 +60,7 @@ Storyboard now: 1 Portada · 2 Técnica/práctica/sentimental · 3 Quién soy ·
 Asset lists: assets/memes/README.md, assets/fotos/README.md, assets/logos/README.md.
 
 ## REORDER (2026-10-17, noche) — orden exacto del guion
-1 Portada (neutral: "Orquestación de agentes y modelos de IA" · Franco Durán · Facultad de Ingeniería · jujuy.dev) · 2 ¿Técnica, práctica, teórica o sentimental? (primera línea real: "Cuando estaba armando esta charla…") · 3 Quién soy (reveals: 26 años → Lic. en TI → consultor → founder jujuy.dev → ColeJUY → embajador/charlas + organizo/hosteo hackatones; logos Stellar, Superteam, CrecimientoAR) · 4 ColeJUY · 5 Estas semanas fueron una locura · 6 Plot twist · 7 ¿Quién programa hoy a mano? (acá aparece la pregunta por primera vez) · 8 Pantallas compartidas · 9 5 etapas (miedo → negación → posts en contra → … → esperanza) · 10 Hackatones · 11 Un modelo no es un agente · 12 ¿Qué es el harness? · 13 Orquestar es coordinar trabajo · 14 ¿Quién usa un IDE? Yo uso un ADE (+ vergüenza) · 15 Un agente, un espacio de trabajo · 16 Orca (cierre técnico: modelos + sticker "Gracias, Jev") · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea algo nuevo (24/7 → Grok Bot → Ben/SpaceX → pelea con el bondi) · 21 Delegar · 22 Cierre.
+1 Portada (neutral: "Orquestación de agentes y modelos de IA" · Franco Durán · Facultad de Ingeniería · jujuy.dev) · 2 ¿Técnica, práctica, teórica o sentimental? (primera línea real: "Cuando estaba armando esta charla…") · 3 Quién soy (reveals: 26 años → Lic. en TI → consultor → founder jujuy.dev → ColeJUY → embajador/charlas + organizo/hosteo hackatones; logos Stellar, Superteam, CrecimientoAR) · 4 ColeJUY · 5 Estas semanas fueron una locura · 6 Plot twist · 7 ¿Quién programa hoy a mano? (acá aparece la pregunta por primera vez) · 8 Pantallas compartidas · 9 5 etapas (miedo → negación → posts en contra → … → esperanza) · 10 Hackatones · 11 Un modelo no es un agente · 12 ¿Qué es el harness? · 13 Orquestar es coordinar trabajo · 14 ¿Quién usa un IDE? Yo uso un ADE (+ vergüenza) · 15 Un agente, un espacio de trabajo · 16 Orca (cierre técnico: modelos + sticker "Gracias, Jev") · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea algo nuevo (24/7 → Grok Bot → pelea con el bondi) · 21 Delegar · 22 Cierre.
 Removed: "Analista Programador Universitario", "y gané unas cuantas", "Hackatones ganadas/hosteadas". The CSS classes s11–s16 keep their old names (s11 = IDE slide, now 14th) — styling only, not position.
 
 ## UPDATE (2026-10-17, 23:50) — 20 slides
@@ -123,3 +123,11 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 
 ## UPDATE (2026-10-19, 14:40) — slide 7 con las 5 etapas clásicas
 - 01 Negación (“La IA no sirve, escribe código malo”) · 02 Ira (Posts en contra y gente que se quedó sin laburo; acá entran las 4 burbujas anónimas y el slot oculto 09-posts-en-contra.png) · 03 Negociación (“La uso solo para autocompletar, nada más”) · 04 Depresión (foto This is fine; las burbujas se desvanecen) · 05 Aceptación (¡Pum! Esperanza, violeta; slot oculto 09-post-esperanza.png). Sin “Miedo”, “Posts en contra” ni “…”. Notas reescritas por etapa; cierran con que después se revela el punto “?” (cómo trabajo yo).
+
+## UPDATE (2026-10-19, 14:50) — slide 17
+- Eliminada la línea PD a Ben/SpaceX (HTML, CSS `.ben` y notas). El meme de la pelea con el bondi (slot oculto) pasa al paso 4; quedan 4 pasos.
+- Tarjeta `.gb`: ícono oficial de Grok Bot al lado del nombre (`assets/logos/grokbot.png`, extraído del og:image oficial de x.ai/bot).
+
+## UPDATE (2026-10-19, 15:00) — slides 15 y 18
+- Slide 15 (FOMO): nuevo remate en el paso 2 (último), bloque punch negro con sombra violeta a la derecha: “Animate a instalar algo nuevo: no tiene que ser algo mejor.” Sumado a las notas.
+- Slide 18 (Delegar): caption “☕ Un café con amigos” → “🧉 Unos mates con amigos” (también label y notas).

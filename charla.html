@@ -3,7 +3,7 @@
 <meta name="description" content="Orquestación de agentes y modelos de IA — charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu.">
 <meta property="og:title" content="Orquestación de agentes y modelos de IA — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=27"><link rel="stylesheet" href="charla.css?v=27">
+<link rel="stylesheet" href="base.css?v=29"><link rel="stylesheet" href="charla.css?v=29">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -223,6 +223,7 @@
 .s18 .lesson .mono{color:var(--violet);margin-bottom:8px}
 .s18 .lesson p{font:700 28px/1.25 var(--font-sans)}
 .s18 .meme{right:56px;top:100px;width:540px;height:560px}
+.s18 .punch{position:absolute;right:56px;top:250px;width:560px;z-index:5;background:var(--ink);color:#fff;padding:30px 34px;font:400 60px/1.02 var(--font-condensed);text-transform:uppercase;box-shadow:12px 12px 0 var(--violet)}.s18 .punch.pop{transform:rotate(-2deg) scale(.7)}.s18 .punch.pop.on{transform:rotate(-2deg) scale(1)}.s18 .punch .hl{color:#b794ff}
 /* 19 comunidades (mapa) */
 .s19 .left{position:absolute;left:56px;top:110px;width:380px;z-index:3}
 .s19 .left h2{font-size:64px}
@@ -252,11 +253,9 @@
 .s20 .lock .body{transition:background .4s}
 .s20 h2{font-size:76px;margin-top:16px}
 .s20 .now{margin-top:22px;font-size:28px}
-.s20 .ben{position:absolute;left:56px;bottom:42px;width:520px;font:600 19px/1.35 var(--font-sans);color:var(--ink-muted)}
-.s20 .ben b{color:var(--ink)}
 .s20 .right{position:absolute;left:640px;right:56px;top:96px}
 .s20 .gb{background:var(--ink);color:#fff;border-radius:var(--radius-tile);padding:20px 24px;display:flex;justify-content:space-between;align-items:center}
-.s20 .gb b{font:400 50px/1 var(--font-condensed);text-transform:uppercase}
+.s20 .gb b{font:400 50px/1 var(--font-condensed);text-transform:uppercase;display:flex;align-items:center;gap:14px}.s20 .gb .gbi{width:46px;height:46px;flex:none;display:block}
 .s20 .gb span{font:600 19px/1.3 var(--font-sans);text-align:right;color:#d8d6ce}
 .s20 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .s20 .chips .tag{font-size:19px;font-weight:700}.s20 .chips .tag:not(.tag--violet){background:var(--paper-raised)}
@@ -536,7 +535,8 @@
  <div class="left lead">Vivía en una burbuja de Twitter: gente muy avanzada y <b>cosas nuevas cada semana</b>.</div>
  <div class="lesson step" data-step="1"><div class="mono">Aprendizaje</div><p>Comunicar y transmitir esto es súper importante.</p></div>
  <figure class="media meme" data-label="MEME: distracted boyfriend — yo / herramienta nueva / la de la semana pasada"><img src="assets/memes/15-fomo.jpg" alt=""><span class="tag tag--solid cap">Yo cada lunes con una herramienta nueva</span></figure>
- <aside class="notes"><p>(Opcional, para cerrar la historia de la vergüenza: al otro día el team leader cayó con Herd y me dijo “Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”)</p><p>Cada semana algo nuevo: bienvenido al FOMO. Vivía en una burbuja de Twitter con gente muy avanzada, y cada semana salía algo nuevo.</p><p>Aprendizaje: comunicar y transmitir esto es súper importante. Si no lo contás, te quedás solo en tu burbuja.</p></aside>
+ <div class="punch pop" data-step="2">Animate a instalar algo nuevo: <span class="hl">no tiene que ser algo mejor.</span></div>
+ <aside class="notes"><p>(Opcional, para cerrar la historia de la vergüenza: al otro día el team leader cayó con Herd y me dijo “Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”)</p><p>Cada semana algo nuevo: bienvenido al FOMO. Vivía en una burbuja de Twitter con gente muy avanzada, y cada semana salía algo nuevo.</p><p>Aprendizaje: comunicar y transmitir esto es súper importante. Si no lo contás, te quedás solo en tu burbuja.</p><p>Y el remate: animate a instalar algo nuevo. No tiene que ser algo mejor.</p></aside>
 </section>
 
 <!-- 16 COMUNIDADES -->
@@ -559,15 +559,14 @@
   <h2 class="display">Se desbloquea <span class="hl">algo nuevo</span></h2>
   <div class="lead now step" data-step="1">Agentes corriendo <b>24/7</b>.<br>Ya es el presente.</div>
  </div>
- <div class="ben step" data-step="4">PD: <b>Ben, si me estás viendo:</b> pronto espero ser ambassador de SpaceX 🚀</div>
  <div class="right">
-  <div class="gb step" data-step="2"><b>Grok Bot</b><span>~2 meses en el mercado<br>y ya es parte de mi rutina</span></div>
+  <div class="gb step" data-step="2"><b><img class="gbi" src="assets/logos/grokbot.png" alt="">Grok Bot</b><span>~2 meses en el mercado<br>y ya es parte de mi rutina</span></div>
   <div class="chips">
    <span class="tag pop" data-step="3">📅 Eventos de la comunidad</span><span class="tag pop" data-step="3">🤝 Conseguir contactos</span><span class="tag pop" data-step="3">🎤 Armar esta presentación</span><span class="tag pop" data-step="3">🥊 Pelearme con empresas</span><span class="tag tag--violet pop" data-step="3">💜 Conectar con gente hermosa</span>
   </div>
  </div>
- <figure class="media meme pop" data-step="5" data-label="MEME: pelea con el bondi"><img src="assets/memes/17-pelea-bondi.jpg" alt=""><span class="tag tag--solid cap">Yo vs. las empresas (con refuerzos)</span></figure>
- <aside class="notes"><p>Y acá se desbloquea algo nuevo: agentes corriendo 24/7. No es el futuro, ya es el presente.</p><p>[Grok Bot es... completar]</p><p>Grok Bot lleva unos 2 meses en el mercado y ya es parte de mi rutina. Me permitió hacer los eventos de la comunidad, conseguir contactos, armar esta presentación, pelearme con empresas y conectar con gente hermosa.</p><p>Ben, si me estás viendo: pronto espero ser ambassador de SpaceX. 😄</p><p>(Meme de la pelea con el bondi: yo vs. las empresas, con refuerzos.)</p></aside>
+ <figure class="media meme pop" data-step="4" data-label="MEME: pelea con el bondi"><img src="assets/memes/17-pelea-bondi.jpg" alt=""><span class="tag tag--solid cap">Yo vs. las empresas (con refuerzos)</span></figure>
+ <aside class="notes"><p>Y acá se desbloquea algo nuevo: agentes corriendo 24/7. No es el futuro, ya es el presente.</p><p>[Grok Bot es... completar]</p><p>Grok Bot lleva unos 2 meses en el mercado y ya es parte de mi rutina. Me permitió hacer los eventos de la comunidad, conseguir contactos, armar esta presentación, pelearme con empresas y conectar con gente hermosa.</p><p>(Meme de la pelea con el bondi: yo vs. las empresas, con refuerzos.)</p></aside>
 </section>
 
 <!-- 18 DELEGAR -->
@@ -575,12 +574,12 @@
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Delegar lo automático para <span class="hl">vivir lo real</span></h2></div>
  <div class="row">
-  <figure class="media sm p1 pop" data-step="1" data-label="FOTO: café con amigos"><img src="assets/fotos/18-cafe-amigos.jpg" alt="Mate y código con amigos de jujuy.dev"><span class="tag tag--solid cap">☕ Un café con amigos</span></figure>
+  <figure class="media sm p1 pop" data-step="1" data-label="FOTO: mates con amigos"><img src="assets/fotos/18-cafe-amigos.jpg" alt="Mate y código con amigos de jujuy.dev"><span class="tag tag--solid cap">🧉 Unos mates con amigos</span></figure>
   <figure class="media sm p2 pop" data-step="2" data-label="FOTO: mate con los abuelos"><img src="assets/fotos/18-mate-abuelos.jpg" alt=""><span class="tag tag--solid cap">🧉 Un mate con los abuelos</span></figure>
   <figure class="media sm p3 pop" data-step="3" data-label="FOTO: dando esta charla"><img src="assets/fotos/18-charla.jpg" alt="Charla de jujuy.dev"><span class="tag tag--solid cap">🎤 Explicar esto acá</span></figure>
   <figure class="media sm p4 pop" data-step="4" data-label="FOTO: estudiando / pizarrón"><img src="assets/fotos/18-estudiar.jpg" alt="Mentoría con laptop en jujuy.dev"><span class="tag tag--violet cap">📚 Estudiar el producto y el problema</span></figure>
  </div>
- <aside class="notes"><p>¿Para qué todo esto? Para delegar lo automático y vivir lo real.</p><p>Un café con amigos. Un mate con los abuelos. Venir a explicar esto acá. Y estudiar más el producto y el problema.</p></aside>
+ <aside class="notes"><p>¿Para qué todo esto? Para delegar lo automático y vivir lo real.</p><p>Unos mates con amigos. Un mate con los abuelos. Venir a explicar esto acá. Y estudiar más el producto y el problema.</p></aside>
 </section>
 
 <!-- 19 CIERRE -->
@@ -600,4 +599,4 @@
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=27"></script></body></html>
+<script src="deck.js?v=29"></script></body></html>

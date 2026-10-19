@@ -16,3 +16,5 @@ No hay slots vacíos: un logo cuyo archivo falta se oculta. Para sumar uno, agre
 
 ## assets/logos/comunidades/ (slide 19 · mapa)
 Descargados de la sección “Los que empujan” de https://jujuy.dev.ar: saltadev.webp, cuyoconnect.webp, crecimientoar.webp, superteam-argentina.svg, formosa-dev.webp, mardelplata-dev.webp, nerdearla.webp. Superteam Brasil no figura en el sitio → nodo con iniciales “ST”.
+
+- `grokbot.png` — ícono oficial de Grok Bot (círculo blanco con dos “ojos”, fondo transparente, 155×156). Extraído del og:image oficial de https://x.ai/bot (`https://x.ai/images/news/introducing-grok-bot-og-2.png`), sin redibujar: sólo recorte + canal alfa a partir del blanco. Usado en la tarjeta `.gb` de la slide 17.
