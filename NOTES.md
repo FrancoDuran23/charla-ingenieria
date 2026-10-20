@@ -151,3 +151,8 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 ## UPDATE (2026-10-20, 15:50) — slide 12 ¿Quién usa un IDE?: logos Orca + herdr
 - En el paso 1 (con “ADE: Orca”) aparece una fila de dos tarjetas blancas con borde (estilo logos de Quién soy) bajo el texto: Orca (borde violeta, onorca.dev) y herdr (herdr.dev). No tocan el slot del meme (columna derecha). Fuentes en assets/logos/README.md.
 - (15:55) Logos de Orca y herdr movidos a la mitad derecha (donde iba el meme 11): dos tarjetas grandes apiladas y centradas (ícono 168 px, nombre 76 px), Orca con sombra violeta. Siguen en el paso 1. El slot del meme 11 queda oculto siempre (`.s11 .meme{display:none!important}`) aunque aparezca el archivo, para no superponerse.
+
+## UPDATE (2026-10-20, 16:05) — nueva slide 12 “Orquestar es armar un DAG” (deck = 21)
+- Búsqueda previa: no había ni hubo contenido sobre DAG / grafo acíclico dirigido (grep en charla.html/NOTES y `git log -S` en todo el historial: sin resultados). La slide 11 “Orquestar es coordinar trabajo” ya está llena, así que va una slide nueva justo después.
+- Diagrama HTML/SVG con el estilo de la sub-sección agentes: paso 1 Planificar · paso 2 Backend y Frontend en paralelo (caja punteada violeta “en paralelo”) · paso 3 Tests → Deploy 🚀 · paso 4 flecha roja punteada de vuelta al principio tachada (“Prohibido volver al principio”). Leyenda abajo: Nodo / Flecha / Paralelo / Sin ciclos. Notas: explicación simple (sin datos ni citas).
+- Kickers de la sub-sección renumerados a /6 (DAG = 4/6, worktrees 5/6, Orca 6/6). Renumeración: ¿Quién usa un IDE? 13, Un agente un espacio 14, Para probar en casa 15, Orca 16, FOMO 17, Comunidades 18, Se desbloquea 19, Delegar 20, Cierre 21.

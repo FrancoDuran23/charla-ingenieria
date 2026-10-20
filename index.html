@@ -3,7 +3,7 @@
 <meta name="description" content="Orquestación de agentes y modelos de IA — charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu.">
 <meta property="og:title" content="Orquestación de agentes y modelos de IA — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=35"><link rel="stylesheet" href="charla.css?v=35">
+<link rel="stylesheet" href="base.css?v=36"><link rel="stylesheet" href="charla.css?v=36">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -282,6 +282,16 @@
 .s22 .orb{width:420px;height:420px;right:40px;top:230px}
 .s22 .llama{right:70px;bottom:0;height:470px}
 .s22 .gracias{position:absolute;right:56px;top:96px;font:400 64px/1 var(--font-condensed);text-transform:uppercase;z-index:5}
+.s25 .par{position:absolute;left:324px;top:262px;width:232px;height:256px;border:2px dashed var(--violet);border-radius:18px;z-index:1}
+.s25 .par span{position:absolute;left:50%;top:-15px;transform:translateX(-50%);white-space:nowrap;background:var(--violet);color:#fff;font:700 13px/1 var(--font-mono);letter-spacing:2px;text-transform:uppercase;padding:7px 10px;border-radius:6px}
+.s25 svg.wires .loop path{stroke:#d23}
+.s25 .nope{position:absolute;left:503px;top:500px;width:160px;display:flex;flex-direction:column;align-items:center;gap:4px;z-index:4;text-align:center}
+.s25 .nope b{width:52px;height:52px;border-radius:50%;background:#d23;color:#fff;display:grid;place-items:center;font:700 30px/1 var(--font-sans);box-shadow:0 0 0 5px var(--paper)}
+.s25 .nope span{font:700 13px/1.15 var(--font-mono);letter-spacing:1px;text-transform:uppercase;color:#d23;background:var(--paper);padding:2px 4px}
+.s25 .legend{position:absolute;left:56px;right:56px;top:582px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.s25 .lg{background:var(--paper-raised);border:1.5px solid var(--line-soft);border-radius:12px;box-shadow:var(--shadow-tile);padding:10px 14px;font:600 15px/1.25 var(--font-sans);color:var(--ink-muted)}
+.s25 .lg b{display:block;font:400 22px/1 var(--font-condensed);text-transform:uppercase;color:var(--ink);margin-bottom:4px}
+.s25 .lg:last-child b{color:#d23}
 .s24 .head h2{font-size:76px}.s24 .head .lead{margin-top:6px}
 .s24 .qrs{position:absolute;left:0;right:0;top:244px;display:flex;justify-content:center;gap:64px;z-index:3}
 .s24 .qr{width:330px;margin:0;background:#fff;border:2px solid var(--ink);padding:16px;box-shadow:12px 12px 0 var(--violet);transition-delay:var(--d,0s)}
@@ -463,7 +473,7 @@
 
 <!-- 09 MODELO ≠ AGENTE -->
 <section class="slide s12 ag" data-title="Un modelo no es un agente">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 1/5</div>
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 1/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Un modelo <span class="hl">no es</span> un agente</h2><div class="lead muted">Un modelo responde una vez. Un agente actúa, observa y vuelve a empezar.</div></div>
  <div class="colh step" data-step="1" style="left:96px;top:262px">Modelo</div>
  <div class="colh step" data-step="2" style="left:600px;top:262px">Agente</div>
@@ -487,7 +497,7 @@
 
 <!-- 10 HARNESS -->
 <section class="slide s13 ag" data-title="¿Qué es el harness?">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 2/5</div>
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 2/6</div>
  <div class="left"><div class="bar"></div>
   <div class="big">El modelo es <span class="hl">el cerebro</span>.</div>
   <div class="big step" data-step="6">El <span class="hl">harness</span> es el sistema que lo pone a trabajar.</div>
@@ -498,12 +508,37 @@
 
 <!-- 11 ORQUESTAR -->
 <section class="slide s14 ag" data-title="Orquestar es coordinar trabajo">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 3/5</div>
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 3/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Orquestar es <span class="hl">coordinar trabajo</span></h2></div>
  <div class="col no step" data-step="1"><div class="colh">No es:</div><svg viewBox="0 0 540 200"><line x1="380" y1="100" x2="339" y2="166" style="stroke:#55534e;stroke-width:1.5"/><line x1="380" y1="100" x2="246" y2="183" style="stroke:#55534e;stroke-width:1.5"/><line x1="380" y1="100" x2="171" y2="137" style="stroke:#55534e;stroke-width:1.5"/><line x1="380" y1="100" x2="171" y2="63" style="stroke:#55534e;stroke-width:1.5"/><line x1="380" y1="100" x2="246" y2="17" style="stroke:#55534e;stroke-width:1.5"/><line x1="380" y1="100" x2="339" y2="34" style="stroke:#55534e;stroke-width:1.5"/><line x1="339" y1="166" x2="246" y2="183" style="stroke:#55534e;stroke-width:1.5"/><line x1="339" y1="166" x2="171" y2="137" style="stroke:#55534e;stroke-width:1.5"/><line x1="339" y1="166" x2="171" y2="63" style="stroke:#55534e;stroke-width:1.5"/><line x1="339" y1="166" x2="246" y2="17" style="stroke:#55534e;stroke-width:1.5"/><line x1="339" y1="166" x2="339" y2="34" style="stroke:#55534e;stroke-width:1.5"/><line x1="246" y1="183" x2="171" y2="137" style="stroke:#55534e;stroke-width:1.5"/><line x1="246" y1="183" x2="171" y2="63" style="stroke:#55534e;stroke-width:1.5"/><line x1="246" y1="183" x2="246" y2="17" style="stroke:#55534e;stroke-width:1.5"/><line x1="246" y1="183" x2="339" y2="34" style="stroke:#55534e;stroke-width:1.5"/><line x1="171" y1="137" x2="171" y2="63" style="stroke:#55534e;stroke-width:1.5"/><line x1="171" y1="137" x2="246" y2="17" style="stroke:#55534e;stroke-width:1.5"/><line x1="171" y1="137" x2="339" y2="34" style="stroke:#55534e;stroke-width:1.5"/><line x1="171" y1="63" x2="246" y2="17" style="stroke:#55534e;stroke-width:1.5"/><line x1="171" y1="63" x2="339" y2="34" style="stroke:#55534e;stroke-width:1.5"/><line x1="246" y1="17" x2="339" y2="34" style="stroke:#55534e;stroke-width:1.5"/><circle cx="380" cy="100" r="9" fill="#0a0a0a"/><circle cx="339" cy="166" r="9" fill="#0a0a0a"/><circle cx="246" cy="183" r="9" fill="#0a0a0a"/><circle cx="171" cy="137" r="9" fill="#0a0a0a"/><circle cx="171" cy="63" r="9" fill="#0a0a0a"/><circle cx="246" cy="17" r="9" fill="#0a0a0a"/><circle cx="339" cy="34" r="9" fill="#0a0a0a"/></svg><p>“tener muchos agentes.”</p></div>
  <div class="col si step" data-step="2"><div class="colh" style="color:var(--violet)">Es:</div><svg viewBox="0 0 540 200"><line x1="70" y1="100" x2="400" y2="20" style="stroke:#7b37e5;stroke-width:2.5"/><circle cx="400" cy="20" r="10" fill="#fff" stroke="#0a0a0a" stroke-width="2.5"/><line x1="70" y1="100" x2="400" y2="73" style="stroke:#7b37e5;stroke-width:2.5"/><circle cx="400" cy="73" r="10" fill="#fff" stroke="#0a0a0a" stroke-width="2.5"/><line x1="70" y1="100" x2="400" y2="127" style="stroke:#7b37e5;stroke-width:2.5"/><circle cx="400" cy="127" r="10" fill="#fff" stroke="#0a0a0a" stroke-width="2.5"/><line x1="70" y1="100" x2="400" y2="180" style="stroke:#7b37e5;stroke-width:2.5"/><circle cx="400" cy="180" r="10" fill="#fff" stroke="#0a0a0a" stroke-width="2.5"/><circle cx="70" cy="100" r="16" fill="#0a0a0a"/><text x="424" y="26" font-family="Space Mono" font-weight="700" font-size="15" fill="#0a0a0a">UX/UI</text><text x="424" y="79" font-family="Space Mono" font-weight="700" font-size="15" fill="#0a0a0a">Backend</text><text x="424" y="133" font-family="Space Mono" font-weight="700" font-size="15" fill="#0a0a0a">Tests</text><text x="424" y="186" font-family="Space Mono" font-weight="700" font-size="15" fill="#0a0a0a">Review</text></svg><p>decidir <b>quién hace qué, cuándo y cómo se integra.</b></p></div>
  <div class="punch step" data-step="3"><span>Más agentes <b class="neq">=</b> más productividad</span></div>
  <aside class="notes"><p>¿Qué es orquestar? No es abrir diez terminales. No es lanzar diez modelos.</p><p>Orquestar es coordinar trabajo: quién hace qué, qué puede ir en paralelo, qué depende de qué, quién espera a quién, quién revisa, quién integra y qué hacemos cuando algo falla.</p><p>Ejemplo: quiero construir una landing → UX/UI, backend y tests en paralelo → review → merge.</p><p>Y ojo: más agentes no es más productividad. No hace falta orquestar todo.</p></aside>
+</section>
+
+<!-- 11b DAG -->
+<section class="slide s25 ag" data-title="Orquestar es armar un DAG">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 4/6</div>
+ <div class="head"><div class="bar"></div><h2 class="display">Orquestar es armar un <span class="hl">DAG</span></h2><div class="lead muted"><b>Grafo Acíclico Dirigido.</b> Suena a final de Discreta… pero son tareas con flechas.</div></div>
+ <svg class="wires" viewBox="0 0 1280 720" aria-hidden="true"><defs><marker id="dg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0a0a0a"/></marker><marker id="dgr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d23"/></marker></defs>
+  <g class="step" data-step="2"><path d="M246 395 C292 395 292 325 338 325" marker-end="url(#dg)"/><path d="M246 395 C292 395 292 465 338 465" marker-end="url(#dg)"/></g>
+  <g class="step" data-step="3"><path d="M540 325 C590 325 590 395 638 395" marker-end="url(#dg)"/><path d="M540 465 C590 465 590 395 638 395" marker-end="url(#dg)"/><path d="M820 395 L918 395" marker-end="url(#dg)"/></g>
+  <g class="step loop" data-step="4"><path class="dash" d="M1015 432 C1015 562 151 562 151 434" marker-end="url(#dgr)"/></g>
+ </svg>
+ <div class="nbox step" data-step="1" style="left:56px;top:360px;width:190px;height:70px"><div>Planificar</div></div>
+ <div class="par step" data-step="2"><span>⇉ en paralelo</span></div>
+ <div class="nbox step" data-step="2" style="left:340px;top:290px;width:200px;height:70px"><div>Backend</div></div>
+ <div class="nbox step" data-step="2" style="left:340px;top:430px;width:200px;height:70px"><div>Frontend</div></div>
+ <div class="nbox k step" data-step="3" style="left:640px;top:360px;width:180px;height:70px"><div>Tests</div></div>
+ <div class="nbox v step" data-step="3" style="left:920px;top:360px;width:190px;height:70px"><div>Deploy 🚀</div></div>
+ <div class="nope pop" data-step="4"><b>✗</b><span>Prohibido volver al principio</span></div>
+ <div class="legend">
+  <div class="lg step" data-step="1"><b>● Nodo</b>una tarea (o un agente que la hace)</div>
+  <div class="lg step" data-step="2"><b>→ Flecha</b>“esto necesita que termine aquello”</div>
+  <div class="lg step" data-step="2"><b>⇉ Paralelo</b>lo que no depende entre sí, corre a la vez</div>
+  <div class="lg step" data-step="4"><b>✗ Sin ciclos</b>nadie espera a alguien que lo espera a él</div>
+ </div>
+ <aside class="notes"><p>Y si lo quieren con nombre de examen: orquestar agentes es armar un DAG, un Grafo Acíclico Dirigido. Tranquilos, no hay que rendir nada.</p><p>Los nodos son tareas, o los agentes que las hacen. Las flechas son dependencias: “esto no arranca hasta que termine aquello”. Dirigido = las flechas van para un solo lado.</p><p>Ejemplo: primero planificamos. Backend y frontend no dependen uno del otro, así que corren en paralelo, cada agente en lo suyo. Cuando terminan los dos, tests. Y recién después, deploy.</p><p>Acíclico = sin ciclos: nunca volvés al principio por una flecha. Si A espera a B y B espera a A, nadie termina nunca (como el grupo de WhatsApp para organizar un asado).</p><p>Todo lo que no depende de nada más, se puede largar al mismo tiempo. Eso es orquestar.</p></aside>
 </section>
 
 <!-- 12 IDE vs ADE -->
@@ -518,7 +553,7 @@
 
 <!-- 13 WORKTREES -->
 <section class="slide s15 ag" data-title="Un agente, un espacio de trabajo">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 4/5</div>
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 5/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Un agente, <span class="hl">un espacio de trabajo</span></h2><div class="lead muted">git worktrees: el mismo repo, varios directorios de trabajo separados.</div></div>
  <div class="colh step" data-step="1" style="left:56px;top:250px">¿Y si trabajan sobre lo mismo?</div>
  <svg class="wires" viewBox="0 0 1280 720"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0a0a0a"/></marker><marker id="ahv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7b37e5"/></marker></defs>
@@ -546,7 +581,7 @@
 
 <!-- 14 ORCA -->
 <section class="slide s16 ag" data-title="Orca, explicado simple">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 5/5</div>
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 6/6</div>
  <div class="left"><div class="tags"><span class="tag tag--violet">ADE</span></div>
   <div class="orca">Orca</div>
   <div class="lead"><b>Agent Development Environment:</b> un entorno para trabajar con una flota de agentes.</div>
@@ -635,4 +670,4 @@
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=35"></script></body></html>
+<script src="deck.js?v=36"></script></body></html>
