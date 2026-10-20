@@ -3,7 +3,7 @@
 <meta name="description" content="Orquestación de agentes y modelos de IA — charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu.">
 <meta property="og:title" content="Orquestación de agentes y modelos de IA — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=31"><link rel="stylesheet" href="charla.css?v=31">
+<link rel="stylesheet" href="base.css?v=32"><link rel="stylesheet" href="charla.css?v=32">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -276,6 +276,13 @@
 .s22 .orb{width:420px;height:420px;right:40px;top:230px}
 .s22 .llama{right:70px;bottom:0;height:470px}
 .s22 .gracias{position:absolute;right:56px;top:96px;font:400 64px/1 var(--font-condensed);text-transform:uppercase;z-index:5}
+.s24 .head h2{font-size:76px}.s24 .head .lead{margin-top:6px}
+.s24 .qrs{position:absolute;left:0;right:0;top:244px;display:flex;justify-content:center;gap:64px;z-index:3}
+.s24 .qr{width:330px;margin:0;background:#fff;border:2px solid var(--ink);padding:16px;box-shadow:12px 12px 0 var(--violet);transition-delay:var(--d,0s)}
+.s24 .qr img{display:block;margin:0 auto;width:268px;height:268px;image-rendering:pixelated}
+.s24 .qr figcaption{margin-top:10px;text-align:center}
+.s24 .qr b{display:block;white-space:nowrap;font:400 29px/1.05 var(--font-condensed);text-transform:uppercase}
+.s24 .qr small{display:block;margin-top:6px;font:700 14px/1.2 var(--font-mono);color:var(--ink-muted)}
 .s22 .qrs{position:absolute;left:740px;top:224px;display:flex;gap:22px;z-index:6}
 .s22 .qr{width:222px;margin:0;background:#fff;border:2px solid var(--ink);padding:12px 12px 12px;box-shadow:8px 8px 0 var(--violet);transition-delay:var(--d,0s)}
 .s22 .qr img{display:block;width:196px;height:196px;image-rendering:pixelated}
@@ -520,6 +527,17 @@
  <aside class="notes"><p>El primer problema aparece cuando todos trabajan sobre el mismo checkout: un agente cambia una cosa, otro otra, el tercero hace un refactor… y de golpe: conflictos y poca idea de quién hizo qué.</p><p>La solución es aislamiento. Git tiene una herramienta que encaja perfecto: git worktrees. El mismo repo, varios directorios de trabajo separados. El agente A trabaja en A, el B en B, el C en C. No se pisan.</p><p>Patrón fan-out / fan-in: abrimos el trabajo en paralelo y después juntamos. Y review loop: no asumimos que la primera salida está bien; si falla, volvemos.</p></aside>
 </section>
 
+<!-- 13b LLEVATE ESTO (QRs) -->
+<section class="slide s24" data-title="Para probar en casa">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">Para probar <span class="hl">en casa</span></h2><div class="lead muted">Escaneá y llevátelo: dos cosas que uso todos los días.</div></div>
+ <div class="qrs">
+  <figure class="qr pop" data-step="1"><img src="assets/qr/skills-mattpocock.svg" alt="QR al repo de skills de Matt Pocock"><figcaption><b>Skills de Matt Pocock</b><small>github.com/mattpocock/skills</small></figcaption></figure>
+  <figure class="qr pop" data-step="1" style="--d:.15s"><img src="assets/qr/orca-download.svg" alt="QR a la página de descarga de Orca"><figcaption><b>Descargá Orca</b><small>onorca.dev/download</small></figcaption></figure>
+ </div>
+ <aside class="notes"><p>Antes de seguir: si quieren probar esto en casa, saquen el celu y escaneen.</p><p>A la izquierda, las skills de Matt Pocock: skills chiquitas y combinables para agentes de código, funcionan con cualquier modelo. A la derecha, la descarga de Orca, el entorno donde corro varios agentes en paralelo, cada uno en su worktree (es gratis y open source; ustedes ponen la suscripción del agente).</p><p>[Esperar unos segundos a que escaneen.]</p></aside>
+</section>
+
 <!-- 14 ORCA -->
 <section class="slide s16 ag" data-title="Orca, explicado simple">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 5/5</div>
@@ -612,4 +630,4 @@
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=31"></script></body></html>
+<script src="deck.js?v=32"></script></body></html>

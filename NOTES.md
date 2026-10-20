@@ -139,3 +139,7 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - deck.js + charla.css: al cambiar de slide, la saliente se desliza 90 px hacia el lado contrario al avance y se desvanece; la entrante entra desde 110 px del otro lado con fade (450 ms, cubic-bezier(.22,1,.36,1); hacia atrás, espejado). Saltos (índice O, URL/hash, teclas 1–9, Inicio/Fin, saltos sincronizados del presentador) = fade simple de 250 ms. Los pasos dentro de una slide no cambian.
 - Detalle jujuy.dev: barrido del gradiente del deck (magenta→violeta→azul, 6 px) sobre el borde superior en la dirección de avance; desaparece al terminar. No tapa contenido.
 - Solo transform/opacity (translate3d) → fluido en iPhone. prefers-reduced-motion: sin animación.
+
+## UPDATE (2026-10-19, 21:45) — nueva slide 14 “Para probar en casa” (deck = 20 slides)
+- Insertada después de “Un agente, un espacio de trabajo” (13) y antes de “Orca, explicado simple”. Dos QR grandes (paso 1, mismo estilo que el cierre): “Skills de Matt Pocock” → github.com/mattpocock/skills y “Descargá Orca” → onorca.dev/download (ver assets/qr/README.md). Notas: invitar a escanear.
+- Renumeración: todo lo que en este archivo figura como slide 14–19 ahora es 15–20 (Orca 15, … FOMO 16, Comunidades 17, Se desbloquea 18, Delegar 19, Cierre 20). Contador e índice se generan solos; no hay links internos #/N fijos en el deck.
