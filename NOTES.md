@@ -42,7 +42,6 @@ Image files expected (also in assets/memes/README.md and assets/fotos/README.md)
 | `assets/fotos/10-hackaton.jpg` | FOTO: Franco en una hackatón |
 | `assets/memes/11-verguenza.jpg` | MEME: vergüenza ajena / cara de mis compañeros |
 | `assets/memes/15-fomo.jpg` | MEME: distracted boyfriend — yo / herramienta nueva / la de la semana pasada |
-| `assets/memes/17-pelea-bondi.jpg` | MEME: pelea con el bondi |
 | `assets/fotos/18-cafe-amigos.jpg` | FOTO: café con amigos |
 | `assets/fotos/18-mate-abuelos.jpg` | FOTO: mate con los abuelos |
 | `assets/fotos/18-charla.jpg` | FOTO: dando esta charla |
@@ -60,7 +59,7 @@ Storyboard now: 1 Portada · 2 Técnica/práctica/sentimental · 3 Quién soy ·
 Asset lists: assets/memes/README.md, assets/fotos/README.md, assets/logos/README.md.
 
 ## REORDER (2026-10-17, noche) — orden exacto del guion
-1 Portada (neutral: "Orquestación de agentes y modelos de IA" · Franco Durán · Facultad de Ingeniería · jujuy.dev) · 2 ¿Técnica, práctica, teórica o sentimental? (primera línea real: "Cuando estaba armando esta charla…") · 3 Quién soy (reveals: 26 años → Lic. en TI → consultor → founder jujuy.dev → ColeJUY → embajador/charlas + organizo/hosteo hackatones; logos Stellar, Superteam, CrecimientoAR) · 4 ColeJUY · 5 Estas semanas fueron una locura · 6 Plot twist · 7 ¿Quién programa hoy a mano? (acá aparece la pregunta por primera vez) · 8 Pantallas compartidas · 9 5 etapas (miedo → negación → posts en contra → … → esperanza) · 10 Hackatones · 11 Un modelo no es un agente · 12 ¿Qué es el harness? · 13 Orquestar es coordinar trabajo · 14 ¿Quién usa un IDE? Yo uso un ADE (+ vergüenza) · 15 Un agente, un espacio de trabajo · 16 Orca (cierre técnico: modelos + sticker "Gracias, Jev") · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea algo nuevo (24/7 → Grok Bot → pelea con el bondi) · 21 Delegar · 22 Cierre.
+1 Portada (neutral: "Orquestación de agentes y modelos de IA" · Franco Durán · Facultad de Ingeniería · jujuy.dev) · 2 ¿Técnica, práctica, teórica o sentimental? (primera línea real: "Cuando estaba armando esta charla…") · 3 Quién soy (reveals: 26 años → Lic. en TI → consultor → founder jujuy.dev → ColeJUY → embajador/charlas + organizo/hosteo hackatones; logos Stellar, Superteam, CrecimientoAR) · 4 ColeJUY · 5 Estas semanas fueron una locura · 6 Plot twist · 7 ¿Quién programa hoy a mano? (acá aparece la pregunta por primera vez) · 8 Pantallas compartidas · 9 5 etapas (miedo → negación → posts en contra → … → esperanza) · 10 Hackatones · 11 Un modelo no es un agente · 12 ¿Qué es el harness? · 13 Orquestar es coordinar trabajo · 14 ¿Quién usa un IDE? Yo uso un ADE (+ vergüenza) · 15 Un agente, un espacio de trabajo · 16 Orca (cierre técnico: modelos + sticker "Gracias, Jev") · 17 Final feliz · 18 FOMO · 19 Comunidades · 20 Se desbloquea algo nuevo (24/7 → Grok Bot) · 21 Delegar · 22 Cierre.
 Removed: "Analista Programador Universitario", "y gané unas cuantas", "Hackatones ganadas/hosteadas". The CSS classes s11–s16 keep their old names (s11 = IDE slide, now 14th) — styling only, not position.
 
 ## UPDATE (2026-10-17, 23:50) — 20 slides
@@ -143,3 +142,8 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 ## UPDATE (2026-10-19, 21:45) — nueva slide 14 “Para probar en casa” (deck = 20 slides)
 - Insertada después de “Un agente, un espacio de trabajo” (13) y antes de “Orca, explicado simple”. Dos QR grandes (paso 1, mismo estilo que el cierre): “Skills de Matt Pocock” → github.com/mattpocock/skills y “Descargá Orca” → onorca.dev/download (ver assets/qr/README.md). Notas: invitar a escanear.
 - Renumeración: todo lo que en este archivo figura como slide 14–19 ahora es 15–20 (Orca 15, … FOMO 16, Comunidades 17, Se desbloquea 18, Delegar 19, Cierre 20). Contador e índice se generan solos; no hay links internos #/N fijos en el deck.
+
+## UPDATE (2026-10-20, 15:20) — +700, Quién soy sin ColeJUY, sin “pelearme con empresas”
+- jujuy.dev pasa de +600 a +700 en todo el deck (slide 2 “Founder de jujuy.dev · +700 entusiastas tech” y sus notas; Comunidades “Nace jujuy.dev · +700”).
+- Slide 2 Quién soy: fuera el ítem “Creador de ColeJUY”, el logo de ColeJUY en la fila Founder (queda solo jujuy.dev; rótulo “Founder”) y el párrafo de ColeJUY en las notas. Ítems 01–05, pasos 1–4 (Embajador + Hackatones + logos en el paso 4). La foto “ColeJUY en vivo” de la slide 3 sigue.
+- Slide 18 Se desbloquea: fuera el chip “🥊 Pelearme con empresas”, el slot del meme 17-pelea-bondi (“Yo vs. las empresas (con refuerzos)”, su CSS) y las menciones en notas. Quedan 3 pasos.
