@@ -150,3 +150,4 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 
 ## UPDATE (2026-10-20, 15:50) — slide 12 ¿Quién usa un IDE?: logos Orca + herdr
 - En el paso 1 (con “ADE: Orca”) aparece una fila de dos tarjetas blancas con borde (estilo logos de Quién soy) bajo el texto: Orca (borde violeta, onorca.dev) y herdr (herdr.dev). No tocan el slot del meme (columna derecha). Fuentes en assets/logos/README.md.
+- (15:55) Logos de Orca y herdr movidos a la mitad derecha (donde iba el meme 11): dos tarjetas grandes apiladas y centradas (ícono 168 px, nombre 76 px), Orca con sombra violeta. Siguen en el paso 1. El slot del meme 11 queda oculto siempre (`.s11 .meme{display:none!important}`) aunque aparezca el archivo, para no superponerse.
