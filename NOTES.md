@@ -157,3 +157,9 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Diagrama HTML/SVG con el estilo de la sub-sección agentes: paso 1 Planificar · paso 2 Backend y Frontend en paralelo (caja punteada violeta “en paralelo”) · paso 3 Tests → Deploy 🚀 · paso 4 flecha roja punteada de vuelta al principio tachada (“Prohibido volver al principio”). Leyenda abajo: Nodo / Flecha / Paralelo / Sin ciclos. Notas: explicación simple (sin datos ni citas).
 - Kickers de la sub-sección renumerados a /6 (DAG = 4/6, worktrees 5/6, Orca 6/6). Renumeración: ¿Quién usa un IDE? 13, Un agente un espacio 14, Para probar en casa 15, Orca 16, FOMO 17, Comunidades 18, Se desbloquea 19, Delegar 20, Cierre 21.
 - (2026-10-20, 16:10) Slide 17 FOMO: remate cambiado a “El que no prueba, / no se entera.” (mismo bloque punch, paso 2; notas actualizadas). El “Animate a instalar algo nuevo” del Cierre no se tocó.
+
+## UPDATE (2026-10-20, 16:20) — animaciones en loop
+- Slide 11 “Orquestar es coordinar trabajo” (paso 2+): escena SVG/CSS propia abajo a la izquierda: orquestador con chullo y mate revolea un látigo en el aire (“¡CHAS!”, no golpea a nadie); 4 robotitos con laptops tecleando se sobresaltan con cada chasquido (saltito + gota de sudor) y su barra de progreso pega un tirón. Loop 2,4 s. GIF/MP4 de muestra en /workspace/latigo-orquestador.{gif,mp4} (fuera del repo).
+- Slide 12 DAG (paso 3+): dos “tareas” (puntos violeta) salen de Planificar, van en paralelo por Backend y Frontend, se juntan en Tests y llegan a Deploy, que hace un “ping”.
+- Slide 14 worktrees: paso 1, tres puntos rojos chocan en el mismo Repo y “💥 conflictos” tiembla; paso 3, tres puntos violeta viajan en paralelo (a distinta velocidad) Repo → Worktree A/B/C → Review → Merge.
+- Solo transform/opacity/offset-distance; pausadas fuera de la slide activa; con prefers-reduced-motion no hay animación (los puntos se ocultan, la escena queda quieta).
