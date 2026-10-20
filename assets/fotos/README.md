@@ -50,7 +50,8 @@ Toda tarjeta `<figure class="media">` cuyo archivo falta se oculta sola (no se v
 | `assets/fotos/09-post-esperanza.png` | 7 · paso 5 | Captura del post que dio esperanza | ⏳ falta (oculta) |
 | `assets/fotos/10-hackaton.jpg` | 8 Hackatones | Franco pitcheando en HackCBA (antes en slide 3) | ✅ |
 | `assets/fotos/10-hackaton-sala.jpg` | 8 Hackatones (tarjeta chica) | Sala de HackCBA (antes en slide 3) | ✅ |
-| `assets/fotos/18-cafe-amigos.jpg` | 18 · ☕ café con amigos | jujuy.dev.ar evento-mate-y-codigo (antes locura/07) | ✅ |
+| `assets/fotos/18-mates-hackaton.jpg` | 20 · 🧉 unos mates con amigos | amigos en una mesa de hackatón con Takis, una Monster y stickers de jujuy.dev (adjunto de Franco 01M5DC7T2X18FCGW1P5V6Q1X3W) | ✅ |
+| `assets/fotos/18-cafe-amigos.jpg` | (sin uso desde 2026-10-20; reemplazada por 18-mates-hackaton.jpg) | jujuy.dev.ar evento-mate-y-codigo (antes locura/07) | — |
 | `assets/fotos/18-mate-abuelos.jpg` | 18 · 🧉 mate con los abuelos | — no hay foto real | ⏳ falta (oculta) |
 | `assets/fotos/18-franco-hablando.jpg` | 20 · 🎤 explicar esto acá | Franco hablando frente a la gente, remera blanca West Coast Indigo (adjunto de Franco 01M5DBNZE9MYY32NEQASTFRC3V; misma foto que era locura/franco-charla.jpg, que se sacó de la 3) | ✅ |
 | `assets/fotos/18-estudiar-laptop.jpg` | 20 · 📚 estudiar productos y el problema | Franco con tres chicos atrás de una laptop con stickers (adjunto de Franco 01M5DBQ9GXRTRD1XBM0QS9Q2EV) | ✅ |
