@@ -8,7 +8,7 @@ Solo fotos reales y distintas, sin repetir con otras slides; las de Franco van g
 | Archivo | Origen | Burst |
 |---|---|---|
 | `assets/fotos/locura/diario-cabildo-tech.jpg` | Foto de un diario de Jujuy (nota “Cabildo Tech reunió a la comunidad tecnológica jujeña”), recortada a la nota — caption “Salimos en el diario” | 1 |
-| `assets/fotos/locura/franco-charla.jpg` | Franco hablando, remera blanca West Coast Indigo (foto de Franco) — tarjeta grande central | 1 |
+| `assets/fotos/locura/charla-superteam.jpg` | Franco dando una charla frente al banner Superteam ARG (antes 18-charla.jpg; volvió a la 3 en el lugar de franco-charla, que pasó a Delegar) | ✅ |
 | `assets/fotos/locura/midudev.jpg` | Franco con midudev (recortada de historia de IG) — caption “midudev” | 1 |
 | `assets/fotos/locura/franco-amigo-speaker.jpg` | Franco con un amigo speaker de barba y gorra (foto de Franco; antes era el perfil de Quién soy) | 1 |
 | `assets/fotos/locura/selfie-grupo-sala.jpg` | Selfie grupal de Franco en una sala (remera blanca) | 1 |
@@ -52,8 +52,9 @@ Toda tarjeta `<figure class="media">` cuyo archivo falta se oculta sola (no se v
 | `assets/fotos/10-hackaton-sala.jpg` | 8 Hackatones (tarjeta chica) | Sala de HackCBA (antes en slide 3) | ✅ |
 | `assets/fotos/18-cafe-amigos.jpg` | 18 · ☕ café con amigos | jujuy.dev.ar evento-mate-y-codigo (antes locura/07) | ✅ |
 | `assets/fotos/18-mate-abuelos.jpg` | 18 · 🧉 mate con los abuelos | — no hay foto real | ⏳ falta (oculta) |
-| `assets/fotos/18-charla.jpg` | 18 · 🎤 explicar esto acá | jujuy.dev.ar evento-charla-superteam (antes locura/06) | ✅ |
-| `assets/fotos/18-estudiar.jpg` | 18 · 📚 estudiar | jujuy.dev.ar evento-mentoria-laptop (antes locura/08) | ✅ |
+| `assets/fotos/18-franco-hablando.jpg` | 20 · 🎤 explicar esto acá | Franco hablando frente a la gente, remera blanca West Coast Indigo (adjunto de Franco 01M5DBNZE9MYY32NEQASTFRC3V; misma foto que era locura/franco-charla.jpg, que se sacó de la 3) | ✅ |
+| `assets/fotos/18-estudiar-laptop.jpg` | 20 · 📚 estudiar productos y el problema | Franco con tres chicos atrás de una laptop con stickers (adjunto de Franco 01M5DBQ9GXRTRD1XBM0QS9Q2EV) | ✅ |
+| `assets/fotos/18-estudiar.jpg` | (sin uso desde 2026-10-20; reemplazada por 18-estudiar-laptop.jpg) | jujuy.dev.ar evento-mentoria-laptop | — |
 
 Memes que faltan (ocultos): `assets/memes/11-verguenza.jpg` (slide 12), `assets/memes/15-fomo.jpg` (slide 15), `assets/memes/17-pelea-bondi.jpg` (slide 17).
 
