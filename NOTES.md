@@ -147,3 +147,6 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - jujuy.dev pasa de +600 a +700 en todo el deck (slide 2 “Founder de jujuy.dev · +700 entusiastas tech” y sus notas; Comunidades “Nace jujuy.dev · +700”).
 - Slide 2 Quién soy: fuera el ítem “Creador de ColeJUY”, el logo de ColeJUY en la fila Founder (queda solo jujuy.dev; rótulo “Founder”) y el párrafo de ColeJUY en las notas. Ítems 01–05, pasos 1–4 (Embajador + Hackatones + logos en el paso 4). La foto “ColeJUY en vivo” de la slide 3 sigue.
 - Slide 18 Se desbloquea: fuera el chip “🥊 Pelearme con empresas”, el slot del meme 17-pelea-bondi (“Yo vs. las empresas (con refuerzos)”, su CSS) y las menciones en notas. Quedan 3 pasos.
+
+## UPDATE (2026-10-20, 15:50) — slide 12 ¿Quién usa un IDE?: logos Orca + herdr
+- En el paso 1 (con “ADE: Orca”) aparece una fila de dos tarjetas blancas con borde (estilo logos de Quién soy) bajo el texto: Orca (borde violeta, onorca.dev) y herdr (herdr.dev). No tocan el slot del meme (columna derecha). Fuentes en assets/logos/README.md.
