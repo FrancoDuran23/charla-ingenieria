@@ -3,7 +3,7 @@
 <meta name="description" content="Orquestación de agentes y modelos de IA — charla de Franco Durán (jujuy.dev) en la Facultad de Ingeniería de la UNJu.">
 <meta property="og:title" content="Orquestación de agentes y modelos de IA — Franco Durán · jujuy.dev">
 <link rel="icon" href="assets/jujuydev-isotipo.png">
-<link rel="stylesheet" href="base.css?v=38"><link rel="stylesheet" href="charla.css?v=38">
+<link rel="stylesheet" href="base.css?v=39"><link rel="stylesheet" href="charla.css?v=39">
 <style>
 /* 01 */
 .s01 .copy{position:absolute;left:56px;top:118px;width:760px;z-index:3}
@@ -282,16 +282,19 @@
 .s22 .orb{width:420px;height:420px;right:40px;top:230px}
 .s22 .llama{right:70px;bottom:0;height:470px}
 .s22 .gracias{position:absolute;right:56px;top:96px;font:400 64px/1 var(--font-condensed);text-transform:uppercase;z-index:5}
-.s25 .par{position:absolute;left:324px;top:262px;width:232px;height:256px;border:2px dashed var(--violet);border-radius:18px;z-index:1}
+.s25 .par{position:absolute;left:284px;top:262px;width:212px;height:256px;border:2px dashed var(--violet);border-radius:18px;z-index:1}
 .s25 .par span{position:absolute;left:50%;top:-15px;transform:translateX(-50%);white-space:nowrap;background:var(--violet);color:#fff;font:700 13px/1 var(--font-mono);letter-spacing:2px;text-transform:uppercase;padding:7px 10px;border-radius:6px}
-.s25 svg.wires .loop path{stroke:#d23}
-.s25 .nope{position:absolute;left:503px;top:500px;width:160px;display:flex;flex-direction:column;align-items:center;gap:4px;z-index:4;text-align:center}
-.s25 .nope b{width:52px;height:52px;border-radius:50%;background:#d23;color:#fff;display:grid;place-items:center;font:700 30px/1 var(--font-sans);box-shadow:0 0 0 5px var(--paper)}
-.s25 .nope span{font:700 13px/1.15 var(--font-mono);letter-spacing:1px;text-transform:uppercase;color:#d23;background:var(--paper);padding:2px 4px}
 .s25 .legend{position:absolute;left:56px;right:56px;top:582px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .s25 .lg{background:var(--paper-raised);border:1.5px solid var(--line-soft);border-radius:12px;box-shadow:var(--shadow-tile);padding:10px 14px;font:600 15px/1.25 var(--font-sans);color:var(--ink-muted)}
 .s25 .lg b{display:block;font:400 22px/1 var(--font-condensed);text-transform:uppercase;color:var(--ink);margin-bottom:4px}
-.s25 .lg:last-child b{color:#d23}
+.s25 .lg:last-child b{color:var(--violet)}
+.s25 .fix{position:absolute;left:840px;top:262px;width:80px;text-align:center;white-space:nowrap;font:700 14px/1 var(--font-mono);letter-spacing:1px;text-transform:uppercase;color:var(--violet);z-index:3}
+.s25 .fix b{display:inline-block;font-size:18px}
+.s25 .rv{border-color:var(--violet)}
+.s25 .msg{position:absolute;left:0;right:0;top:524px;text-align:center;font:600 24px/1.2 var(--font-sans)}.s25 .msg b{color:var(--violet)}
+.flow.mini{width:12px;height:12px}
+.s25 .spin{animation:jd-spin 1.3s linear infinite}
+@keyframes jd-spin{to{transform:rotate(360deg)}}
 /* ── animaciones en loop (solo en la slide activa; sin animación con prefers-reduced-motion) ── */
 .s14 .whip{position:absolute;left:40px;top:522px;width:540px;height:187px;overflow:visible;z-index:3}
 .whip .arm{transform-box:view-box;transform-origin:74px 90px;animation:jd-arm 2.4s cubic-bezier(.5,0,.3,1) infinite}
@@ -314,8 +317,8 @@
 @keyframes jd-ping{0%,84%{transform:scale(1)}90%{transform:scale(1.1)}97%,100%{transform:scale(1)}}
 .s15 .boom.shake{animation:jd-shake 1.8s ease-in-out infinite;transform-origin:30% 60%}
 @keyframes jd-shake{0%,82%{transform:none}86%{transform:translateX(-5px) rotate(-3deg) scale(1.08)}90%{transform:translateX(5px) rotate(3deg) scale(1.08)}94%{transform:translateX(-3px) rotate(-1deg)}100%{transform:none}}
-.slide:not(.active) .whip *,.slide:not(.active) .flow,.slide:not(.active) .ping,.slide:not(.active) .shake{animation-play-state:paused}
-@media (prefers-reduced-motion: reduce){.whip *,.ping,.shake{animation:none!important}.whip .chas{opacity:1}.flow{display:none}}
+.slide:not(.active) .whip *,.slide:not(.active) .flow,.slide:not(.active) .ping,.slide:not(.active) .shake,.slide:not(.active) .spin{animation-play-state:paused}
+@media (prefers-reduced-motion: reduce){.whip *,.ping,.shake,.spin{animation:none!important}.whip .chas{opacity:1}.flow{display:none}}
 .s24 .head h2{font-size:76px}.s24 .head .lead{margin-top:6px}
 .s24 .qrs{position:absolute;left:0;right:0;top:244px;display:flex;justify-content:center;gap:64px;z-index:3}
 .s24 .qr{width:330px;margin:0;background:#fff;border:2px solid var(--ink);padding:16px;box-shadow:12px 12px 0 var(--violet);transition-delay:var(--d,0s)}
@@ -558,26 +561,29 @@
 <section class="slide s25 ag" data-title="Orquestar es armar un DAG">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 4/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Orquestar es armar un <span class="hl">DAG</span></h2><div class="lead muted"><b>Grafo Acíclico Dirigido.</b> Suena a final de Discreta… pero son tareas con flechas.</div></div>
- <svg class="wires" viewBox="0 0 1280 720" aria-hidden="true"><defs><marker id="dg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0a0a0a"/></marker><marker id="dgr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d23"/></marker></defs>
-  <g class="step" data-step="2"><path d="M246 395 C292 395 292 325 338 325" marker-end="url(#dg)"/><path d="M246 395 C292 395 292 465 338 465" marker-end="url(#dg)"/></g>
-  <g class="step" data-step="3"><path d="M540 325 C590 325 590 395 638 395" marker-end="url(#dg)"/><path d="M540 465 C590 465 590 395 638 395" marker-end="url(#dg)"/><path d="M820 395 L918 395" marker-end="url(#dg)"/></g>
-  <g class="step loop" data-step="4"><path class="dash" d="M1015 432 C1015 562 151 562 151 434" marker-end="url(#dgr)"/></g>
+ <svg class="wires" viewBox="0 0 1280 720" aria-hidden="true"><defs><marker id="dg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0a0a0a"/></marker><marker id="dgv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7b37e5"/></marker></defs>
+  <g class="step" data-step="2"><path d="M226 395 C263 395 263 325 298 325" marker-end="url(#dg)"/><path d="M226 395 C263 395 263 465 298 465" marker-end="url(#dg)"/></g>
+  <g class="step" data-step="3"><path d="M480 325 C520 325 520 395 558 395" marker-end="url(#dg)"/><path d="M480 465 C520 465 520 395 558 395" marker-end="url(#dg)"/><path d="M710 395 L778 395" marker-end="url(#dg)"/><path d="M970 395 L1038 395" marker-end="url(#dg)"/></g>
+  <g class="step" data-step="4"><path class="vio" d="M925 361 C925 296 835 296 835 359" marker-end="url(#dgv)"/></g>
  </svg>
- <div class="step" data-step="3" style="position:absolute;inset:0;z-index:1;pointer-events:none"><i class="flow" style="offset-path:path('M151 395 L246 395 C292 395 292 325 338 325 L540 325 C590 325 590 395 638 395 L1015 395');--t:3.2s"></i><i class="flow" style="offset-path:path('M151 395 L246 395 C292 395 292 465 338 465 L540 465 C590 465 590 395 638 395 L1015 395');--t:3.2s"></i></div>
- <div class="nbox step" data-step="1" style="left:56px;top:360px;width:190px;height:70px"><div>Planificar</div></div>
+ <div class="step" data-step="3" style="position:absolute;inset:0;z-index:1;pointer-events:none"><i class="flow" style="offset-path:path('M141 395 L226 395 C263 395 263 325 298 325 L480 325 C520 325 520 395 558 395 L1125 395');--t:3.4s"></i><i class="flow" style="offset-path:path('M141 395 L226 395 C263 395 263 465 298 465 L480 465 C520 465 520 395 558 395 L1125 395');--t:3.4s"></i></div>
+ <div class="step" data-step="4" style="position:absolute;inset:0;z-index:3;pointer-events:none"><i class="flow mini" style="offset-path:path('M925 361 C925 296 835 296 835 359');--t:1.3s"></i></div>
+ <div class="nbox step" data-step="1" style="left:56px;top:360px;width:170px;height:70px"><div>Planificar</div></div>
  <div class="par step" data-step="2"><span>⇉ en paralelo</span></div>
- <div class="nbox step" data-step="2" style="left:340px;top:290px;width:200px;height:70px"><div>Backend</div></div>
- <div class="nbox step" data-step="2" style="left:340px;top:430px;width:200px;height:70px"><div>Frontend</div></div>
- <div class="nbox k step" data-step="3" style="left:640px;top:360px;width:180px;height:70px"><div>Tests</div></div>
- <div class="nbox v step ping" data-step="3" style="left:920px;top:360px;width:190px;height:70px"><div>Deploy 🚀</div></div>
- <div class="nope pop" data-step="4"><b>✗</b><span>Prohibido volver al principio</span></div>
+ <div class="nbox step" data-step="2" style="left:300px;top:290px;width:180px;height:70px"><div>Backend</div></div>
+ <div class="nbox step" data-step="2" style="left:300px;top:430px;width:180px;height:70px"><div>Frontend</div></div>
+ <div class="nbox k step" data-step="3" style="left:560px;top:360px;width:150px;height:70px"><div>Tests</div></div>
+ <div class="nbox step rv" data-step="3" style="left:780px;top:360px;width:190px;height:70px"><div>Code review</div></div>
+ <div class="nbox v step ping" data-step="3" style="left:1040px;top:360px;width:170px;height:70px"><div>Deploy 🚀</div></div>
+ <div class="fix step" data-step="4"><b class="spin">↻</b> arreglar</div>
+ <div class="msg step" data-step="4">Cada tarea puede <b>iterar adentro</b>; el plan <b>no vuelve atrás</b>.</div>
  <div class="legend">
   <div class="lg step" data-step="1"><b>● Nodo</b>una tarea (o un agente que la hace)</div>
   <div class="lg step" data-step="2"><b>→ Flecha</b>“esto necesita que termine aquello”</div>
   <div class="lg step" data-step="2"><b>⇉ Paralelo</b>lo que no depende entre sí, corre a la vez</div>
-  <div class="lg step" data-step="4"><b>✗ Sin ciclos</b>nadie espera a alguien que lo espera a él</div>
+  <div class="lg step" data-step="4"><b>↻ Sin ciclos entre tareas</b>los loops viven adentro de cada nodo</div>
  </div>
- <aside class="notes"><p>Y si lo quieren con nombre de examen: orquestar agentes es armar un DAG, un Grafo Acíclico Dirigido. Tranquilos, no hay que rendir nada.</p><p>Los nodos son tareas, o los agentes que las hacen. Las flechas son dependencias: “esto no arranca hasta que termine aquello”. Dirigido = las flechas van para un solo lado.</p><p>Ejemplo: primero planificamos. Backend y frontend no dependen uno del otro, así que corren en paralelo, cada agente en lo suyo. Cuando terminan los dos, tests. Y recién después, deploy.</p><p>Acíclico = sin ciclos: nunca volvés al principio por una flecha. Si A espera a B y B espera a A, nadie termina nunca (como el grupo de WhatsApp para organizar un asado).</p><p>Todo lo que no depende de nada más, se puede largar al mismo tiempo. Eso es orquestar.</p></aside>
+ <aside class="notes"><p>Y si lo quieren con nombre de examen: orquestar agentes es armar un DAG, un Grafo Acíclico Dirigido. Tranquilos, no hay que rendir nada.</p><p>Los nodos son tareas, o los agentes que las hacen. Las flechas son dependencias: “esto no arranca hasta que termine aquello”. Dirigido = las flechas van para un solo lado.</p><p>Ejemplo: primero planificamos. Backend y frontend no dependen uno del otro, así que corren en paralelo, cada agente en lo suyo. Cuando terminan los dos, tests, después code review y recién después, deploy.</p><p>“¿Pero el code review no es un ciclo? Reviso, arreglo, reviso de nuevo…” Sí: ese loop vive adentro del nodo. La tarea “code review” itera las veces que haga falta, pero hacia afuera es una caja que termina y le pasa la posta a deploy. Lo que no pasa es que deploy vuelva a planificar: entre tareas no hay ciclos.</p><p>Todo lo que no depende de nada más, se puede largar al mismo tiempo. Eso es orquestar.</p></aside>
 </section>
 
 <!-- 12 IDE vs ADE -->
@@ -711,4 +717,4 @@
 
  <div class="counter"></div><div class="progress"><i></i></div>
 </div>
-<script src="deck.js?v=38"></script></body></html>
+<script src="deck.js?v=39"></script></body></html>

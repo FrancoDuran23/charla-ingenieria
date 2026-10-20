@@ -163,3 +163,7 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Slide 12 DAG (paso 3+): dos “tareas” (puntos violeta) salen de Planificar, van en paralelo por Backend y Frontend, se juntan en Tests y llegan a Deploy, que hace un “ping”.
 - Slide 14 worktrees: paso 1, tres puntos rojos chocan en el mismo Repo y “💥 conflictos” tiembla; paso 3, tres puntos violeta viajan en paralelo (a distinta velocidad) Repo → Worktree A/B/C → Review → Merge.
 - Solo transform/opacity/offset-distance; pausadas fuera de la slide activa; con prefers-reduced-motion no hay animación (los puntos se ocultan, la escena queda quieta).
+
+## UPDATE (2026-10-20, 16:30) — DAG coherente con el code review
+- Slide 12: Planificar → Backend ∥ Frontend → Tests → **Code review** → Deploy. Code review tiene un loop chiquito sobre sí mismo (“↻ arreglar”, paso 4) con un puntito que da vueltas y el ↻ girando (sin animación con reduced-motion). Fuera la flecha roja tachada “Prohibido volver al principio”; en su lugar: “Cada tarea puede iterar adentro; el plan no vuelve atrás.” Leyenda: “↻ Sin ciclos entre tareas: los loops viven adentro de cada nodo”. Notas: el loop de review vive adentro del nodo; entre tareas no hay ciclos. Los puntitos del flujo pasan por Code review.
+- Slide 14 (worktrees) ya es coherente: su “si falla, volvemos” es el mismo loop review ↔ worktree dentro de una tarea; no se tocó.
