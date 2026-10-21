@@ -178,3 +178,4 @@ Orden final (19): 1 Portada · 2 Quién soy · 3 Locura · 4 Plot twist · 5 ¿Q
 - Las animaciones decorativas ya no se apagan con “Reducir movimiento” (Mac de Franco); solo las transiciones entre slides lo respetan.
 - Puntitos más grandes (24 px, borde blanco 3 px, halo) y por encima de las cajas (z-index 5–6).
 - Nuevos: slide 9 “Un modelo no es un agente” (paso 2): un puntito recorre el loop Percibe → Decide → Actúa → Observa. Slide 11 “Orquestar” (paso 2): puntitos salen del orquestador hacia UX/UI, Backend, Tests y Review (además del látigo).
+- (2026-10-21, 12:05) Slide 1 Portada: dos QR abajo a la izquierda (tarjetas horizontales QR 118 px + etiqueta, estilo cierre): “Seguí la charla” → charla online y “IG de jujuy.dev” → instagram.com/jujuy.dev. Título a 90 px y bloque subido para hacerles lugar; “Deslizá →” movido a la derecha de los QR.

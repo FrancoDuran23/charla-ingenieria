@@ -6,3 +6,7 @@ Generados localmente con `segno` (SVG, ECC M, tinta #111 sobre blanco). Verifica
 ## Slide 14 “Para probar en casa” (paso 1)
 - `skills-mattpocock.svg` → https://github.com/mattpocock/skills — repo oficial de skills para agentes de Matt Pocock (“Skills for Real Engineers. Straight from my .agents directory.”), verificado vía GitHub API y web.
 - `orca-download.svg` → https://www.onorca.dev/download — página oficial de descarga de Orca (Stably AI, “The agent development environment”, agentes en git worktrees). Fuente: README de github.com/stablyai/orca (“Download from onOrca.dev”); orca.dev redirige a onOrca.dev.
+
+## Slide 1 Portada
+- `charla.svg` → https://francoduran23.github.io/charla-ingenieria/ — la charla online (GitHub Pages del repo).
+- `ig-jujuydev.svg` → https://www.instagram.com/jujuy.dev/ — Instagram oficial de la comunidad (@jujuy.dev): es el link “Seguir @jujuy.dev” de https://jujuy.dev.ar (sección redes + footer, 4 links) y lo confirma la nota de El Tribuno de Jujuy (“redes sociales oficiales de la comunidad en @jujuy.dev”). curl al perfil: 200 (redirige al login de Instagram, no 404).
