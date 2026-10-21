@@ -34,6 +34,7 @@ html.deck-on,html.deck-on body{position:fixed;inset:0;width:100%;height:100%;ove
 .deck-hint{position:fixed;right:178px;bottom:18px;margin:0;font-size:11px;letter-spacing:1px;color:#55534e;z-index:200;transition:opacity .6s;background:rgba(251,251,247,.85);padding:4px 8px;border-radius:6px}
 .deck-hint kbd{font:inherit;border:1px solid #0a0a0a55;border-radius:4px;padding:0 4px;margin:0 1px;color:#0a0a0a}
 .deck-hint.gone{opacity:0;pointer-events:none}
+@media (hover:none),(pointer:coarse){.deck-hint{display:none}}
 .deck-overview{position:fixed;inset:0;z-index:300;background:rgba(10,10,10,.96);color:#fbfbf7;padding:32px 40px;overflow:auto;display:none}
 .deck-overview.open{display:block}
 .deck-overview header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px}
