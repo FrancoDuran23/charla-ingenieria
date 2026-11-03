@@ -20,3 +20,4 @@
 - Sacó slide «¿Quién programa hoy a mano?» / «hace casi 1 año».
 - Sacó slides 16–18: Comunidades, Se desbloquea algo nuevo, Delegar lo automático.
 - Sacó slide Plot twist (era la 3).
+- Entre duelo y hackatones: slide revelación del “?” → Orquestación de agentes (mismo layout pantallas).
