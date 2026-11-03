@@ -21,3 +21,4 @@
 - Sacó slides 16–18: Comunidades, Se desbloquea algo nuevo, Delegar lo automático.
 - Sacó slide Plot twist (era la 3).
 - Entre duelo y hackatones: slide revelación del “?” → Orquestación de agentes (mismo layout pantallas).
+- Slide Orquestación de agentes: GIF director de orquesta + caption “Yo orquestando agentes”.
