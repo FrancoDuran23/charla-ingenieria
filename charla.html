@@ -345,6 +345,25 @@
 .s22 .llama,.s22 .orb{transition:transform .5s ease,opacity .4s ease;transform-origin:100% 100%}
 .s22:has(.qr.on) .llama{transform:scale(.42)}
 .s22:has(.qr.on) .orb{opacity:0}
+.s03 .lg.sx{width:360px!important;height:128px!important;border:2px solid var(--violet)}.s03 .lg.sx img{padding:8px 14px!important}
+/* bloque producto */
+.pr .kicker{}
+.pr .cols{position:absolute;left:56px;right:56px;top:250px;display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;z-index:3}
+.pr ol,.pr ul{list-style:none;margin:0;padding:0}
+.pr .it{display:flex;gap:14px;align-items:baseline;font:600 25px/1.3 var(--font-sans);padding:10px 0;border-top:1.5px solid var(--line-soft)}
+.pr .it i{font:700 15px/1 var(--font-mono);color:var(--violet);font-style:normal;min-width:30px}
+.pr .it small{font:500 15px/1 var(--font-mono);color:var(--ink-muted);margin-left:auto;white-space:nowrap;padding-left:12px}
+.pr.s32 .display{font-size:clamp(28px,3.2vw,42px);line-height:1.05}
+.pr.s32 .head{max-width:92%}
+.pr .foot{position:absolute;left:56px;bottom:40px;font:500 14px/1 var(--font-mono);letter-spacing:2px;color:var(--ink-muted);text-transform:uppercase}
+.pr .punch2{position:absolute;left:56px;right:56px;bottom:84px;font:600 28px/1.3 var(--font-sans)}
+.pr .foda{position:absolute;left:56px;width:760px;top:240px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pr .q{border:1.5px solid var(--ink);padding:14px 18px;font:600 20px/1.3 var(--font-sans);min-height:120px}
+.pr .q b{display:block;font:400 34px/1 var(--font-condensed);text-transform:uppercase;margin-bottom:6px}
+.pr .q.v{border-color:var(--violet)}.pr .q.v b{color:var(--violet)}
+.pr .err{position:absolute;left:860px;right:56px;top:240px}
+.pr .err .it{font-size:21px}
+.pr .quote{position:absolute;left:96px;right:96px;top:250px;font:400 64px/1.1 var(--font-condensed);text-transform:uppercase}
 </style></head><body>
 <div class="stage">
 
@@ -378,57 +397,23 @@
   <div class="bar"></div><h2 class="display">Franco <span class="hl">Durán</span></h2>
   <div class="tags age"><span class="tag tag--solid">26 años</span><span class="tag">Jujuy, Argentina</span></div>
   <ul>
-   <li class="step" data-step="1"><i>01</i><span>Lic. en <b>Tecnologías de la Información</b></span></li>
-   <li class="step" data-step="2"><i>02</i><span>Consultor en <b>automatización de procesos e IA</b></span></li>
-   <li class="step" data-step="3"><i>03</i><span>Founder de <b>jujuy.dev</b> · +700 entusiastas tech</span></li>
-   <li class="step" data-step="4"><i>04</i><span>Embajador de redes blockchain · charlas</span></li>
-   <li class="step" data-step="4"><i>05</i><span>Organizo y hosteo <b>hackatones web2 y web3</b></span></li>
+   <li class="step" data-step="1"><i>01</i><span><b>Builder Ambassador</b> · SpaceX AI Community</span></li>
+   <li class="step" data-step="2"><i>02</i><span>Lic. en <b>Tecnologías de la Información</b></span></li>
+   <li class="step" data-step="2"><i>03</i><span>Consultor en <b>automatización de procesos e IA</b></span></li>
+   <li class="step" data-step="3"><i>04</i><span>Founder de <b>jujuy.dev</b> · +700 entusiastas tech</span></li>
+   <li class="step" data-step="4"><i>05</i><span>Embajador de redes blockchain · charlas</span></li>
+   <li class="step" data-step="4"><i>06</i><span>Organizo y hosteo <b>hackatones web2 y web3</b></span></li>
   </ul>
  </div>
  <div class="wall">
-  <div class="grp step" data-step="3"><div class="mono v">Founder</div><div class="row"><div class="lg jdlogo"><img src="assets/jujuydev-logo.webp" alt="jujuy.dev"></div></div></div>
+  <div class="grp step" data-step="1"><div class="mono v">Builder Ambassador</div><div class="row"><div class="lg sx"><img src="assets/logos/spacexai-wordmark.svg" alt="SpaceX AI"></div></div></div>
+  <div class="grp step" data-step="3"><div class="mono">Founder</div><div class="row"><div class="lg jdlogo"><img src="assets/jujuydev-logo.webp" alt="jujuy.dev"></div></div></div>
   <div class="grp step" data-step="4"><div class="mono">Embajador · charlas · hackatones</div><div class="row"><div class="lg wide"><img src="assets/logos/stellar.png" alt="Stellar"></div><div class="lg wide"><img src="assets/logos/comunidades/superteam-argentina.svg" alt="Superteam"></div><div class="lg"><img src="assets/logos/comunidades/crecimientoar.webp" alt="CrecimientoAR"></div><div class="lg wide"><img src="assets/logos/celo.svg" alt="Celo"></div><div class="lg rip"><img src="assets/logos/ripio.svg" alt="Ripio"></div></div></div>
  </div>
- <aside class="notes"><p>Soy Franco Durán, tengo 26 años. Licenciado en Tecnologías de la Información, acá en la UNJu.</p><p>Hoy soy consultor en automatización de procesos e IA en varias empresas.</p><p>Soy founder de jujuy.dev, una comunidad de +700 entusiastas tecnológicos donde conectamos y aprendemos.</p><p>Soy embajador de redes blockchain, doy charlas, organizo y hosteo hackatones web2 y web3. [Logos: Stellar, Superteam, CrecimientoAR, Celo y Ripio.]</p></aside>
+ <aside class="notes"><p>Soy Franco Durán, tengo 26 años. Hoy soy Builder Ambassador de la SpaceX AI Community.</p><p>También soy embajador de redes blockchain: Stellar, Superteam, CrecimientoAR, Celo y Ripio; doy charlas y organizo y hosteo hackatones web2 y web3.</p><p>Licenciado en Tecnologías de la Información, acá en la UNJu, y consultor en automatización de procesos e IA en varias empresas.</p><p>Y soy founder de jujuy.dev, una comunidad de +700 entusiastas tecnológicos donde conectamos y aprendemos.</p></aside>
 </section>
 
-<!-- 03 LOCURA -->
-<section class="slide s05" data-title="Estas semanas fueron una locura">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
- <div class="titletag"><h2 class="display">Estas semanas fueron <span class="hl">una locura</span></h2></div>
- <div class="boom">
-  <figure class="pol fr" data-step="1" style="left:10px;top:212px;width:340px;height:250px;--r:-2deg;--fx:460px;--fy:23px;--d:0s;z-index:62"><figure class="media"><img src="assets/fotos/locura/diario-cabildo-tech.jpg" alt="Nota del diario: “Cabildo Tech reunió a la comunidad tecnológica jujeña”"></figure><figcaption>Salimos en el diario</figcaption></figure>
-  <figure class="pol fr" data-step="1" style="left:322px;top:196px;width:360px;height:285px;--r:2deg;--fx:138px;--fy:22px;--d:0.05s;z-index:61"><figure class="media"><img src="assets/fotos/locura/charla-superteam.jpg" style="object-position:50% 35%" alt="Franco dando una charla frente al banner de Superteam ARG"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="1" style="left:660px;top:168px;width:215px;height:315px;--r:-3deg;--fx:-128px;--fy:34px;--d:0.1s;z-index:63"><figure class="media"><img src="assets/fotos/locura/midudev.jpg" alt="Franco con midudev"></figure><figcaption>midudev</figcaption></figure>
-  <figure class="pol fr" data-step="1" style="left:325px;top:436px;width:220px;height:300px;--r:-4deg;--fx:205px;--fy:-226px;--d:0.12s;z-index:71"><figure class="media"><img src="assets/fotos/locura/franco-amigo-speaker.jpg" style="object-position:50% 20%" alt="Franco con un amigo speaker"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="1" style="left:712px;top:468px;width:300px;height:240px;--r:-2deg;--fx:-222px;--fy:-228px;--d:0.08s;z-index:72"><figure class="media"><img src="assets/fotos/locura/selfie-grupo-sala.jpg" style="object-position:50% 40%" alt="Franco en una selfie grupal en una sala"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="1" style="left:832px;top:168px;width:280px;height:252px;--r:2deg;--fx:-332px;--fy:66px;--d:0.15s;z-index:65"><figure class="media"><img src="assets/fotos/locura/richard-hipp.jpg" style="object-position:50% 0%" alt="Cowork con Richard Hipp, el creador de SQLite: él con su laptop al fondo y adelante la laptop de Franco"></figure><figcaption style="font-size:13.5px;letter-spacing:-.2px">Cowork con el creador de SQLite</figcaption></figure>
-  <figure class="pol fr" data-step="3" style="left:985px;top:8px;width:300px;height:190px;--r:4deg;--fx:-495px;--fy:257px;--d:0.05s;z-index:50"><figure class="media"><img src="assets/fotos/locura/selfie-auditorio-2.jpg" style="object-position:50% 75%" alt="Selfie grupal en un auditorio"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="2" style="left:1112px;top:160px;width:168px;height:272px;--r:6deg;--fx:-556px;--fy:64px;--d:0.05s;z-index:67"><figure class="media"><img src="assets/fotos/locura/colejuy-app.jpg" alt="ColeJUY en vivo: mapa de la línea 45"></figure><figcaption>ColeJUY en vivo</figcaption></figure>
-  <figure class="pol fr" data-step="2" style="left:975px;top:440px;width:212px;height:245px;--r:3deg;--fx:-441px;--fy:-202px;--d:0.1s;z-index:73"><figure class="media"><img src="assets/fotos/locura/grokbot-salta.jpg" style="object-position:50% 30%" alt="Franco junto al banner “Welcome Grok Bot Salta”"></figure><figcaption>Grok Bot Salta</figcaption></figure>
-  <figure class="pol fr" data-step="2" style="left:16px;top:492px;width:318px;height:190px;--r:2deg;--fx:465px;--fy:-227px;--d:0.04s;z-index:65"><figure class="media"><img src="assets/fotos/locura/metropolis.jpg" alt="Flyer de speakers de Metropolis Argentina &amp; LATAM"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="2" style="left:535px;top:468px;width:190px;height:250px;--r:3deg;--fx:10px;--fy:-233px;--d:0.15s;z-index:70"><figure class="media"><img src="assets/fotos/locura/perro-robot.jpg" alt="Perro robot Cygnus en un evento"></figure><figcaption></figcaption></figure>
-  <figure class="pol" data-step="2" style="left:453px;top:290px;width:254px;height:220px;--r:1.2deg;--fx:60px;--fy:-40px;--d:0.1s;z-index:10"><figure class="media"><img src="assets/fotos/locura/04.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="2" style="left:640px;top:300px;width:286px;height:221px;--r:3.1deg;--fx:-143px;--fy:-50px;--d:0.12s;z-index:10"><figure class="media"><img src="assets/fotos/locura/03.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="2" style="left:239px;top:303px;width:286px;height:244px;--r:-10.8deg;--fx:258px;--fy:-65px;--d:0.14s;z-index:13"><figure class="media"><img src="assets/fotos/locura/14.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:474px;top:40px;width:252px;height:190px;--r:-5deg;--fx:40px;--fy:225px;--d:0.2s;z-index:28"><figure class="media"><img src="assets/fotos/locura/16.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol fr" data-step="3" style="left:455px;top:-12px;width:260px;height:190px;--r:-3deg;--fx:55px;--fy:277px;--d:0s;z-index:45"><figure class="media"><img src="assets/fotos/locura/coworking-llama.jpg" alt="Coworking de jujuy.dev con la llama en pantalla"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="3" style="left:-20px;top:30px;width:260px;height:190px;--r:-6deg;--fx:530px;--fy:235px;--d:0.05s;z-index:44"><figure class="media"><img src="assets/fotos/locura/coworking-noche-2.jpg" alt="Coworking de noche con laptops"></figure><figcaption></figcaption></figure>
-  <figure class="pol fr" data-step="3" style="left:700px;top:10px;width:250px;height:200px;--r:5deg;--fx:-185px;--fy:250px;--d:0.1s;z-index:41"><figure class="media"><img src="assets/fotos/locura/grupo-carpa.jpg" style="object-position:50% 45%" alt="Grupo con credenciales en una carpa"></figure><figcaption></figcaption></figure>
-  <figure class="pol" data-step="3" style="left:220px;top:20px;width:260px;height:200px;--r:-3deg;--fx:290px;--fy:240px;--d:0.15s;z-index:43"><figure class="media"><img src="assets/fotos/locura/11.jpg" style="object-position:50% 40%" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:690px;top:498px;width:262px;height:226px;--r:3.3deg;--fx:-181px;--fy:-251px;--d:0.2s;z-index:25"><figure class="media"><img src="assets/fotos/locura/10.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:252px;top:74px;width:256px;height:221px;--r:1.5deg;--fx:260px;--fy:176px;--d:0.25s;z-index:23"><figure class="media"><img src="assets/fotos/locura/17.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:900px;top:322px;width:281px;height:240px;--r:-1.7deg;--fx:-400px;--fy:-82px;--d:0.1s;z-index:25"><figure class="media"><img src="assets/fotos/locura/12.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="3" style="left:895px;top:105px;width:283px;height:192px;--r:5.5deg;--fx:-396px;--fy:159px;--d:0.2s;z-index:24"><figure class="media"><img src="assets/fotos/locura/09.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:1029px;top:315px;width:271px;height:232px;--r:-1.9deg;--fx:-524px;--fy:-71px;--d:0s;z-index:31"><figure class="media"><img src="assets/fotos/locura/01.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:899px;top:499px;width:285px;height:243px;--r:-3.8deg;--fx:-402px;--fy:-260px;--d:0.05s;z-index:35"><figure class="media"><img src="assets/fotos/locura/18.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:1045px;top:100px;width:255px;height:220px;--r:4.7deg;--fx:-532px;--fy:150px;--d:0.15s;z-index:31"><figure class="media"><img src="assets/fotos/locura/05.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
-  <figure class="pol" data-step="4" style="left:655px;top:92px;width:270px;height:236px;--r:-4.6deg;--fx:-150px;--fy:150px;--d:0.2s;z-index:30"><figure class="media"><img src="assets/fotos/locura/13.jpg" alt=""></figure><figcaption>jujuy.dev</figcaption></figure>
- </div>
- <aside class="notes"><p>Estas últimas semanas fueron una locura. (Ir apretando → y que exploten las fotos.)</p><p>Hice cowork con Richard Hipp, el creador de SQLite. Conocí a midudev. Compartí con amigos que son líderes tech: Artu Grande, Erasmo Hernández, Carli Code.</p><p>Más laburo de automatización, reuniones, coworking con amigos, hackatones, eventos y hackatones en simultáneo, redes…</p></aside>
-</section>
-
-<!-- 04 PLOT TWIST -->
+<!-- 03 PLOT TWIST -->
 <section class="slide s06" data-title="Plot twist">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="kick tags"><span class="tag tag--solid">Plot twist</span></div>
@@ -445,7 +430,7 @@
  <aside class="notes"><p>Plot twist: todo esto fue gracias a orquestar agentes. Aunque no me crean, jaja.</p><p>Los eventos de la comunidad fueron automatizados por agentes: la publicación, la conversión, los sponsors, el venue… ¡hasta el catering!</p></aside>
 </section>
 
-<!-- 05 HACE CASI 1 AÑO -->
+<!-- 04 HACE CASI 1 AÑO -->
 <section class="slide s07" data-title="Hace casi 1 año que no programo a mano">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="q"><div class="bar"></div><h2 class="display">¿Quién programa<br>hoy <span class="hl">a mano</span>?</h2></div>
@@ -454,7 +439,7 @@
  <aside class="notes"><p>Y acá una pregunta, manos arriba: ¿quién programa hoy a mano? …</p><p>Yo hace casi un año que no programo a mano.</p></aside>
 </section>
 
-<!-- 06 PANTALLAS COMPARTIDAS -->
+<!-- 05 PANTALLAS COMPARTIDAS -->
 <section class="slide s08" data-title="Las pantallas compartidas">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Las pantallas <span class="hl">compartidas</span></h2><div class="lead muted">Hace 5 meses…</div></div>
@@ -473,7 +458,7 @@
  <aside class="notes"><p>Hace 5 meses, mis compañeros compartían pantalla.</p><p>Uno le preguntaba a la IA y copiaba y pegaba. Otro usaba un CLI. Otros, prompts larguísimos. Algunos ya usaban skills o AGENTS.md…</p><p>¿Y el 5? Lo vemos después de las etapas del duelo.</p></aside>
 </section>
 
-<!-- 07 5 ETAPAS DEL DUELO -->
+<!-- 06 5 ETAPAS DEL DUELO -->
 <section class="slide s09" data-title="Las 5 etapas del duelo con la IA">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Las 5 etapas del duelo <span class="hl">con la IA</span></h2></div>
@@ -494,7 +479,7 @@
  <aside class="notes"><p>Las 5 etapas del duelo con la IA. Mis compañeros, varios de +40, vivieron esto: la IA estaba mal vista. Yo esto lo viví 5 meses antes que ellos.</p><p>1. Negación: “la IA no sirve, escribe código malo”.</p><p>2. Ira: posts en contra todo el tiempo, y gente contando que se quedó sin laburo por la IA (aparecen las burbujas).</p><p>3. Negociación: “bueno, la uso… pero solo para autocompletar, nada más”.</p><p>4. Depresión: this is fine (aparece la foto; todo se prende fuego y uno sigue con la laptop).</p><p>5. Aceptación: y de golpe, pum: un post que daba esperanza. [Contar el post — el de “cielo” / Martín.]</p><p>Y después de esto les cuento el punto “?”: cómo trabajo yo.</p></aside>
 </section>
 
-<!-- 08 PUERTA DE ENTRADA -->
+<!-- 07 PUERTA DE ENTRADA -->
 <section class="slide s10" data-title="La puerta de entrada: hackatones">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">La puerta de entrada: <span class="hl">hackatones</span></h2></div>
@@ -512,7 +497,7 @@
  <aside class="notes"><p>La puerta de entrada fueron las hackatones. Programar con IA, y seguir a la gente que ganaba hackatones, levantaba rondas y armaba su empresa en San Francisco… desde Argentina, desde LATAM, desde cualquier país.</p><p>Ahí me perfeccioné y me metí en la ingeniería de agentes de IA.</p></aside>
 </section>
 
-<!-- 09 MODELO ≠ AGENTE -->
+<!-- 08 MODELO ≠ AGENTE -->
 <section class="slide s12 ag" data-title="Un modelo no es un agente">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 1/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Un modelo <span class="hl">no es</span> un agente</h2><div class="lead muted">Un modelo responde una vez. Un agente actúa, observa y vuelve a empezar.</div></div>
@@ -537,7 +522,7 @@
  <aside class="notes"><p>Vuelvo a la evolución de cómo se programa: para entender cómo trabajo, hablemos de agentes, harness y orquestación.</p><p>Primera distinción, la más importante: un modelo no es un agente.</p><p>Un modelo recibe un prompt y produce una respuesta. Y listo.</p><p>Un agente agrega un loop: tiene un objetivo, lee el contexto, usa herramientas, ejecuta acciones, observa qué pasó… y con eso decide qué hacer después.</p><p>Modelo = motor de inferencia. Agente = motor + herramientas + contexto + loop de acción.</p></aside>
 </section>
 
-<!-- 10 HARNESS -->
+<!-- 09 HARNESS -->
 <section class="slide s13 ag" data-title="¿Qué es el harness?">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 2/6</div>
  <div class="left"><div class="bar"></div>
@@ -548,7 +533,7 @@
  <aside class="notes"><p>Ahora una palabra que van a escuchar cada vez más: harness.</p><p>El modelo hace la inferencia: es el cerebro. El harness construye el entorno donde esa inferencia se convierte en trabajo: qué herramientas puede usar, qué contexto recibe, qué permisos tiene, cómo continúa el loop, qué estado mantiene, qué pasa cuando falla.</p></aside>
 </section>
 
-<!-- 11 ORQUESTAR -->
+<!-- 10 ORQUESTAR -->
 <section class="slide s14 ag" data-title="Orquestar es coordinar trabajo">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 3/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Orquestar es <span class="hl">coordinar trabajo</span></h2></div>
@@ -573,7 +558,7 @@
  <aside class="notes"><p>¿Qué es orquestar? No es abrir diez terminales. No es lanzar diez modelos.</p><p>Orquestar es coordinar trabajo: quién hace qué, qué puede ir en paralelo, qué depende de qué, quién espera a quién, quién revisa, quién integra y qué hacemos cuando algo falla.</p><p>Ejemplo: quiero construir una landing → UX/UI, backend y tests en paralelo → review → merge.</p><p>Y ojo: más agentes no es más productividad. No hace falta orquestar todo.</p></aside>
 </section>
 
-<!-- 11b DAG -->
+<!-- 10b DAG -->
 <section class="slide s25 ag" data-title="Orquestar es armar un DAG">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 4/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Orquestar es armar un <span class="hl">DAG</span></h2><div class="lead muted"><b>Grafo Acíclico Dirigido.</b> Suena a final de Discreta… pero son tareas con flechas.</div></div>
@@ -603,7 +588,7 @@
  <aside class="notes"><p>Y si lo quieren con nombre de examen: orquestar agentes es armar un DAG, un Grafo Acíclico Dirigido. Tranquilos, no hay que rendir nada.</p><p>Los nodos son tareas, o los agentes que las hacen. Las flechas son dependencias: “esto no arranca hasta que termine aquello”. Dirigido = las flechas van para un solo lado.</p><p>Ejemplo: primero planificamos. Backend y frontend no dependen uno del otro, así que corren en paralelo, cada agente en lo suyo. Cuando terminan los dos, tests, después code review y recién después, deploy.</p><p>“¿Pero el code review no es un ciclo?” Sí: en la práctica el review puede encontrar que el backend o el frontend están mal, y ahí el orquestador vuelve a repartir: reorquesta. Eso sí es un ciclo. Por eso lo pensamos en rondas: cada ronda es un DAG (planificar, paralelo, tests, review, deploy) y, si el review encuentra algo mal, el orquestador arma una ronda nueva solo con lo que hay que rehacer, por ejemplo el backend.</p><p>Todo lo que no depende de nada más, se puede largar al mismo tiempo. Eso es orquestar.</p></aside>
 </section>
 
-<!-- 12 IDE vs ADE -->
+<!-- 11 IDE vs ADE -->
 <section class="slide s11" data-title="¿Quién usa un IDE?">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="q"><div class="bar"></div><h2 class="display">¿Quién de ustedes<br>usa un <span class="hl">IDE</span>?</h2></div>
@@ -613,7 +598,7 @@
  <aside class="notes"><p>Ahora sí: ¿quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca. (Lo explico técnicamente en dos slides.)</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p></aside>
 </section>
 
-<!-- 13 WORKTREES -->
+<!-- 12 WORKTREES -->
 <section class="slide s15 ag" data-title="Un agente, un espacio de trabajo">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 5/6</div>
  <div class="head"><div class="bar"></div><h2 class="display">Un agente, <span class="hl">un espacio de trabajo</span></h2><div class="lead muted">git worktrees: el mismo repo, varios directorios de trabajo separados.</div></div>
@@ -632,7 +617,7 @@
  <aside class="notes"><p>El primer problema aparece cuando todos trabajan sobre el mismo checkout: un agente cambia una cosa, otro otra, el tercero hace un refactor… y de golpe: conflictos y poca idea de quién hizo qué.</p><p>La solución es aislamiento. Git tiene una herramienta que encaja perfecto: git worktrees. El mismo repo, varios directorios de trabajo separados. El agente A trabaja en A, el B en B, el C en C. No se pisan.</p><p>Patrón fan-out / fan-in: abrimos el trabajo en paralelo y después juntamos. Y review loop: no asumimos que la primera salida está bien; si falla, volvemos.</p></aside>
 </section>
 
-<!-- 13b LLEVATE ESTO (QRs) -->
+<!-- 12b LLEVATE ESTO (QRs) -->
 <section class="slide s24" data-title="Para probar en casa">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Para probar <span class="hl">en casa</span></h2><div class="lead muted">Escaneá y llevátelo: dos cosas que uso todos los días.</div></div>
@@ -643,7 +628,7 @@
  <aside class="notes"><p>Antes de seguir: si quieren probar esto en casa, saquen el celu y escaneen.</p><p>A la izquierda, las skills de Matt Pocock: skills chiquitas y combinables para agentes de código, funcionan con cualquier modelo. A la derecha, la descarga de Orca, el entorno donde corro varios agentes en paralelo, cada uno en su worktree (es gratis y open source; ustedes ponen la suscripción del agente).</p><p>[Esperar unos segundos a que escaneen.]</p></aside>
 </section>
 
-<!-- 14 ORCA -->
+<!-- 13 ORCA -->
 <section class="slide s16 ag" data-title="Orca, explicado simple">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 6/6</div>
  <div class="left"><div class="tags"><span class="tag tag--violet">ADE</span></div>
@@ -660,7 +645,7 @@
  <aside class="notes"><p>Y ahí aparece Orca, el ADE que les mostré. Se presenta como un Agent Development Environment: un entorno para trabajar con una flota de agentes. No reemplaza al modelo: es el entorno alrededor de los agentes — worktrees, terminales, navegador, revisión, tareas.</p><p>Antes: terminales por todos lados, branches, worktrees, browsers, notas… y encima recordar quién estaba haciendo qué. ¿Cuál era cuál?</p><p>Orca lo convierte en un solo lugar donde ves los agentes, sus entornos y su trabajo. Cada worker es un agente ejecutando una tarea concreta.</p><p>Cierre técnico: los modelos que uso (aparecen los chips): Claude Sonnet, Haiku, Opus, Fable… y no me puedo olvidar de Jev ⭐ (último reveal).</p><p>(Orca lo desarrolla Stably; es gratuito y open source, MIT.)</p></aside>
 </section>
 
-<!-- 15 FOMO -->
+<!-- 14 FOMO -->
 <section class="slide s18" data-title="Cada semana algo nuevo: bienvenido al FOMO">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Cada semana<br>algo nuevo:<br>bienvenido al <span class="hl">FOMO</span></h2></div>
@@ -671,7 +656,7 @@
  <aside class="notes"><p>(Opcional, para cerrar la historia de la vergüenza: al otro día el team leader cayó con Herd y me dijo “Franco, tenés razón, estamos trabajando mal. Gracias por abrirnos la cabeza.”)</p><p>Cada semana algo nuevo: bienvenido al FOMO. Vivía en una burbuja de Twitter con gente muy avanzada, y cada semana salía algo nuevo.</p><p>Aprendizaje: comunicar y transmitir esto es súper importante. Si no lo contás, te quedás solo en tu burbuja.</p><p>Y el remate: el que no prueba, no se entera.</p></aside>
 </section>
 
-<!-- 16 COMUNIDADES -->
+<!-- 15 COMUNIDADES -->
 <section class="slide s19" data-title="Comunidades">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="left"><div class="bar"></div><h2 class="display">Salí a buscar más gente <span class="hl">como yo</span></h2></div>
@@ -683,7 +668,7 @@
  <aside class="notes"><p>Entonces salí a buscar más gente como yo: Superteam Brasil, Superteam Argentina… y las comunidades hermanas de todo el país: SaltaDev, CuyoConnect, CrecimientoAR, Nerdearla, Formosa.dev, Mar del Plata Dev.</p><p>Conecté con gente como midudev, Artu Grande, Erasmo Hernández, Carli Code.</p><p>Y me animaron a crear la primera comunidad tech con eventos de la provincia. Había una antes, estuve 4 años, pero nunca organizaban eventos. Así nació jujuy.dev.</p></aside>
 </section>
 
-<!-- 17 SE DESBLOQUEA -->
+<!-- 16 SE DESBLOQUEA -->
 <section class="slide s20" data-title="Se desbloquea algo nuevo">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="left">
@@ -700,7 +685,7 @@
  <aside class="notes"><p>Y acá se desbloquea algo nuevo: agentes corriendo 24/7. No es el futuro, ya es el presente.</p><p>[Grok Bot es... completar]</p><p>Grok Bot lleva unos 2 meses en el mercado y ya es parte de mi rutina. Me permitió hacer los eventos de la comunidad, conseguir contactos, armar esta presentación y conectar con gente hermosa.</p></aside>
 </section>
 
-<!-- 18 DELEGAR -->
+<!-- 17 DELEGAR -->
 <section class="slide s21" data-title="Delegar lo automático para vivir lo real">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="head"><div class="bar"></div><h2 class="display">Delegar lo automático para <span class="hl">vivir lo real</span></h2></div>
@@ -713,7 +698,96 @@
  <aside class="notes"><p>¿Para qué todo esto? Para delegar lo automático y vivir lo real.</p><p>Unos mates con amigos. Un mate con los abuelos. Venir a explicar esto acá. Y estudiar productos y el problema.</p></aside>
 </section>
 
-<!-- 19 CIERRE -->
+<!-- 17b PRODUCTO -->
+<section class="slide s30 pr" data-title="Producto de punta a punta">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Producto · 1/6</div>
+ <div class="head"><div class="bar"></div><h2 class="display">Producto de <span class="hl">punta a punta</span></h2></div>
+ <div class="cols" style="top:300px">
+  <div class="lead step" data-step="1">El código solo <b>no alcanza</b>.</div>
+  <div class="lead step" data-step="2">Hay que <span class="hl">planificar el producto</span>.</div>
+ </div>
+ <div class="tags step" data-step="3" style="position:absolute;left:56px;top:460px"><span class="tag tag--solid">Problema</span><span class="tag">Usuario</span><span class="tag">Valor</span><span class="tag">MVP</span><span class="tag tag--violet">Métrica</span></div>
+ <aside class="notes"><p>Si la IA escribe el código, lo que nos diferencia es pensar el producto de punta a punta. El código solo no alcanza: hay que planificar el producto.</p></aside>
+</section>
+
+<!-- 17c PING-PONG -->
+<section class="slide s31 pr" data-title="Planificar con IA: el ping-pong">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Producto · 2/6</div>
+ <div class="head"><div class="bar"></div><h2 class="display">Planificar con IA: <span class="hl">el ping-pong</span></h2></div>
+ <ol class="cols">
+   <li class="it step" data-step="1"><i>01</i><span><b>Idea en una frase:</b> Para [quién], que necesita [job], hacemos [qué].</span></li>
+   <li class="it step" data-step="2"><i>02</i><span>Pedirle a la IA que te <b>interrogue</b> (10 preguntas difíciles), no que te felicite.</span></li>
+   <li class="it step" data-step="3"><i>03</i><span>Contestar con <b>evidencia</b>; marcar hipótesis.</span></li>
+   <li class="it step" data-step="4"><i>04</i><span><b>Brief de 1 página:</b> problema, usuario, valor, MVP, métrica.</span></li>
+   <li class="it step" data-step="5"><i>05</i><span><b>Moat + FODA</b> (arrancar por lo externo).</span></li>
+   <li class="it step" data-step="6"><i>06</i><span>Build mínimo → <b>medir</b> → volver al 2.</span></li>
+ </ol>
+ <aside class="notes"><p>Cómo planifico con IA: es un ping-pong. Uno, la idea en una frase: para quién, qué job necesita, qué hacemos. Dos, le pido a la IA que me interrogue con 10 preguntas difíciles, no que me felicite. Tres, contesto con evidencia y marco lo que es hipótesis. Cuatro, un brief de una página. Cinco, moat y FODA, arrancando por lo externo. Seis, construyo lo mínimo, mido y vuelvo al paso 2.</p></aside>
+</section>
+
+<!-- 17d PRODUCTO INNOVADOR -->
+<section class="slide s32 pr" data-title="¿Qué tiene que cumplir un producto innovador?">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Producto · 3/6</div>
+ <div class="head"><div class="bar"></div><h2 class="display">¿Qué tiene que cumplir un <span class="hl">producto innovador</span>?</h2></div>
+ <ul class="cols" style="grid-template-columns:1fr;top:270px;gap:2px">
+   <li class="it step" data-step="1"><i>✓</i><span>¿Hay un <b>job real</b> mal resuelto?</span><small>JTBD · Christensen</small></li>
+   <li class="it step" data-step="2"><i>✓</i><span>¿Es <b>claramente mejor</b> para el usuario?</span><small>Rogers</small></li>
+   <li class="it step" data-step="3"><i>✓</i><span>¿Encaja, es simple, se prueba, se ven resultados?</span><small>Rogers</small></li>
+   <li class="it step" data-step="4"><i>✓</i><span>¿<b>Deseable, factible y viable</b>?</span><small>IDEO</small></li>
+   <li class="it step" data-step="5"><i>✓</i><span>¿Se valida con <b>construir → medir → aprender</b>?</span><small>Lean Startup</small></li>
+   <li class="it step" data-step="6"><i>✓</i><span>¿Qué te <b>protege</b> cuando te copien?</span><small>Helmer</small></li>
+   <li class="it step" data-step="7"><i>✓</i><span>¿Solo producto, o también <b>modelo / canal / experiencia</b>?</span><small>Doblin</small></li>
+ </ul>
+ <div class="foot">Fuentes: HBR · Rogers · IDEO · Lean Startup · Helmer · Doblin</div>
+ <aside class="notes"><p>Checklist de un producto innovador, con fuentes. Jobs to be Done de Clayton Christensen (HBR, 2016): ¿hay un trabajo real que la gente quiere resolver y está mal resuelto? Rogers, Diffusion of Innovations: ventaja relativa, compatibilidad, baja complejidad, que se pueda probar y que los resultados se vean. IDEO: deseable, factible y viable. Lean Startup: el ciclo construir-medir-aprender. Hamilton Helmer, 7 Powers: qué te protege cuando te copian. Doblin, Ten Types of Innovation: no solo se innova en producto, también en modelo, canal y experiencia.</p></aside>
+</section>
+
+<!-- 17e 7 POWERS -->
+<section class="slide s33 pr" data-title="¿Qué te protege cuando te copien? 7 Powers">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Producto · 4/6</div>
+ <div class="head"><div class="bar"></div><h2 class="display">¿Qué te protege cuando <span class="hl">te copien</span>?</h2><div class="lead muted">7 Powers · Hamilton Helmer</div></div>
+ <ol class="cols" style="top:290px">
+   <li class="it step" data-step="1"><i>01</i><span><b>Economías de escala</b></span></li>
+   <li class="it step" data-step="2"><i>02</i><span><b>Economías de red</b></span></li>
+   <li class="it step" data-step="3"><i>03</i><span><b>Contraposicionamiento</b></span></li>
+   <li class="it step" data-step="4"><i>04</i><span><b>Costos de cambio</b></span></li>
+   <li class="it step" data-step="5"><i>05</i><span><b>Marca</b></span></li>
+   <li class="it step" data-step="6"><i>06</i><span><b>Recurso acaparado</b></span></li>
+   <li class="it step" data-step="6"><i>07</i><span><b>Poder de proceso</b></span></li>
+ </ol>
+ <div class="punch2 step" data-step="7">Startup tech típica: <span class="hl">contraposicionamiento → escala → costos de cambio → red</span>.</div>
+ <aside class="notes"><p>Hamilton Helmer, 7 Powers: siete fuentes de ventaja duradera. Economías de escala, economías de red, contraposicionamiento, costos de cambio, marca, recurso acaparado y poder de proceso.</p><p>Las startups tech suelen arrancar por contraposicionamiento, después escala, costos de cambio y red.</p></aside>
+</section>
+
+<!-- 17f FODA -->
+<section class="slide s34 pr" data-title="FODA sin autoengaño">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Producto · 5/6</div>
+ <div class="head"><div class="bar"></div><h2 class="display">FODA <span class="hl">sin autoengaño</span></h2></div>
+ <div class="foda">
+  <div class="q v step" data-step="1"><b>Oportunidades</b>Cambio en el entorno que abre el problema</div>
+  <div class="q v step" data-step="1"><b>Amenazas</b>Quién más lo resuelve o te puede copiar</div>
+  <div class="q step" data-step="2"><b>Fortalezas</b>Qué tenés que otros no (con evidencia)</div>
+  <div class="q step" data-step="2"><b>Debilidades</b>Qué te falta hoy: equipo, datos, canal</div>
+ </div>
+ <div class="err"><div class="mono step" data-step="3" style="font:700 13px/1 var(--font-mono);letter-spacing:3px;margin-bottom:8px">3 ERRORES COMUNES</div>
+<ul>
+   <li class="it step" data-step="3"><i>01</i><span>Empezar por fortalezas y no por el <b>entorno</b></span></li>
+   <li class="it step" data-step="4"><i>02</i><span>Listas vagas, <b>sin evidencia</b></span></li>
+   <li class="it step" data-step="5"><i>03</i><span>No pasar a <b>acciones</b> (TOWS)</span></li>
+ </ul></div>
+ <aside class="notes"><p>FODA sin autoengaño. Arrancamos por lo externo, oportunidades y amenazas, y después lo interno. Para un producto temprano: oportunidades, el cambio en el entorno que abre el problema; amenazas, quién más lo resuelve o te puede copiar; fortalezas, lo que tenés y otros no, con evidencia; debilidades, lo que te falta hoy.</p><p>Tres errores: uno, empezar por las fortalezas en vez del entorno (HBR recomienda hacer el FODA “al revés”). Dos, listas vagas sin evidencia. Tres, no pasar a acciones: la matriz TOWS cruza cada cuadrante para sacar estrategias.</p></aside>
+</section>
+
+<!-- 17g JOB -->
+<section class="slide s35 pr" data-title="El job antes que la feature">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Producto · 6/6</div>
+ <div class="head"><div class="bar"></div><h2 class="display">El job antes que <span class="hl">la feature</span></h2></div>
+ <div class="quote step" data-step="1" style="top:290px">La gente no compra productos: <span class="hl">los contrata para hacer un trabajo</span>.</div>
+ <div class="foot">Jobs to be Done · Clayton Christensen · HBR</div>
+ <aside class="notes"><p>Idea central de Jobs to be Done de Christensen: la gente no compra productos, los “contrata” para hacer un trabajo en su vida. Primero el job, después la feature.</p></aside>
+</section>
+
+<!-- 18 CIERRE -->
 <section class="slide s22" data-title="Cierre">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="left">
