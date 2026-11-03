@@ -14,3 +14,7 @@
 - Hamilton Helmer, *7 Powers* — https://7powers.com/
 - Doblin, Ten Types of Innovation — https://doblin.com/ten-types
 - FODA al revés — https://hbr.org/2021/02/are-you-doing-the-swot-analysis-backwards · TOWS — https://hbr.org/2007/03/from-swot-to-tows-answering-a-readers-strategy-question · trampas SWOT — https://www.inc.com/paul-j-h-schoemaker/five-traps-swot-analysis.html
+
+## 2026-11-03 (tarde)
+- Sacó logo CrecimientoAR del muro Quién soy (quedaba cortado); sigue en slide Comunidades.
+- Sacó slide «¿Quién programa hoy a mano?» / «hace casi 1 año».
