@@ -18,3 +18,4 @@
 ## 2026-11-03 (tarde)
 - Sacó logo CrecimientoAR del muro Quién soy (quedaba cortado); sigue en slide Comunidades.
 - Sacó slide «¿Quién programa hoy a mano?» / «hace casi 1 año».
+- Sacó slides 16–18: Comunidades, Se desbloquea algo nuevo, Delegar lo automático.
