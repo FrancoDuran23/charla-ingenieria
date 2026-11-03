@@ -22,3 +22,4 @@
 - Sacó slide Plot twist (era la 3).
 - Entre duelo y hackatones: slide revelación del “?” → Orquestación de agentes (mismo layout pantallas).
 - Slide Orquestación de agentes: GIF director de orquesta + caption “Yo orquestando agentes”.
+- Puerta de entrada: copy motivador (por qué hackatones); sin San Francisco; “desde Jujuy también”.
