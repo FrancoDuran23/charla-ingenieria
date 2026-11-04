@@ -8,5 +8,6 @@ Si usás otra extensión, cambiala también en `charla.html` **y** `index.html` 
 | ~~`assets/memes/02-two-buttons.jpg`~~ | (slide eliminada; ya no se usa) | — |
 | ~~`assets/memes/05-this-is-fine.jpg`~~ | (eliminado: se sacó la mención a la amenaza) | — |
 | `assets/memes/07-claude-daily-limit.webp` | MEME: orangután serruchando — “Claude watching me write code manually after I hit the daily limit” (lo mandó Franco; trae su caption) | ✅ listo |
+| `assets/memes/09-yo-y-claude.mp4` | Slide Depresión, entre el duelo y el elefante. “POV: yo y Claude” — chaleco empujando el subte ([@dev_TEMITAYO](https://x.com/dev_TEMITAYO/status/2117281864096297060)) | ✅ listo |
 | `assets/memes/11-verguenza.jpg` | MEME: vergüenza ajena / cara de mis compañeros | ⏳ falta |
 | `assets/memes/15-fomo.jpg` | MEME: distracted boyfriend — yo / herramienta nueva / la de la semana pasada | ⏳ falta |

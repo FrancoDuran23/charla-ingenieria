@@ -37,8 +37,8 @@ body{background:#000;font-family:var(--font-sans);color:var(--ink)}
 .sticker{position:absolute;z-index:6;font:400 30px/1 var(--font-condensed);text-transform:uppercase;background:var(--violet);color:#fff;padding:12px 18px;transform:rotate(-5deg);box-shadow:5px 5px 0 var(--ink)}
 /* media + placeholders */
 .media{position:absolute;margin:0;border-radius:var(--radius-tile);overflow:hidden;background:var(--paper-sunk);box-shadow:var(--shadow-tile)}
-.media img{width:100%;height:100%;object-fit:cover;display:block}
-.media.meme{background:var(--ink)} .media.meme img{object-fit:contain}
+.media img,.media video{width:100%;height:100%;object-fit:cover;display:block}
+.media.meme{background:var(--ink)} .media.meme img,.media.meme video{object-fit:contain}
 .media.contain img{object-fit:contain;background:var(--paper-raised)}
 .media .ph{display:none}
 .media.missing img{display:none}
