@@ -23,3 +23,6 @@
 - Entre duelo y hackatones: slide revelación del “?” → Orquestación de agentes (mismo layout pantallas).
 - Slide Orquestación de agentes: GIF director de orquesta + caption “Yo orquestando agentes”.
 - Puerta de entrada: copy motivador (por qué hackatones); sin San Francisco; “desde Jujuy también”.
+
+## 2026-11-04
+- **Depresión:** slide nueva entre s09 (duelo) y s08e (elefante). Título “Depresión”, lead “POV: yo y Claude”. Video en loop `assets/memes/09-yo-y-claude.mp4` (chaleco empujando el subte; [@dev_TEMITAYO](https://x.com/dev_TEMITAYO/status/2117281864096297060)). s09 conserva “this is fine”; la nota del paso 4 apunta a esta slide.

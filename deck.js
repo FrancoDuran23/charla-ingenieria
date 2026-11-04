@@ -80,9 +80,21 @@
   }
   function render(silent){
     const eff=stepsOn()?st:maxStep[i];
-    if(shown!==i){ transition(shown,i); shown=i; } mode=null;
+    const entered=shown!==i;
+    if(entered){ transition(shown,i); shown=i; } mode=null;
     slides.forEach((el,k)=>{ el.classList.toggle('active',k===i); el.setAttribute('aria-hidden',k!==i); });
     const cur=slides[i]; cur.dataset.cur=eff;
+    // El video no es un GIF: arranca de cero al entrar a la slide y se pausa al salir.
+    $$('video').forEach(v=>{
+      const on=v.closest('.slide')===cur;
+      if(!on){ v.pause(); return; }
+      if(entered){
+        const restart=()=>{ try{ v.currentTime=0; }catch(e){} };
+        if(v.readyState>=1) restart();
+        else v.addEventListener('loadedmetadata', restart, {once:true});
+      }
+      const p=v.play(); if(p&&p.catch) p.catch(()=>{});
+    });
     $$('[data-step]',cur).forEach(e=>e.classList.toggle('on',(+e.dataset.step||0)<=eff));
     if(bar) bar.style.width=((i+1)/N*100)+'%';
     if(ctr) ctr.textContent=String(i+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');
